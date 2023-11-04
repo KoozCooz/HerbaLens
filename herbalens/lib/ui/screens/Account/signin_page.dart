@@ -1,13 +1,14 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:herbalens/constants.dart';
 import 'package:herbalens/ui/root_page.dart';
 import 'package:herbalens/ui/screens/forgot_password.dart';
-import 'package:herbalens/ui/screens/signup_page.dart';
+import 'package:herbalens/ui/screens/Account/signup_page.dart';
 import 'package:herbalens/ui/screens/widgets/custom_textfield.dart';
 import 'package:page_transition/page_transition.dart';
 
-import '../Firebase_auth_implementation/firebase_auth_services.dart';
+import '../../../Firebase_auth_implementation/firebase_auth_services.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
@@ -142,35 +143,40 @@ class _SignIn extends State<SignIn> {
               const SizedBox(
                 height: 20,
               ),
-              Container(
-                width: size.width,
-                decoration: BoxDecoration(
+              GestureDetector(
+                onTap: () {
+                  signInWithGoogle();
+                },
+                child: Container(
+                  width: size.width,
+                  decoration: BoxDecoration(
                     border: Border.all(color: Constants.primaryColor),
-                    borderRadius: BorderRadius.circular(10)),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    SizedBox(
-                      height: 30,
-                      child: Image.asset('assets/images/google.png'),
-                    ),
-                    Text(
-                      'Sign In with Google',
-                      style: TextStyle(
-                        color: Constants.blackColor,
-                        fontSize: 18.0,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      SizedBox(
+                        height: 30,
+                        child: Image.asset('assets/images/google.png'),
                       ),
-                    ),
-                  ],
+                      Text(
+                        'Sign In with Google',
+                        style: TextStyle(
+                          color: Constants.blackColor,
+                          fontSize: 18.0,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
+
               const SizedBox(
                 height: 20,
               ),
 
-              //GOOGLE SIGN IN
               GestureDetector(
                 onTap: () {
                   Navigator.pushReplacement(
@@ -269,5 +275,26 @@ class _SignIn extends State<SignIn> {
         );
       }
     }
+  }
+  signInWithGoogle() async {
+    GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+    GoogleSignInAuthentication? googleAuth = await googleUser?.authentication;
+
+    AuthCredential credential = GoogleAuthProvider.credential(
+      accessToken: googleAuth?.accessToken,
+      idToken: googleAuth?.idToken,
+    );
+
+    UserCredential userCredential = await FirebaseAuth.instance.signInWithCredential(credential);
+    print(userCredential.user?.displayName);
+
+    // Navigate to RootPage after successful sign-in
+    Navigator.pushReplacement(
+      context,
+      PageTransition(
+        child: const RootPage(),
+        type: PageTransitionType.bottomToTop,
+      ),
+    );
   }
 }

@@ -7,8 +7,8 @@ import 'package:herbalens/firebase_options.dart';
 import 'package:herbalens/ui/screens/Profile/Notifications/message.dart';
 import 'package:herbalens/ui/screens/Profile/Notifications/notifications.dart';
 import 'package:herbalens/ui/screens/home_page.dart';
-import 'package:herbalens/ui/screens/signup_page.dart';
-import 'package:herbalens/ui/signin_page.dart';
+import 'package:herbalens/ui/screens/Account/signup_page.dart';
+import 'package:herbalens/ui/screens/Account/signin_page.dart';
 import 'package:herbalens/ui/onboarding_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -20,7 +20,7 @@ Future _firebaseBackgroundMessage(RemoteMessage message) async {
   }
 }
 
-void main() async {
+Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,

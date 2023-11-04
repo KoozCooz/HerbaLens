@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:herbalens/constants.dart';
-import 'package:herbalens/ui/signin_page.dart';
+import 'package:herbalens/ui/screens/Account/signin_page.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({Key? key}) : super(key: key);

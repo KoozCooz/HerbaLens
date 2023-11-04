@@ -1,9 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:herbalens/Firebase_auth_implementation/firebase_auth_services.dart';
 import 'package:herbalens/constants.dart';
 import 'package:herbalens/ui/screens/widgets/profil_widget.dart';
-import 'package:herbalens/ui/signin_page.dart';
+import 'package:herbalens/ui/screens/Account/signin_page.dart';
 import 'package:page_transition/page_transition.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -181,6 +182,8 @@ class _ProfilePageState extends State<ProfilePage> {
 }
 
 Future selectLogOut(BuildContext context) {
+  final user = FirebaseAuth.instance.currentUser;
+
   return showDialog(
     context: context,
     builder: (BuildContext context) {
@@ -196,13 +199,23 @@ Future selectLogOut(BuildContext context) {
           ),
           TextButton(
             child: const Text('Logout'),
-            onPressed: () {
-              FirebaseAuth.instance.signOut();
+            onPressed: () async {
+              if (user != null && user.providerData.any((info) => info.providerId == 'google.com')) {
+                // Sign out from Google
+                final GoogleSignIn googleSignIn = GoogleSignIn();
+                await googleSignIn.signOut();
+              }
+              
+              // Sign out from Firebase
+              await FirebaseAuth.instance.signOut();
+              
               Navigator.push(
-                  context,
-                  PageTransition(
-                      child: const SignIn(),
-                      type: PageTransitionType.bottomToTop));
+                context,
+                PageTransition(
+                  child: const SignIn(),
+                  type: PageTransitionType.bottomToTop,
+                ),
+              );
             },
           ),
         ],

@@ -4,8 +4,9 @@ import 'package:herbalens/constants.dart';
 import 'package:herbalens/ui/root_page.dart';
 import 'package:herbalens/ui/screens/widgets/custom_textfield.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:herbalens/ui/signin_page.dart';
+import 'package:herbalens/ui/screens/Account/signin_page.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({Key? key}) : super(key: key);
@@ -122,35 +123,43 @@ class _SignUpPageState extends State<SignUp> {
               const SizedBox(
                 height: 20,
               ),
-              Container(
-                width: size.width,
-                decoration: BoxDecoration(
+              //GOOGLE SIGN IN
+              GestureDetector(
+                onTap: () {
+                  signInWithGoogle();
+                  
+                  // Add your desired functionality here
+                  // This code will be executed when the container is tapped
+                },
+                child: Container(
+                  width: size.width,
+                  decoration: BoxDecoration(
                     border: Border.all(color: Constants.primaryColor),
-                    borderRadius: BorderRadius.circular(10)),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    SizedBox(
-                      height: 30,
-                      child: Image.asset('assets/images/google.png'),
-                    ),
-                    Text(
-                      'Sign Up with Google',
-                      style: TextStyle(
-                        color: Constants.blackColor,
-                        fontSize: 18.0,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      SizedBox(
+                        height: 30,
+                        child: Image.asset('assets/images/google.png'),
                       ),
-                    ),
-                  ],
+                      Text(
+                        'Sign Up with Google',
+                        style: TextStyle(
+                          color: Constants.blackColor,
+                          fontSize: 18.0,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               const SizedBox(
                 height: 20,
               ),
-
-              //Google Sign Up
+              //LOGIN
               GestureDetector(
                 onTap: () {
                   Navigator.pushReplacement(
@@ -260,5 +269,29 @@ class _SignUpPageState extends State<SignUp> {
         },
       );
     }
+  }
+  Future <void> signInWithGoogle() async{
+    FirebaseAuth auth = FirebaseAuth.instance;
+    final GoogleSignIn googleSignIn = GoogleSignIn();
+
+    final GoogleSignInAccount? googleUser = await googleSignIn.signIn();
+
+    final GoogleSignInAuthentication googleAuth = await googleUser!.authentication;
+
+    final AuthCredential credential = GoogleAuthProvider.credential(
+      accessToken: googleAuth.accessToken,
+      idToken: googleAuth.idToken,
+    );
+
+    final UserCredential userCredential = await auth.signInWithCredential(credential);
+    print(userCredential.user?.displayName);
+
+    Navigator.pushReplacement(
+      context,
+      PageTransition(
+      child: const RootPage(),
+      type: PageTransitionType.bottomToTop,
+      ),
+    );
   }
 }
