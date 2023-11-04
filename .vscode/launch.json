@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "herbalens",
+            "cwd": "herbalens",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "herbalens (profile mode)",
+            "cwd": "herbalens",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "herbalens (release mode)",
+            "cwd": "herbalens",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "Flutter (lib\\firebase_options.dart)",
+            "type": "dart",
+            "request": "launch",
+            "cwd": "herbalens",
+            "program": "lib\\firebase_options.dart"
+        }
+    ]
+}

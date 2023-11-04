@@ -1,0 +1,136 @@
+import 'dart:convert';
+
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:herbalens/firebase_options.dart';
+import 'package:herbalens/ui/screens/Profile/Notifications/message.dart';
+import 'package:herbalens/ui/screens/Profile/Notifications/notifications.dart';
+import 'package:herbalens/ui/screens/home_page.dart';
+import 'package:herbalens/ui/screens/signup_page.dart';
+import 'package:herbalens/ui/signin_page.dart';
+import 'package:herbalens/ui/onboarding_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
+
+final navigatorKey = GlobalKey<NavigatorState>();
+
+Future _firebaseBackgroundMessage(RemoteMessage message) async {
+  if (message.notification != null) {
+    print("Some notification Received");
+  }
+}
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
+  // on background notification tapped
+  FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
+    if (message.notification != null) {
+      print("Background Notification Tapped");
+      navigatorKey.currentState!.pushNamed("/message", arguments: message);
+    }
+  });
+
+  PushNotifications.init();
+  PushNotifications.localNotiInit();
+  // Listen to background notifications
+  FirebaseMessaging.onBackgroundMessage(_firebaseBackgroundMessage);
+
+  // to handle foreground notifications
+  FirebaseMessaging.onMessage.listen((RemoteMessage message) {
+    String payloadData = jsonEncode(message.data);
+    print("Got a message in foreground");
+    if (message.notification != null) {
+      PushNotifications.showSimpleNotification(
+          title: message.notification!.title!,
+          body: message.notification!.body!,
+          payload: payloadData);
+    }
+  });
+
+  // for handling in terminated state
+  final RemoteMessage? message =
+      await FirebaseMessaging.instance.getInitialMessage();
+
+  if (message != null) {
+    print("Launched from terminated state");
+     Fluttertoast.showToast(msg: "Lauched in Terminated State");
+    Future.delayed(Duration(seconds: 1), () {
+      navigatorKey.currentState!.pushNamed("/message", arguments: message);
+    });
+  }
+
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      navigatorKey: navigatorKey,
+      title: 'Onboarding Screen',
+      home: const OnboardingScreen(),
+      debugShowCheckedModeBanner: false,
+      routes: {
+        '/login': (context) => const SignIn(),
+        '/signUp': (context) => const SignUp(),
+        '/home': (context) => const HomePage(),
+        '/message': (context) => const Message()
+      },
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.title});
+
+  final String title;
+
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  int _counter = 0;
+
+  void _incrementCounter() {
+    setState(() {
+      _counter++;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Text(widget.title),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            const Text(
+              'You have pushed the button this many times:',
+            ),
+            Text(
+              '$_counter',
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: const Icon(Icons.add),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}

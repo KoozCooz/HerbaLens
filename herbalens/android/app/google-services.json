@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "663924677150",
+    "project_id": "herbalens-firebase",
+    "storage_bucket": "herbalens-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663924677150:android:dd24cbc98b9ed6454f2c0f",
+        "android_client_info": {
+          "package_name": "com.example.herbalens"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA37T6CyxnEGAhzloMXNlSOKWRlcE2MLSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
