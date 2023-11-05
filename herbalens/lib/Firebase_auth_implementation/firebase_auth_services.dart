@@ -55,5 +55,7 @@ class FirebaseAuthService {
   String getCurrentUserEmail() {
     User? user = _auth.currentUser;
     return user?.email ?? "";
+    
   }
+  var currentUser = FirebaseAuth.instance.currentUser;
 }

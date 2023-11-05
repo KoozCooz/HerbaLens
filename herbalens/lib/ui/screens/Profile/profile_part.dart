@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:herbalens/Firebase_auth_implementation/firebase_auth_services.dart';
 import 'package:herbalens/constants.dart';
+import 'package:herbalens/ui/screens/Profile/Settings/settings.dart';
 import 'package:herbalens/ui/screens/widgets/profil_widget.dart';
 import 'package:herbalens/ui/screens/Account/signin_page.dart';
 import 'package:page_transition/page_transition.dart';
@@ -16,9 +17,9 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   final FirebaseAuthService _auth = FirebaseAuthService();
-
   TextEditingController _emailController = TextEditingController();
   TextEditingController _nameController = TextEditingController();
+
 
   @override
   void initState() {
@@ -130,7 +131,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     //EDIT SETTINGS
                     GestureDetector(
                       onTap: () {
-                        // Add code to perform desired action when "Settings" is tapped
+                        Navigator.push(context, PageTransition(child: const Settings(), type: PageTransitionType.bottomToTop));
                       },
                       child: const ProfileWidget(
                         icon: Icons.settings,
