@@ -15,7 +15,6 @@ class _ChangePassState extends State<ChangePass> {
 
     final FirebaseAuthService _auth = FirebaseAuthService();
 
-    var auth = FirebaseAuth.instance;
     var currentUser = FirebaseAuth.instance.currentUser;
 
     var oldPasswordController = TextEditingController();

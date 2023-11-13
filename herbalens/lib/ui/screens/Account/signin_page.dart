@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:herbalens/constants.dart';
 import 'package:herbalens/ui/root_page.dart';
-import 'package:herbalens/ui/screens/forgot_password.dart';
+import 'package:herbalens/ui/screens/Account/forgot_password.dart';
 import 'package:herbalens/ui/screens/Account/signup_page.dart';
 import 'package:herbalens/ui/screens/widgets/custom_textfield.dart';
 import 'package:page_transition/page_transition.dart';
