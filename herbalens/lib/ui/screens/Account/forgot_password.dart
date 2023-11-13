@@ -4,7 +4,7 @@ import 'package:herbalens/ui/screens/widgets/custom_textfield.dart';
 import 'package:herbalens/ui/screens/Account/signin_page.dart';
 import 'package:page_transition/page_transition.dart';
 
-import '../../constants.dart';
+import '../../../constants.dart';
 
 class ForgotPassword extends StatefulWidget {
   const ForgotPassword({Key? key}) : super(key: key);
