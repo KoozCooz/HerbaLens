@@ -6,7 +6,7 @@ import 'package:herbalens/constants.dart';
 import 'package:herbalens/models/plants.dart';
 import 'package:herbalens/ui/screens/favorite_page.dart';
 import 'package:herbalens/ui/screens/herbalens_page.dart';
-import 'package:herbalens/ui/screens/home_page.dart';
+import 'package:herbalens/ui/screens/Dashboard/home_page.dart';
 import 'package:herbalens/ui/screens/Profile/profile_part.dart';
 import 'package:herbalens/ui/scan_page.dart';
 import 'package:page_transition/page_transition.dart';
@@ -26,7 +26,7 @@ class _RootPageState extends State<RootPage> {
   //List of the pages
   List<Widget> _widgetOptions(){
     return[
-    const HomePage(),
+    const HomePage(articleId: 0,),
     HerbalPage(listofHerbaLens: plants,),
     FavoritePage(favoritedPlants: favorites,),
     const ProfilePage(),

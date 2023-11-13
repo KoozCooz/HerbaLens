@@ -6,7 +6,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:herbalens/firebase_options.dart';
 import 'package:herbalens/ui/screens/Profile/Notifications/message.dart';
 import 'package:herbalens/ui/screens/Profile/Notifications/notifications.dart';
-import 'package:herbalens/ui/screens/home_page.dart';
+import 'package:herbalens/ui/screens/Dashboard/home_page.dart';
 import 'package:herbalens/ui/screens/Account/signup_page.dart';
 import 'package:herbalens/ui/screens/Account/signin_page.dart';
 import 'package:herbalens/ui/onboarding_screen.dart';
@@ -80,7 +80,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/login': (context) => const SignIn(),
         '/signUp': (context) => const SignUp(),
-        '/home': (context) => const HomePage(),
+        '/home': (context) => const HomePage(articleId: 0,),
         '/message': (context) => const Message()
       },
     );
