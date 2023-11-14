@@ -73,7 +73,7 @@ String selectedImagePath = '';
           children: [
             selectedImagePath == ''
                 ? Image.asset('assets/images/code-scan.png',height: 300, width: 500)
-                : Image.file(File(selectedImagePath), height: 200, width: 200, fit: BoxFit.fill,),
+                : Image.file(File(selectedImagePath), height: 300, width: 500),
            const Padding(
               padding: EdgeInsets.all(40.0), // set the padding to 16.0 on all sides
               child: Text(
