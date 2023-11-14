@@ -739,7 +739,7 @@ class HerbalLens {
         category: 'Fruit',
         plantName: 'Bilimbi',
         scientificname: 'Beta vulgaris',
-        imageURL: 'assets/plants/fruits/kamis.png',
+        imageURL: 'assets/plants/fruits/kamias.png',
         isFavorated: false,
         decription: '',
         usefulin: "",
