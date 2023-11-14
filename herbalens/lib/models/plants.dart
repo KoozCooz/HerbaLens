@@ -908,7 +908,7 @@ Gastrointestinal Sensitivity: In some cases, individuals with sensitive stomachs
         category: 'Fruit',
         plantName: 'Lemon',
         scientificname: 'Citrus limonum Risso',
-        imageURL: 'assets/plants/fruits/lemen.png',
+        imageURL: 'assets/plants/fruits/lemon.png',
         isFavorated: false,
         decription: '"Citrus limonum Risso" specifically refers to the lemon, with the addition of "Risso" indicating the involvement of Antoine Risso in the botanical description or classification of this lemon species.',
         usefulin: """Culinary Uses: Lemons are widely used in cooking and baking to add flavor to dishes and beverages.
