@@ -372,241 +372,109 @@ class HerbalLens {
         isSelected: false),
 
     // LIST OF FLOWERS
-    //GUMAMELA
+    //ASIAN JASMINE 
     HerbalLens(
         plantId: 20,
         category: 'Flower',
-        plantName: 'Gumamela',
-        scientificname: 'Hibiscus rosa-sinensis',
-        imageURL: 'assets/images/plant-flower-five.png',
+        plantName: 'Asian Jasmine',
+        scientificname: 'Jasminum sambac',
+        imageURL: 'assets/plants/flowers/Sampaguita.png',
         isFavorated: false,
-        decription:
-            'A flower with four-feet shrub with large five-petal flowers. Because of its beauty, it is a choice ornamental flower for Filipinos.',
-        usefulin:
-            """•Bronchitis, coughs, fever, dysentery, urinary and bladder infections, high blood pressure and constipation
-            Procedure: Decoction or a tea of gumamela. 
-      •Headaches, boils, swelling, abscesses and mumps
-            Procedure: Poultice or mashed flowers paste """,
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Jasminum sambac" translates to the jasmine species known for its fragrant flowers. This plant is highly valued for its aromatic qualities and is culturally significant in various regions where it is grown.',
+        usefulin: """Aromatic Qualities: Jasmine flowers, especially those of Jasminum sambac, are valued for their pleasant fragrance.
+Traditional Medicine: In traditional medicine, jasmine is sometimes used for its potential calming and soothing properties.
+Perfumery: Jasmine is a popular ingredient in the perfume industry due to its sweet and exotic scent.""",
+        procedure: """Harvesting: Jasmine flowers are typically harvested when they are fully bloomed and have the strongest fragrance.
+Extraction: Jasmine oil can be extracted from the flowers through methods like steam distillation""",
+        symptoms: """Allergic Reactions: Some individuals may be allergic to jasmine. Allergic reactions could include skin irritation, itching, or respiratory symptoms.""",
+        precautions: """Allergies: If you have known allergies to flowers or fragrances, it's advisable to use jasmine products cautiously.\
+Pregnancy: Pregnant women should use jasmine products, including essential oils, with caution, as excessive use may not be recommended during pregnancy.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Jasminum+sambac',
         isSelected: false),
-    //SANTAN
+    //BLUE TERNATE
     HerbalLens(
         plantId: 21,
         category: 'Flower',
-        plantName: 'Santan',
-        scientificname: 'Ixora coccinea',
-        imageURL: 'assets/images/plant-flower-six.png',
+        plantName: 'Blue Ternate',
+        scientificname: 'Clitoria ternatea',
+        imageURL: 'assets/plants/flowers/Blue ternate.png',
         isFavorated: false,
-        decription:
-            'A flowering plant endemic to Asia due to its tropical and subtropical climates.'
-            'Because of its colorful and brilliant blossoms, it is a popular decorative plant.',
-        usefulin: """•Incipient tuberculosis and hemorrhage
-        Procedure: Infusion of fresh flowers, drunk ad libitum. 
-  •Hypertension,Irregular menstruation, and Female reproduction organ infections
-        Procedure: Decoction of flowers. 
-  •Sprains, Eczema, Boils, and Contusions
-        Procedure: Poultice of santan flowers.""",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription:'a plant species belonging to the family Fabaceae. The flowers of this vine were imagined to have the shape of human female genitals, hence the Latin name of the genus "Clitoria", from "clitoris". The species name is thought to derive from the city of Ternate in the Indonesian archipelago, from where Linnaeus\'s specimens originated.',
+        usefulin: """Traditional Medicine: In some traditional medicinal practices, Clitoria ternatea is used for various purposes, including promoting brain health and improving mood.
+Culinary Uses: The flowers are used as a natural food coloring in various culinary dishes and beverages.
+Antioxidant Properties: Butterfly pea flowers are rich in antioxidants, which can help neutralize free radicals in the body.""",
+        procedure: """Harvesting: The flowers are typically harvested when they are in full bloom.
+Infusion: Butterfly pea flowers can be steeped in hot water to make a vibrant blue tea. The infusion can be consumed on its own or used as a natural food coloring.""",
+        symptoms: """Allergic Reactions: Some individuals may be allergic to butterfly pea flowers, leading to symptoms such as itching, swelling, or respiratory issues.""",
+        precautions: """Pregnancy: Pregnant women should use butterfly pea flowers with caution, and it's advisable to consult with a healthcare professional.
+
+Allergies: If you have known allergies to flowers or legumes, exercise caution when using butterfly pea flowers""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Clitoria+ternatea',
         isSelected: false),
-    //SAMPAGUITA
+    //BOUGAINVILLEA
     HerbalLens(
         plantId: 22,
         category: 'Flower',
-        plantName: 'Sampaguita',
-        scientificname: 'Jasminum sambac',
-        imageURL: 'assets/images/plant-flower-seven.png',
+        plantName: 'Bougainvillea',
+        scientificname: 'Bougainvillea spectabilis',
+        imageURL: 'assets/plants/flowers/Bougainvillea.png',
         isFavorated: false,
-        decription:
-            'A flowering plant native to Southeast Asia. It is a highly prized and aromatic species of jasmine known for its fragrant white flowers.',
-        usefulin: """•Ulcers
-        Procedure: Pound flowers and apply. •Fever
-        Procedure: Decoction of flowers. •Abdominal distention and eye wash for eye redness and swelling
-        Procedure: Decoction of dried flowers""",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription:' "Bougainvillea spectabilis" refers to a species of bougainvillea known for its remarkable and showy bracts. This plant is celebrated for its colorful and eye-catching appearance, making it a popular choice for ornamental purposes in gardens and landscaping.',
+        usefulin: """Ornamental Plant: Bougainvillea spectabilis is primarily cultivated for its vibrant and showy bracts, making it a popular ornamental plant in landscaping and gardens.
+Traditional Uses: In some traditional practices, extracts from Bougainvillea spectabilis are used for potential medicinal purposes, including anti-inflammatory properties.""",
+        procedure: """Cultivation: Bougainvillea spectabilis is typically grown in well-drained soil and requires full sunlight for optimal growth.
+Pruning: Regular pruning is often performed to control the size and shape of the plant and to encourage prolific flowering.""",
+        symptoms: """Skin Irritation: Contact with the sap or thorns of Bougainvillea spectabilis may cause skin irritation in some individuals.""",
+        precautions: """Handling: Care should be taken when handling Bougainvillea spectabilis, as the plant has thorns that can cause injury, and the sap may cause skin irritation.
+Allergies: Individuals with known allergies to plants should exercise caution, as contact with Bougainvillea spectabilis may trigger allergic reactions.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Bougainvillea+spectabilis',
         isSelected: false),
-    //GARLIC VINE
+    //CANANGA TREE
     HerbalLens(
         plantId: 23,
         category: 'Flower',
-        plantName: 'Garlic Vine',
-        scientificname: 'Mansoa alliacea',
-        imageURL: 'assets/images/plant-flower-eight.png',
+        plantName: 'Cananga Tree',
+        scientificname: 'Cananga odorata',
+        imageURL: 'assets/plants/flowers/Ylang-ylang.png',
         isFavorated: false,
         decription:
-            'A flowering vine native to Central and South America. It is also commonly referred to as "Wild Garlic" or "Garlic Creeper.',
-        usefulin: """•Fever
-        Procedure: Decoction of infusion of flower""",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+            '',
+        usefulin: """Perfumery: Ylang-ylang oil, extracted from the flowers of Cananga odorata, is a popular ingredient in the perfume industry, known for its sweet and floral fragrance.
+Aromatherapy: Ylang-ylang essential oil is used in aromatherapy for its potential calming and mood-enhancing properties.
+Cosmetics: Ylang-ylang oil is used in various cosmetic products, including lotions, soaps, and hair care items.""",
+        procedure: """Distillation: Ylang-ylang oil is often produced through steam distillation of the fresh flowers.
+Extraction: The flowers are carefully harvested, and their essential oil is extracted for various applications.""",
+        symptoms: """Skin Irritation: Some individuals may be sensitive to ylang-ylang oil, and skin irritation may occur in rare cases.""",
+        precautions: """Allergies: Individuals with known allergies to fragrances or essential oils should use ylang-ylang with caution.
+Pregnancy: Pregnant women should consult with a healthcare professional before using ylang-ylang oil, as excessive use is not recommended during pregnancy.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Cananga+odorata',
         isSelected: false),
-    // BLUE TERNATE EDIT
+    // CHAMOMILE
     HerbalLens(
         plantId: 24,
         category: 'Flower',
-        plantName: 'Blue ternate',
-        scientificname: '',
-        imageURL: 'assets/icon/Kathy.jpg',
-        isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
-        isSelected: false),
-    // BOUGAINVILLEA EDIT
-    HerbalLens(
-        plantId: 25,
-        category: 'Flower',
-        plantName: 'Bougainvillea',
-        scientificname: '',
-        imageURL: 'assets/icon/Kathy.jpg',
-        isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
-        isSelected: false),
-    // CHAMOMILE EDIT
-    HerbalLens(
-        plantId: 26,
-        category: 'Flower',
         plantName: 'Chamomile',
-        scientificname: '',
-        imageURL: 'assets/icon/Kathy.jpg',
+        scientificname: 'Matricaria chamomilla',
+        imageURL: 'assets/plants/flowers/Chamomile.png',
         isFavorated: false,
         decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        usefulin: """Herbal Tea: Chamomile tea is popular for its potential calming and relaxation properties. It is often consumed to promote better sleep and reduce stress.
+Digestive Aid: Chamomile is sometimes used to ease digestive discomfort, including symptoms of indigestion and bloating.
+Topical Applications: Chamomile extracts may be used topically in creams or ointments for skin conditions, such as eczema or dermatitis, due to its anti-inflammatory properties.""",
+        procedure: """Tea Preparation: Chamomile tea is typically prepared by steeping dried chamomile flowers in hot water for a few minutes.
+Topical Application: For topical use, chamomile extracts or chamomile-infused oils can be applied to the affected skin area.""",
+        symptoms: """Allergic Reactions: Some individuals may be allergic to chamomile, and allergic reactions may include skin irritation, itching, or respiratory symptoms.""",
+        precautions: """Pregnancy: Pregnant women should consult with a healthcare professional before consuming chamomile tea, as excessive intake may not be recommended during pregnancy.
+Allergies: Individuals with known allergies to plants in the Asteraceae family (like ragweed, marigolds, or daisies) should exercise caution with chamomile.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Matricaria+chamomilla',
         isSelected: false),
     // COSMOS EDIT
     HerbalLens(
-        plantId: 27,
+        plantId: 25,
         category: 'Flower',
         plantName: 'Cosmos',
-        scientificname: '',
-        imageURL: 'assets/icon/Kathy.jpg',
-        isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
-        isSelected: false),
-    // LANTANA EDIT
-    HerbalLens(
-        plantId: 28,
-        category: 'Flower',
-        plantName: 'Lantana',
-        scientificname: '',
-        imageURL: 'assets/icon/Kathy.jpg',
-        isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
-        isSelected: false),
-    // Katuray EDIT
-    HerbalLens(
-        plantId: 29,
-        category: 'Flower',
-        plantName: 'Katuray',
-        scientificname: '',
-        imageURL: 'assets/icon/Kathy.jpg',
-        isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
-        isSelected: false),
-    // CHRYSANTHEMUM EDIT
-    HerbalLens(
-        plantId: 30,
-        category: 'Flower',
-        plantName: 'Chrysanthemum',
-        scientificname: '',
-        imageURL: 'assets/icon/Kathy.jpg',
-        isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
-        isSelected: false),
-    // MALABAGO EDIT
-    HerbalLens(
-        plantId: 31,
-        category: 'Flower',
-        plantName: 'Malabago',
-        scientificname: '',
-        imageURL: 'assets/icon/Kathy.jpg',
-        isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
-        isSelected: false),
-    // MARIGOLD EDIT
-    HerbalLens(
-        plantId: 32,
-        category: 'Flower',
-        plantName: 'Marigold',
-        scientificname: '',
-        imageURL: 'assets/icon/Kathy.jpg',
-        isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
-        isSelected: false),
-    // ROSE EDIT
-    HerbalLens(
-        plantId: 33,
-        category: 'Flower',
-        plantName: 'Rose',
-        scientificname: '',
-        imageURL: 'assets/icon/Kathy.jpg',
-        isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
-        isSelected: false),
-    // YLANG-YLANG EDIT
-    HerbalLens(
-        plantId: 34,
-        category: 'Flower',
-        plantName: 'Ylang-ylang',
-        scientificname: '',
-        imageURL: 'assets/icon/Kathy.jpg',
+        scientificname: 'Cosmos sulphureus',
+        imageURL: 'assets/plants/flowers/Cosmos.png',
         isFavorated: false,
         decription: '',
         usefulin: '',
@@ -617,11 +485,11 @@ class HerbalLens {
         isSelected: false),
     // CRAPE JASMINE EDIT
     HerbalLens(
-        plantId: 35,
+        plantId: 26,
         category: 'Flower',
         plantName: 'Crape Jasmine',
-        scientificname: '',
-        imageURL: 'assets/icon/Kathy.jpg',
+        scientificname: 'Tabernaemontana divaricata',
+        imageURL: 'assets/plants/flowers/Crape Jasmine.png',
         isFavorated: false,
         decription: '',
         usefulin: '',
@@ -630,13 +498,163 @@ class HerbalLens {
         precautions: '',
         references: '',
         isSelected: false),
-    // A LAS CUATRO EDIT
+    // FOUR O' CLOCK EDIT
+    HerbalLens(
+        plantId: 27,
+        category: 'Flower',
+        plantName: 'Four o\' clock',
+        scientificname: 'Mirabilis jalapa',
+        imageURL: 'assets/plants/flowers/Four o\' clock.png',
+        isFavorated: false,
+        decription: '',
+        usefulin: '',
+        procedure: '',
+        symptoms: '',
+        precautions: '',
+        references: '',
+        isSelected: false),
+    // GARLIC VINE EDIT
+    HerbalLens(
+        plantId: 28,
+        category: 'Flower',
+        plantName: 'Garlic Vine',
+        scientificname: 'Mansoa alliacea',
+        imageURL: 'assets/plants/flowers/garlic vine.png',
+        isFavorated: false,
+        decription: '',
+        usefulin: '',
+        procedure: '',
+        symptoms: '',
+        precautions: '',
+        references: '',
+        isSelected: false),
+    // GUMAMELA EDIT
+    HerbalLens(
+        plantId: 29,
+        category: 'Flower',
+        plantName: 'Gumamela',
+        scientificname: 'Hibiscus rosa-sinensis',
+        imageURL: 'assets/plants/flowers/gumamela.png',
+        isFavorated: false,
+        decription: '',
+        usefulin: '',
+        procedure: '',
+        symptoms: '',
+        precautions: '',
+        references: '',
+        isSelected: false),
+    // JUNGLE FLAME EDIT
+    HerbalLens(
+        plantId: 30,
+        category: 'Flower',
+        plantName: 'Jungle Flame',
+        scientificname: 'Ixora coccinea',
+        imageURL: 'assets/plants/flowers/Santan.png',
+        isFavorated: false,
+        decription: '',
+        usefulin: '',
+        procedure: '',
+        symptoms: '',
+        precautions: '',
+        references: '',
+        isSelected: false),
+    // LANTANA EDIT
+    HerbalLens(
+        plantId: 31,
+        category: 'Flower',
+        plantName: 'Lantana',
+        scientificname: 'Lantana camara',
+        imageURL: 'assets/plants/flowers/Latana.png',
+        isFavorated: false,
+        decription: '',
+        usefulin: '',
+        procedure: '',
+        symptoms: '',
+        precautions: '',
+        references: '',
+        isSelected: false),
+    // LAVENDER EDIT
+    HerbalLens(
+        plantId: 32,
+        category: 'Flower',
+        plantName: 'Lavender',
+        scientificname: 'Lavandula angustifolia',
+        imageURL: 'assets/plants/flowers/Lavender.png',
+        isFavorated: false,
+        decription: '',
+        usefulin: '',
+        procedure: '',
+        symptoms: '',
+        precautions: '',
+        references: '',
+        isSelected: false),
+    // MARIGOLD EDIT
+    HerbalLens(
+        plantId: 33,
+        category: 'Flower',
+        plantName: 'Marigold',
+        scientificname: 'Tagetes',
+        imageURL: 'assets/plants/flowers/Marigold.png',
+        isFavorated: false,
+        decription: '',
+        usefulin: '',
+        procedure: '',
+        symptoms: '',
+        precautions: '',
+        references: '',
+        isSelected: false),
+    // MUMS EDIT
+    HerbalLens(
+        plantId: 34,
+        category: 'Flower',
+        plantName: 'Mums',
+        scientificname: 'Chrysanthemum',
+        imageURL: 'assets/plants/flowers/Chrysanthemum.png',
+        isFavorated: false,
+        decription: '',
+        usefulin: '',
+        procedure: '',
+        symptoms: '',
+        precautions: '',
+        references: '',
+        isSelected: false),
+    // ROSE EDIT
+    HerbalLens(
+        plantId: 35,
+        category: 'Flower',
+        plantName: 'Rose',
+        scientificname: 'Rosa',
+        imageURL: 'assets/plants/flowers/Rose.png',
+        isFavorated: false,
+        decription: '',
+        usefulin: '',
+        procedure: '',
+        symptoms: '',
+        precautions: '',
+        references: '',
+        isSelected: false),
+    // ROSE BALSAM EDIT
     HerbalLens(
         plantId: 36,
         category: 'Flower',
-        plantName: 'A las cuatro',
-        scientificname: '',
-        imageURL: 'assets/icon/Kathy.jpg',
+        plantName: 'Rose Balsam',
+        scientificname: 'Impatiens balsamina ',
+        imageURL: 'assets/plants/flowers/Kamantigi.png',
+        isFavorated: false,
+        decription: '',
+        usefulin: '',
+        procedure: '',
+        symptoms: '',
+        precautions: '',
+        references: '',
+        isSelected: false),
+    // SEA ROSEMALLOW EDIT
+    HerbalLens(
+        plantId: 37,
+        category: 'Flower',
+        plantName: 'Sea Rosemallow',
+        scientificname: 'Hibiscus tiliaceus',
+        imageURL: 'assets/plants/flowers/Malabago.png',
         isFavorated: false,
         decription: '',
         usefulin: '',
@@ -647,26 +665,11 @@ class HerbalLens {
         isSelected: false),
     // SUNFLOWER EDIT
     HerbalLens(
-        plantId: 37,
-        category: 'Flower',
-        plantName: 'Sunflower',
-        scientificname: '',
-        imageURL: 'assets/icon/Kathy.jpg',
-        isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
-        isSelected: false),
-    // Lavender EDIT
-    HerbalLens(
         plantId: 38,
         category: 'Flower',
-        plantName: 'Lavender',
-        scientificname: 'Lavandula angustifolia ',
-        imageURL: 'assets/icon/Kathy.jpg',
+        plantName: 'Sunflower',
+        scientificname: 'Tagetes erecta',
+        imageURL: 'assets/plants/flowers/Sunflower.png',
         isFavorated: false,
         decription: '',
         usefulin: '',
@@ -675,13 +678,13 @@ class HerbalLens {
         precautions: '',
         references: '',
         isSelected: false),
-    // KAMANTIGI EDIT
+    // VEGETABLE HUMMINGBIRD EDIT
     HerbalLens(
         plantId: 39,
         category: 'Flower',
-        plantName: 'Kamantigi',
-        scientificname: 'Impatiens balsamina',
-        imageURL: 'assets/icon/Kathy.jpg',
+        plantName: 'Vegetable Hummingbird',
+        scientificname: 'Sesbania grandiflora',
+        imageURL: 'assets/plants/flowers/Katuray.png',
         isFavorated: false,
         decription: '',
         usefulin: '',
