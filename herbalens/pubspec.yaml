@@ -80,9 +80,9 @@ flutter:
     - assets/icon/
     - assets/images/
     - assets/posts/
-    - assets/plants/fruits
-    - assets/plants/flowers
-    - assets/plants/leaves
+    - assets/plants/fruits/
+    - assets/plants/flowers/
+    - assets/plants/leaves/
   #   - images/a_dot_ham.jpeg assets/plants/fruits
 
   # An image asset can refer to one or more resolution-specific "variants", see
