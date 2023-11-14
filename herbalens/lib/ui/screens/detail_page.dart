@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:herbalens/constants.dart';
 import 'package:herbalens/models/plants.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DetailPage extends StatefulWidget {
   final int plantId;
@@ -149,6 +150,7 @@ class _DetailPageState extends State<DetailPage> {
                               color: Constants.blackColor,
                               fontSize: 24.0,
                               fontWeight: FontWeight.bold,
+                              fontStyle: FontStyle.italic,
                             ),
                           ),
                         ],
@@ -194,7 +196,116 @@ class _DetailPageState extends State<DetailPage> {
                         ),
                       ),
                     ],
-                  )
+                  ),
+                  Container(
+                    padding: const EdgeInsets.only(top: 20), //Below News Herbal Leaves
+                    child: const Text(
+                      'Prodecure:',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25.0,
+                        color:Color(0xff296e48)
+                      ),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          _plantList[widget.plantId].procedure,
+                          textAlign: TextAlign.justify,
+                          style: TextStyle(
+                            height: 2,
+                            fontSize: 18,
+                            color: Constants.blackColor.withOpacity(.7),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Container(
+                    padding: const EdgeInsets.only(top: 20), //Below News Herbal Leaves
+                    child: const Text(
+                      'Symptoms:',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25.0,
+                        color:Color(0xff296e48)
+                      ),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          _plantList[widget.plantId].symptoms,
+                          textAlign: TextAlign.justify,
+                          style: TextStyle(
+                            height: 2,
+                            fontSize: 18,
+                            color: Constants.blackColor.withOpacity(.7),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Container(
+                    padding: const EdgeInsets.only(top: 20), //Below News Herbal Leaves
+                    child: const Text(
+                      'Precautions:',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25.0,
+                        color:Color(0xff296e48)
+                      ),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          _plantList[widget.plantId].precautions,
+                          textAlign: TextAlign.justify,
+                          style: TextStyle(
+                            height: 2,
+                            fontSize: 18,
+                            color: Constants.blackColor.withOpacity(.7),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Container(
+                    padding: const EdgeInsets.only(top: 20), //Below News Herbal Leaves
+                    child: const Text(
+                      'References:',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25.0,
+                        color:Color(0xff296e48)
+                      ),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: GestureDetector(
+                          onTap: () => launchUrl(Uri.parse(_plantList[widget.plantId].references)),
+                          child: Text(
+                            _plantList[widget.plantId].references,
+                            textAlign: TextAlign.justify,
+                            style: TextStyle(
+                              height: 2,
+                              fontSize: 18,
+                              color: Constants.blackColor.withOpacity(.7),
+                              decoration: TextDecoration.underline,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 30),
                 ],
               ),
             ),

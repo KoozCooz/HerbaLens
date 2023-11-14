@@ -19,27 +19,7 @@ class _HerbalPageState extends State<HerbalPage> {
         child:Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children:[
-            Container(
-            padding: const EdgeInsets.only(left: 16, bottom: 10, top: 20), //Below News Herbal Leaves
-            child: const Text(
-              'Herbal Leaves',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 25.0,
-                color:Color(0xff296e48)
-              ),
-            ),
-          ),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              height:500,
-              child: ListView.builder(
-                  itemCount: 5,
-                  physics: const NeverScrollableScrollPhysics(),
-                  itemBuilder: (BuildContext context, int index) {
-                    return PlantWidget(index: index,plantList: plantList);
-                      }),
-            ),
+            //HERBAL FRUITS
             Container(
             padding: const EdgeInsets.only(left: 16, bottom: 10), //Below News Herbal Leaves
             child: const Text(
@@ -53,15 +33,38 @@ class _HerbalPageState extends State<HerbalPage> {
           ),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 20),
-              height: 500,
+              height: 2000,
               child: ListView.builder(
-                  itemCount: 5,
+                  itemCount: 20,
                   physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (BuildContext context, int index) {
-                    final adjustedIndex = index + 10;
+                    final adjustedIndex = index + 40;
                     return PlantWidget(index: adjustedIndex,plantList: plantList);
                       }),
             ),
+            //HERBAL LEAVES
+            Container(
+            padding: const EdgeInsets.only(left: 16, bottom: 10, top: 20), //Below News Herbal Leaves
+            child: const Text(
+              'Herbal Leaves',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 25.0,
+                color:Color(0xff296e48)
+              ),
+            ),
+          ),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              height:2000,
+              child: ListView.builder(
+                  itemCount: 20,
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemBuilder: (BuildContext context, int index) {
+                    return PlantWidget(index: index,plantList: plantList);
+                      }),
+            ),
+            //HERBAL FLOWERS
             Container(
             padding: const EdgeInsets.only(left: 16, bottom: 10), //Below News Herbal Leaves
             child: const Text(
@@ -75,12 +78,12 @@ class _HerbalPageState extends State<HerbalPage> {
           ),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 20),
-              height: 500,
+              height: 2000,
               child: ListView.builder(
-                  itemCount: 5,
+                  itemCount: 20,
                   physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (BuildContext context, int index) {
-                    final adjustedIndex = index + 5;
+                    final adjustedIndex = index + 20;
                     return PlantWidget(index: adjustedIndex,plantList: plantList);
                       }),
             ),
