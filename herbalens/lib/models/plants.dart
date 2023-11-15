@@ -387,7 +387,7 @@ Perfumery: Jasmine is a popular ingredient in the perfume industry due to its sw
         procedure: """Harvesting: Jasmine flowers are typically harvested when they are fully bloomed and have the strongest fragrance.
 Extraction: Jasmine oil can be extracted from the flowers through methods like steam distillation""",
         symptoms: """Allergic Reactions: Some individuals may be allergic to jasmine. Allergic reactions could include skin irritation, itching, or respiratory symptoms.""",
-        precautions: """Allergies: If you have known allergies to flowers or fragrances, it's advisable to use jasmine products cautiously.\
+        precautions: """Allergies: If you have known allergies to flowers or fragrances, it's advisable to use jasmine products cautiously.
 Pregnancy: Pregnant women should use jasmine products, including essential oils, with caution, as excessive use may not be recommended during pregnancy.""",
         references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Jasminum+sambac',
         isSelected: false),
@@ -512,7 +512,7 @@ Skin Contact: Handling the plant might cause skin irritation in some individuals
         scientificname: 'Mirabilis jalapa',
         imageURL: 'assets/plants/flowers/Four o\' clock.png',
         isFavorated: false,
-        decription: '"Mirabilis jalapa" refers to the Four O\' Clock Flower. The genus name suggests the plant's notable and admirable characteristics, while the specific epithet acknowledges its historical association with the town of Xalapa in Mexico, where it was cultivated and introduced to Europe centuries ago.',
+        decription: '"Mirabilis jalapa" refers to the Four O\' Clock Flower. The genus name suggests the plant\'s notable and admirable characteristics, while the specific epithet acknowledges its historical association with the town of Xalapa in Mexico, where it was cultivated and introduced to Europe centuries ago.',
         usefulin: """Ornamental Plant: Mirabilis jalapa is primarily grown as an ornamental plant due to its attractive and colorful flowers that bloom in the late afternoon or evening.
 Historical Medicinal Use: Traditionally, some cultures used parts of the plant in herbal remedies, although modern scientific evidence for medicinal efficacy might be limited.""",
         procedure: """Cultivation: It grows well in various soil types with moderate watering, preferably in full sunlight.
