@@ -40,11 +40,13 @@ class HerbalLens {
         imageURL: 'assets/plants/leaves/Tawa-tawa.png', //find photo
         isFavorated: false,
         decription:'"Euphorbia hirta" refers specifically to a species within the Euphorbia genus known for its characteristic hairy or rough texture. This particular species is commonly called Asthma Plant or Garden Spurge and is recognized for its medicinal properties and traditional uses in various herbal remedies.', //find description
-        usefulin: """""",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        usefulin: """Traditional Medicine: Euphorbia hirta is used in various traditional medicinal practices for potential therapeutic effects, including treating respiratory issues, gastrointestinal problems, and skin ailments. However, scientific evidence supporting its efficacy may vary.
+Anti-inflammatory Properties: Some cultures use Euphorbia hirta for its potential anti-inflammatory and analgesic properties.""",
+        procedure: 'Preparation: Parts of the plant, such as leaves and stems, are often used to prepare herbal remedies, teas, or extracts',
+        symptoms: 'Potential Allergies: Some individuals may develop allergic reactions to basil. Allergic responses might manifest as skin rashes or respiratory issues in sensitive individuals.',
+        precautions: """Allergic Reactions: Exercise caution if prone to plant allergies or allergic reactions to mint family plants, as basil belongs to the Lamiaceae family.
+Consumption Quantity: While basil is generally safe for consumption in culinary quantities, excessive intake could lead to adverse effects in some cases.""",
+        references: 'https://pfaf.org/user/Plant.aspx?LatinName=Euphorbia+hirta',
         isSelected: false),
     //Basil
     HerbalLens(
@@ -55,11 +57,13 @@ class HerbalLens {
         imageURL: 'assets/plants/leaves/Basil.png', //find photo
         isFavorated: false,
         decription:'"Ocimum basilicum" refers specifically to the species of basil recognized for its culinary significance, aromatic fragrance, and use in various cuisines worldwide. This species includes different cultivars such as sweet basil, Genovese basil, Thai basil, and others, each with distinct characteristics in flavor, aroma, and appearance.',
-        usefulin: """""",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        usefulin: """Culinary Use: Basil is a widely used herb in various cuisines, appreciated for its distinctive aroma and flavor. It adds a fresh and slightly sweet taste to dishes and is a key ingredient in pesto, salads, sauces, soups, and as a garnish.
+Traditional Medicine: In some traditional practices, basil is utilized for its potential medicinal properties, including being considered as an anti-inflammatory, antioxidant, and antimicrobial agent.""",
+        procedure: 'Cultivation: Basil is easily cultivated in well-drained soil, requiring sunlight and regular watering. It can be grown from seeds or cuttings and thrives in both garden beds and containers.',
+        symptoms: 'Potential Allergies: Some individuals may develop allergic reactions to basil. Allergic responses might manifest as skin rashes or respiratory issues in sensitive individuals.',
+        precautions: """Allergic Reactions: Exercise caution if prone to plant allergies or allergic reactions to mint family plants, as basil belongs to the Lamiaceae family.
+Consumption Quantity: While basil is generally safe for consumption in culinary quantities, excessive intake could lead to adverse effects in some cases.""",
+        references: 'https://www.almanac.com/plant/basil',
         isSelected: false),
     //Betel Leaves
     HerbalLens(
@@ -69,12 +73,15 @@ class HerbalLens {
         scientificname: 'Piper betle',
         imageURL: 'assets/plants/leaves/Nga-nga Leaves.png',
         isFavorated: false,
-        decription: '',
-        usefulin: """""",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Piper betle" specifically denotes the species of vine valued for its leaves, which are popularly used in various cultural traditions, especially in parts of Southeast Asia and the Indian subcontinent. The betel leaf is often chewed along with other ingredients such as areca nut and slaked lime as a common practice in some cultural rituals, ceremonies, or for its supposed stimulant and medicinal properties.',
+        usefulin: """Cultural and Traditional Practices: Betel leaves have significant cultural importance in various regions and are often used in traditional rituals, ceremonies, and social gatherings.
+Chewing Practice: In some cultures, betel leaves are chewed with areca nut and slaked lime as a stimulant, for social interactions, or in ceremonial contexts.
+Potential Medicinal Use: Betel leaves are believed to have certain medicinal properties and are used in traditional medicine for their supposed antiseptic, anti-inflammatory, and digestive properties. However, scientific evidence supporting these claims may vary.""",
+        procedure: 'Chewing Preparation: Betel leaves are commonly prepared by wrapping them around areca nut pieces and slaked lime, forming a betel quid, which is then chewed.',
+        symptoms: 'Staining: Betel leaves may stain the teeth and mouth due to their natural pigmentation, especially with prolonged use',
+        precautions: """Health Concerns: Long-term use of betel leaves in the form of betel quid may have adverse effects on oral health, including oral cancer risk and staining of teeth.
+Allergies: Some individuals might develop allergies or sensitivities to betel leaves, resulting in skin irritation or allergic reactions.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=piper+betle',
         isSelected: false),
     //BOKCHOY
     HerbalLens(
@@ -84,12 +91,14 @@ class HerbalLens {
         scientificname: 'Brassica rapa subsp. chinensis',
         imageURL: 'assets/plants/leaves/Pechay.png',
         isFavorated: false,
-        decription:'',
-        usefulin: """""",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription:'Brassica rapa subsp. chinensis denotes a specific subspecies within the Brassica rapa species, known for its leafy greens widely used in Asian cuisines, particularly associated with Chinese culinary traditions.',
+        usefulin: """Culinary Use: Chinese Cabbage, also known as Pak Choi or Bok Choy, is widely used in various Asian cuisines for its crunchy stems and tender leaves. It's used in stir-fries, soups, salads, and as a side dish.
+Nutritional Value: It's known for its nutritional content, being rich in vitamins, minerals, and antioxidants.""",
+        procedure: 'Cultivation: Chinese Cabbage grows best in well-drained soil and requires adequate watering and sunlight. It can be grown from seeds or seedlings and is suitable for both gardens and containers.',
+        symptoms: 'Potential Allergies: Some individuals might have allergic reactions to certain components of Brassica rapa subsp. chinensis, although such occurrences are relatively rare.',
+        precautions: """Food Safety: When consuming raw Chinese Cabbage, ensure it's thoroughly washed to remove any dirt or contaminants.
+Allergy Caution: If allergic to other brassica vegetables, use caution when consuming Chinese Cabbage.""",
+        references: 'https://pfaf.org/user/Plant.aspx?LatinName=Brassica+rapa+chinensis',
         isSelected: false),
     //celery
     HerbalLens(
@@ -99,12 +108,15 @@ class HerbalLens {
         scientificname: 'Apium graveolens',
         imageURL: 'assets/plants/leaves/Celery.png',
         isFavorated: false,
-        decription:'',
-        usefulin: """""",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription:' "Apium graveolens" specifically refers to the species known as celery, recognized for its edible stalks and leaves, commonly used as a vegetable in cooking, salads, and as a flavoring agent. Celery is appreciated for its crisp texture and distinctive flavor and is also valued for its nutritional content, including vitamins, minerals, and dietary fiber.',
+        usefulin: """Culinary Use: Celery is widely used as a vegetable in various culinary preparations, including salads, soups, stews, and as a flavoring ingredient due to its distinctive taste and crunchiness.
+Nutritional Value: Celery is low in calories and a good source of vitamins, minerals (like vitamin K and potassium), and dietary fiber, contributing to a healthy diet.
+Potential Medicinal Use: In some traditional practices, celery has been used for its potential diuretic properties and as a natural remedy for various health issues, although scientific evidence supporting these claims may vary.""",
+        procedure: 'Culinary Preparation: Celery can be consumed raw, chopped in salads, used as a snack with dips, or cooked in various dishes.',
+        symptoms: 'Allergies: Some individuals might have allergies to celery, leading to allergic reactions such as skin rashes, itching, or digestive discomfort in sensitive individuals.',
+        precautions: """Allergic Reactions: Those with known allergies to celery or other plants in the Apiaceae family (carrots, parsley, etc.) should avoid celery or use it cautiously.
+Pesticides and Contaminants: Wash celery thoroughly before consumption to remove any pesticides or contaminants.""",
+        references: 'https://pfaf.org/user/Plant.aspx?LatinName=Apium+graveolens',
         isSelected: false),
     // Chili Leaves EDIT
     HerbalLens(
@@ -114,12 +126,16 @@ class HerbalLens {
         scientificname: 'Capsicum spp.',
         imageURL: 'assets/plants/leaves/Dahon ng Sili.png',
         isFavorated: false,
-        decription: '',
-        usefulin: "",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: 'Capsicum plants belong to the Solanaceae family and encompass a diverse range of pepper varieties, including sweet peppers, chili peppers, bell peppers, and other spicy peppers. These plants are cultivated worldwide for their fruits, which vary in shape, size, color, and spiciness. They are integral ingredients in various cuisines, used fresh, dried, or powdered to add flavor and heat to dishes. Additionally, Capsicum plants have ornamental value and are grown for their attractive fruits and foliage.',
+        usefulin: """Culinary Use: Peppers from the Capsicum genus are widely used in cooking to add flavor, spice, and color to various dishes worldwide.
+Nutritional Value: Peppers are rich in vitamins, especially vitamin C, and contain antioxidants beneficial to health.
+Medicinal Uses: Some Capsicum species are used in traditional medicine for potential pain relief and as a topical remedy, although usage should be approached with caution.""",
+        procedure: 'Cultivation: Capsicum spp. can be grown in gardens, containers, or greenhouses. They require warm temperatures, well-drained soil, and adequate sunlight.',
+        symptoms: """Skin Irritation: Contact with the plant's sap or seeds may cause skin irritation in sensitive individuals.
+Digestive Discomfort: Eating peppers, particularly spicy ones, might cause discomfort in some people, such as heartburn or upset stomach.""",
+        precautions: """Gloves: When handling hot peppers, wearing gloves is advisable to prevent skin irritation from capsaicin, the compound responsible for their heat.
+Avoid Eye Contact: Avoid touching your eyes or face after handling hot peppers, as capsaicin can cause irritation.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Capsicum+spp.',
         isSelected: false),
     //Five-Leaved Chaste Tree
     HerbalLens(
@@ -129,12 +145,14 @@ class HerbalLens {
         scientificname: 'Vitex negundo',
         imageURL: 'assets/plants/leaves/Lagundi.png',
         isFavorated: false,
-        decription: '',
-        usefulin: "",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Vitex negundo" specifically denotes this species of plant, the Five-Leaved Chaste Tree, which is recognized for its medicinal properties and has been traditionally used in herbal medicine for various purposes. This plant is valued in traditional medicine across different cultures for its potential therapeutic effects.',
+        usefulin: """Traditional Medicine: Vitex negundo has been utilized in various traditional medicinal practices for its potential therapeutic properties. It is used for its supposed analgesic, anti-inflammatory, antipyretic, and antimicrobial effects.
+Pain Relief: In traditional practices, it's used for managing pain, inflammation, rheumatic conditions, and as a muscle relaxant.""",
+        procedure: 'Herbal Preparations: Various parts of the plant, such as leaves, seeds, or oil extracts, are used in the preparation of herbal remedies, decoctions, poultices, or topical applications.',
+        symptoms: 'Allergic Reactions: Some individuals may develop allergic reactions or skin sensitivities upon contact with Vitex negundo.',
+        precautions: """Pregnancy and Lactation: Avoid using Vitex negundo during pregnancy and breastfeeding due to the lack of adequate safety data.
+Consultation: Before using it for medicinal purposes, especially in combination with other medications, consult a healthcare professional for guidance and potential interactions.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Vitex+negundo',
         isSelected: false),
     //Goethe plant
     HerbalLens(
@@ -144,12 +162,14 @@ class HerbalLens {
         scientificname: 'Kalanchoe pinnata',
         imageURL: 'assets/plants/leaves/Katakataka.png',
         isFavorated: false,
-        decription: '',
-        usefulin: "",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Kalanchoe pinnata" specifically refers to this species of plant, recognized for its succulent nature, distinctive leaf structure, and its historical uses in traditional medicine for various ailments. This plant has been valued for its potential medicinal properties and has a range of traditional uses in different cultures.',
+        usefulin: """Traditional Medicine: Kalanchoe pinnata has been used in various traditional medicinal practices for its potential therapeutic effects. It is believed to have anti-inflammatory, analgesic, antimicrobial, and wound-healing properties.
+Respiratory Issues: In some cultures, it's used as a traditional remedy for respiratory problems such as coughs, colds, and asthma.""",
+        procedure: 'Herbal Preparations: Various parts of the plant, particularly the leaves, are used in the preparation of herbal remedies. Leaves may be crushed, juiced, or prepared as infusions or decoctions.',
+        symptoms: 'Skin Irritation: Direct contact with the sap of Kalanchoe pinnata might cause skin irritation or allergic reactions in sensitive individuals. ',
+        precautions: """Pregnancy and Lactation: Limited information exists regarding its safety during pregnancy and breastfeeding, so caution is advised.
+Medical Consultation: Before using it for medicinal purposes, especially alongside other medications, consulting a healthcare professional is recommended.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=+Kalanchoe+pinnata',
         isSelected: false),
     //Guava Leaves
     HerbalLens(
@@ -159,12 +179,15 @@ class HerbalLens {
         scientificname: 'Psidium guajava',
         imageURL: 'assets/plants/leaves/Bayabas Leaves.png',
         isFavorated: false,
-        decription: '',
-        usefulin: "",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Psidium guajava" denotes the specific species of tree known as the guava tree, recognized for its delicious and nutritious fruits. The guava tree is native to tropical regions and produces round or oval-shaped fruits with green or yellow skin, containing pink or white flesh and numerous seeds. Guavas are valued for their sweet taste and are consumed fresh or used in various culinary preparations, juices, jams, and desserts. Additionally, guavas contain vitamins, antioxidants, and dietary fiber, contributing to their nutritional value.',
+        usefulin: """Nutritious Fruit: Guava fruits are highly nutritious, rich in Vitamin C, antioxidants, and dietary fiber, contributing to overall health and well-being.
+Culinary Use: Guavas are used fresh, in salads, smoothies, juices, jams, and various desserts due to their sweet and aromatic flavor.
+Medicinal Properties: In traditional medicine, various parts of the guava tree, such as leaves and fruits, are used for potential medicinal benefits, including treating diarrhea, stomach ailments, and wound healing.""",
+        procedure: 'Cultivation: Guava trees thrive in subtropical and tropical climates, preferring well-drained soil and adequate sunlight. They can be propagated from seeds, cuttings, or grafting.',
+        symptoms: 'Allergies: Some individuals may be allergic to guava fruit or pollen. Allergic reactions are rare but possible.',
+        precautions: """Consumption: While guava is generally safe for consumption, moderation is advised, especially for individuals with existing medical conditions or allergies.
+Pesticides: If using pesticides or chemicals for cultivation, follow proper instructions to avoid residue on fruits.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=guava+leaves',
         isSelected: false),
     //MALABAR SPINACH
     HerbalLens(
@@ -174,12 +197,14 @@ class HerbalLens {
         scientificname: 'Basella alba',
         imageURL: 'assets/plants/leaves/Alugbati.png',
         isFavorated: false,
-        decription: '',
-        usefulin: "",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: ' "Basella alba" specifically refers to this species of plant, known as Malabar Spinach, valued as an edible vegetable with nutritious leaves and tender shoots used in various culinary dishes. It\'s popular in many cuisines worldwide and is appreciated for its spinach-like taste and nutritional benefits.',
+        usefulin: """Nutritional Benefits: Moringa oleifera is renowned for its high nutritional value. Its leaves, pods, and seeds are rich in vitamins, minerals (such as iron and calcium), proteins, antioxidants, and essential amino acids. They are used as a dietary supplement to address nutritional deficiencies.
+Medicinal Properties: It's used in traditional medicine for its potential anti-inflammatory, antioxidant, antimicrobial, and hypoglycemic properties. Different parts of the plant have been historically used for various ailments, although scientific evidence supporting these uses may vary.""",
+        procedure: 'Culinary Preparation: The leaves and shoots can be cooked or consumed raw in various dishes. They are often used similarly to spinach, providing a unique flavor to recipes.',
+        symptoms: 'Allergies: Some individuals might have allergies to certain leafy greens, including Malabar Spinach, causing allergic reactions such as skin rashes or gastrointestinal discomfort in sensitive individuals.',
+        precautions: """Pesticides and Contaminants: Wash the leaves thoroughly before consumption to remove any residues of pesticides or contaminants.
+Allergies: If prone to allergies related to leafy greens or spinach, exercise caution or avoid consuming Basella alba.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=+Basella+alba+',
         isSelected: false),
     //MORINGA
     HerbalLens(
@@ -189,12 +214,14 @@ class HerbalLens {
         scientificname: 'Moringa oleifera',
         imageURL: 'assets/plants/leaves/Malunggay.png',
         isFavorated: false,
-        decription: '',
-        usefulin: "",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: ' "Moringa oleifera" specifically refers to this species of plant known for its numerous nutritional, medicinal, and commercial uses. Moringa is highly valued for its edible parts, including leaves, seeds, flowers, and pods, which are rich in nutrients and have various culinary and medicinal applications.',
+        usefulin: """Nutritional Benefits: Moringa oleifera is renowned for its high nutritional value. Its leaves, pods, and seeds are rich in vitamins, minerals (such as iron and calcium), proteins, antioxidants, and essential amino acids. They are used as a dietary supplement to address nutritional deficiencies.
+Medicinal Properties: It's used in traditional medicine for its potential anti-inflammatory, antioxidant, antimicrobial, and hypoglycemic properties. Different parts of the plant have been historically used for various ailments, although scientific evidence supporting these uses may vary.""",
+        procedure: 'Consumption: Leaves are commonly consumed raw or cooked as a vegetable, while seeds and pods can be eaten fresh or after cooking. Leaves are also used to make teas, extracts, or powdered supplements.',
+        symptoms: 'Potential Digestive Upset: Some individuals might experience digestive discomfort or diarrhea with excessive intake. Moderation is recommended.',
+        precautions: """Pregnancy and Lactation: Limited safety data exist, so pregnant or breastfeeding women should consult healthcare professionals before using Moringa supplements.
+Allergies: Individuals allergic to plants in the Moringaceae family might experience allergic reactions to Moringa.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Moringa+oleifera',
         isSelected: false),
     //Mugwort
     HerbalLens(
@@ -204,27 +231,30 @@ class HerbalLens {
         scientificname: 'Artemisia vulgaris',
         imageURL: 'assets/plants/leaves/Damong Maria.png',
         isFavorated: false,
-        decription: '',
-        usefulin: "",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Artemisia vulgaris" specifically refers to this species of plant, Mugwort, recognized for its historical uses in herbal medicine, culinary practices, and as a folklore remedy for various purposes. I\'s known for its distinctive aroma and has been utilized in traditional practices across different cultures for its potential medicinal properties.',
+        usefulin: """Traditional Medicine: Mugwort has been used in various traditional medicinal practices worldwide. It is believed to possess anti-inflammatory, antimicrobial, and antispasmodic properties. It has been historically used for digestive issues, menstrual discomfort, as a mild sedative, and for its potential benefits for skin conditions.
+Culinary Use: In some cultures, Mugwort leaves are used as a flavoring agent in cooking, particularly in certain traditional dishes.""",
+        procedure: 'Herbal Remedies: Mugwort can be prepared as teas, infusions, extracts, or used externally in poultices or as a topical application for specific conditions.',
+        symptoms: 'Allergies: Some individuals may have allergies or sensitivities to Mugwort, leading to allergic reactions such as skin irritation, rashes, or respiratory issues.',
+        precautions: """Pregnancy and Lactation: Pregnant or breastfeeding women should avoid Mugwort due to potential risks. It may stimulate menstruation and should be avoided during pregnancy.
+Allergic Reactions: If allergic to plants in the Asteraceae family (such as ragweed or other Artemisia species), there may be an increased risk of allergic reactions to Mugwort.""",
+        references: 'https://pfaf.org/user/Plant.aspx?LatinName=Artemisia+vulgaris',
         isSelected: false),
     //Ngai camphor
     HerbalLens(
         plantId: 12,
         category: 'Leaves',
         plantName: 'Ngai camphor',
-        scientificname: 'Ngai camphor',
+        scientificname: 'Blumea balsamifera',
         imageURL: 'assets/plants/leaves/Sambong.png',
         isFavorated: false,
-        decription: '',
-        usefulin: "",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Blumea balsamifera" refers specifically to this species of plant recognized for its aromatic properties, particularly its leaves, which emit a balsamic scent when crushed. This plant is valued in traditional medicine and is used for various purposes due to its purported medicinal properties.',
+        usefulin: """Ornamental Plant: Coleus blumei is primarily grown for its aesthetic appeal. It's valued as an ornamental plant due to its vibrant and colorful foliage, which comes in various shades, patterns, and combinations.""",
+        procedure: 'Preparation: Typically, the leaves of Blumea balsamifera are used. They can be prepared as an infusion, decoction, or as a poultice for external application.',
+        symptoms: 'Allergies: Some individuals might develop allergies or sensitivities to Blumea balsamifera, leading to skin irritation or allergic reactions.',
+        precautions: """Pregnancy and Lactation: Pregnant and lactating women should avoid using Blumea balsamifera due to the lack of sufficient safety data.
+Consultation: Before using it for medicinal purposes, especially in combination with other medications, it's advisable to consult with a healthcare professional for guidance and potential interactions.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=sambong',
         isSelected: false),
     //Painted Coleus
     HerbalLens(
@@ -234,12 +264,12 @@ class HerbalLens {
         scientificname: 'Coleus blumei',
         imageURL: 'assets/plants/leaves/Mayana.png',
         isFavorated: false,
-        decription: '',
-        usefulin: "",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Coleus blumei" specifically refers to this species of plant, recognized for its colorful foliage and is often cultivated as an ornamental plant for gardens or indoor decoration. It\'s appreciated for its vibrant leaves, which can display a wide range of colors and patterns.',
+        usefulin: """Ornamental Plant: Coleus blumei is primarily grown for its aesthetic appeal. It's valued as an ornamental plant due to its vibrant and colorful foliage, which comes in various shades, patterns, and combinations.""",
+        procedure: 'ultivation: Coleus blumei is cultivated as a decorative plant in gardens, landscapes, and as indoor potted plants. They thrive in well-draining soil and prefer partial shade to bright, indirect light.',
+        symptoms: 'Coleus or forskolin are used for high blood pressure, chest pain (angina), asthma, dry eye, and many other conditions, but there is no good scientific evidence to support any of these uses.',
+        precautions: 'Non-Toxic: It is considered non-toxic to humans and animals. However, ingestion of any plant material could cause mild gastrointestinal discomfort, so avoid consumption.',
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Coleus+blumei',
         isSelected: false),
     //Pandan
     HerbalLens(
@@ -249,12 +279,12 @@ class HerbalLens {
         scientificname: 'Pandanus amaryllifolius',
         imageURL: 'assets/plants/leaves/Pandan.png',
         isFavorated: false,
-        decription: '',
-        usefulin: "",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Pandanus amaryllifolius" specifically refers to this species of Pandanus, known for its aromatic leaves, which are used in culinary practices across various Southeast Asian cuisines, especially in desserts and savory dishes. The leaves have a distinctive sweet fragrance and are valued for their flavoring properties.',
+        usefulin: """Culinary Use: Pandanus amaryllifolius leaves, known as Pandan leaves, are widely used in Southeast Asian cuisine for their aromatic and flavor-enhancing properties. They add a unique sweet fragrance to dishes and are commonly used in desserts, rice dishes, beverages, and savory foods.""",
+        procedure: 'Cooking: Pandan leaves are often used fresh or after being bruised, tied in knots, or shredded, and then added to dishes during cooking to infuse flavor and aroma.',
+        symptoms: 'Traditional medicine prizes pandan for its role in pain relief, especially arthritis and joint pain',
+        precautions: 'Allergies: While Pandan leaves are generally safe for consumption, some individuals may have allergic reactions. It\'s advisable to use them cautiously, especially if allergic to other plants.',
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Pandanus+amaryllifolius',
         isSelected: false),
     //Physic nut tree
     HerbalLens(
@@ -264,12 +294,14 @@ class HerbalLens {
         scientificname: 'Jatropha curcas',
         imageURL: 'assets/plants/leaves/Tubang-bakod.png',
         isFavorated: false,
-        decription: '',
-        usefulin: "",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Jatropha curcas" specifically refers to this species of plant, recognized for its seeds that contain oil used for biodiesel production, as well as for its historical use in traditional medicine for various purposes.',
+        usefulin: """Biofuel Production: Jatropha curcas seeds contain oil that can be processed to produce biodiesel, making it a potential source for renewable energy.
+Traditional Medicine: Some cultures have used parts of the plant in traditional medicine, though scientific evidence supporting medicinal uses may vary. The plant has been historically used for ailments like constipation, wounds, and as a purgative.""",
+        procedure: 'Biodiesel Production: The oil extracted from Jatropha curcas seeds is processed to create biodiesel. This involves crushing the seeds and refining the oil for use as a fuel.',
+        symptoms: 'Potential Toxicity: Jatropha curcas seeds and other parts of the plant contain toxic compounds such as phorbol esters and curcin. Ingestion can cause severe symptoms including abdominal pain, nausea, vomiting, and diarrhea.',
+        precautions: """Toxicity: Extreme caution must be taken with handling and consumption due to the plant's toxicity. Direct contact or ingestion of parts of the plant, especially the seeds, can be harmful.
+Biodiesel Use: While it has been considered for biodiesel production, environmental impact assessments and economic viability studies are essential to prevent negative ecological effects and to ensure sustainability.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Jatropha+curcas',
         isSelected: false),
     //Rosemary
     HerbalLens(
@@ -279,12 +311,15 @@ class HerbalLens {
         scientificname: 'Salvia rosmarinus',
         imageURL: 'assets/plants/leaves/Rosemary.png',
         isFavorated: false,
-        decription: '',
-        usefulin: "",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Salvia rosmarinus" specifically refers to this species of plant, Rosemary, recognized for its aromatic foliage and culinary uses in various cuisines worldwide, along with its potential medicinal properties and ornamental value.',
+        usefulin: """Culinary Purposes: Rosemary is a popular herb used in cooking, especially in Mediterranean cuisine. Its aromatic leaves are used to add flavor to various dishes, including meats, soups, stews, and vegetables.
+Traditional Medicine: Rosemary has been historically used in herbal medicine for its potential medicinal properties, including being a source of antioxidants and having antimicrobial properties. It's believed to aid digestion and has been used topically for minor muscle aches.""",
+        procedure: """Culinary Use: Fresh or dried Rosemary leaves are commonly used to flavor dishes. They can be added whole or chopped to various recipes during cooking.
+Topical Application: Rosemary-infused oil or extracts are used topically for massages or as an ingredient in some topical solutions.""",
+        symptoms: 'Mild Allergies: Some individuals may have mild allergic reactions to Rosemary, although it\'s relatively uncommon',
+        precautions: """Pregnancy: Pregnant women should use Rosemary in moderation, especially in medicinal amounts, as high doses might have adverse effects.
+Allergic Reactions: Individuals with known allergies to plants in the Lamiaceae family (such as mint, sage, or basil) should use Rosemary cautiously.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Salvia+rosmarinus',
         isSelected: false),
     //Soursop Leaves
     HerbalLens(
@@ -294,12 +329,13 @@ class HerbalLens {
         scientificname: 'Annona muricata',
         imageURL: 'assets/plants/leaves/Guyabano Leaves.png',
         isFavorated: false,
-        decription: '',
-        usefulin: "",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: ' "Annona muricata" specifically refers to this species of plant, the Soursop, recognized for its large, spiky, green fruit with a distinctive flavor. Soursop is valued for its culinary uses and has gained attention for its potential medicinal properties in traditional and herbal medicine.',
+        usefulin: """Culinary Uses: The fruit of Annona muricata, known as Soursop, is consumed for its sweet, tangy taste. It's eaten raw or used in various culinary preparations, including beverages, smoothies, desserts, and jams.
+Traditional Medicine: In some cultures, various parts of the Soursop tree, including leaves, seeds, and fruit, have been used in traditional medicine. It's believed to have potential medicinal properties and has been historically used for various ailments.""",
+        procedure: 'Consumption: The ripe fruit is typically eaten fresh. It can also be juiced, blended into smoothies, or used as an ingredient in various recipes',
+        symptoms: 'Limited Evidence: While used traditionally, scientific evidence supporting its medicinal uses is still limited or inconclusive. Always consult a healthcare professional before using it as a remedy',
+        precautions: 'Toxicity Concerns: Certain parts of the plant, particularly the seeds and leaves, contain compounds that may be toxic in large quantities. It\'s advisable to moderate consumption and avoid ingesting seeds.',
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Annona+muricata+',
         isSelected: false),
     //Thyme
     HerbalLens(
@@ -309,12 +345,14 @@ class HerbalLens {
         scientificname: 'Thymus vulgaris',
         imageURL: 'assets/plants/leaves/Thyme.png',
         isFavorated: false,
-        decription: '',
-        usefulin: "",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: 'Thymus vulgaris" specifically refers to this species of plant, Thyme, recognized for its fragrant leaves, which are utilized for culinary purposes, herbal remedies, and as a decorative herb. Thyme is highly valued for its aromatic and flavorful characteristics, often used as a culinary herb in various cuisines worldwide. Additionally, it\'s known for its potential medicinal properties in traditional and herbal medicine.',
+        usefulin: """Culinary Uses: Thyme is a versatile herb used in cooking for its aromatic flavor. It adds a distinctive taste to various dishes, including soups, stews, meats, sauces, and vegetables.
+Traditional Medicine: Thyme has been historically used in traditional medicine for its potential medicinal properties, including being antimicrobial, antifungal, and containing antioxidants. It's used in remedies for coughs, sore throats, and as a digestive aid.""",
+        procedure: """Culinary Application: Fresh or dried Thyme leaves are used in cooking. They can be added whole, chopped, or as sprigs to infuse flavor into dishes during cooking.
+Herbal Preparation: Thyme can be used to make herbal teas or infusions for medicinal purposes, such as soothing sore throats""",
+        symptoms: 'Limited Side Effects: Thyme is generally safe when used in culinary amounts. However, excessive use may cause digestive issues in some individuals.',
+        precautions: 'Allergic Reactions: Some people may have allergies to Thyme or other plants in the Lamiaceae family (such as mint or sage). Use cautiously if you have known plant allergies.',
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Thyme',
         isSelected: false),
     //Water Spinach
     HerbalLens(
@@ -324,12 +362,14 @@ class HerbalLens {
         scientificname: 'Ipomoea aquatica',
         imageURL: 'assets/plants/leaves/Kang-kong.png',
         isFavorated: false,
-        decription: '',
-        usefulin: "",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Ipomoea aquatica" specifically refers to this species of plant, Water spinach, known for its edible leaves and stems, commonly used as a vegetable in various Southeast Asian cuisines. It grows in aquatic or semi-aquatic conditions, thriving in freshwater environments and is appreciated for its taste and nutritional value.',
+        usefulin: """"Culinary Use: Ipomoea aquatica, commonly known as Water Spinach or Kangkong, is a leafy green vegetable used in various culinary dishes. It's a staple in Southeast Asian cuisines, commonly stir-fried, sautéed, or used in soups and salads.
+Nutritional Value: It's valued for its nutritional content, rich in vitamins (A, C, and K), minerals, and antioxidants, making it a healthy addition to meals.""",
+        procedure: 'Cooking: Water Spinach can be cooked similarly to other leafy greens. It\'s typically washed, chopped, and then added to recipes, sautéed with garlic, onions, or other spices.',
+        symptoms: 'No Known Major Side Effects: When consumed as a vegetable in normal culinary amounts, there are generally no significant adverse effects reported',
+        precautions: """Hygiene: As with any leafy vegetable, it's essential to wash Kangkong thoroughly before use to remove any dirt or contaminants.
+Growing Conditions: In some regions, there have been concerns about potential contamination with parasites if grown in polluted water. Therefore, it's recommended to source Kangkong from clean water sources.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=kangkong',
         isSelected: false),
 
     // LIST OF FLOWERS
