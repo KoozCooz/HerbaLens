@@ -355,11 +355,11 @@ class HerbalLens {
         precautions: '',
         references: '',
         isSelected: false),
-    //PETCHAY EDIT
+    //BOKCHOY EDIT
     HerbalLens(
         plantId: 19,
         category: 'Leaves',
-        plantName: 'Petchay',
+        plantName: 'Bokchoy',
         scientificname: '',
         imageURL: 'assets/icon/Fritz.jpg',
         isFavorated: false,
@@ -476,12 +476,14 @@ Allergies: Individuals with known allergies to plants in the Asteraceae family (
         scientificname: 'Cosmos sulphureus',
         imageURL: 'assets/plants/flowers/Cosmos.png',
         isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Cosmos sulphureus" refers specifically to a species of flowering plant known for its vibrant yellow, orange, or reddish flowers. The genus name Cosmos suggests an ordered or harmonious beauty, while the specific epithet "sulphureus" highlights the striking sulfur-like coloration of its blooms.',
+        usefulin: """Garden Ornamental: Cosmos sulphureus is primarily grown as an ornamental plant due to its brightly colored flowers, making it popular in gardens and landscapes.
+Attracts Pollinators: Its vibrant flowers attract butterflies, bees, and birds, supporting pollination in gardens""",
+        procedure: """Cultivation: Cosmos sulphureus grows well in sunny locations with well-draining soil. Seeds can be sown directly in the garden or started indoors and later transplanted.
+Maintenance: Regular watering and deadheading spent flowers can promote continuous blooming.""",
+        symptoms: """Contact Dermatitis: Some individuals may experience skin irritation upon contact with the plant.""",
+        precautions: """Skin Sensitivity: If handling the plant, wearing gloves might be advisable to prevent skin irritation in sensitive individuals.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=cosmos',
         isSelected: false),
     // CRAPE JASMINE EDIT
     HerbalLens(
@@ -491,12 +493,16 @@ Allergies: Individuals with known allergies to plants in the Asteraceae family (
         scientificname: 'Tabernaemontana divaricata',
         imageURL: 'assets/plants/flowers/Crape Jasmine.png',
         isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Tabernaemontana divaricata" refers specifically to this species of plant within the Tabernaemontana genus, characterized by its spreading or diverging growth and commonly known as Crepe Jasmine.',
+        usefulin: """Ornamental Plant: Tabernaemontana divaricata is primarily cultivated as an ornamental plant due to its fragrant and attractive white flowers.
+Traditional Uses: In some traditional practices, various parts of the plant are used for potential medicinal purposes, although scientific evidence might be limited.""",
+        procedure: """Cultivation: It can be grown in well-draining soil in sunny to partially shaded areas, and it requires regular watering.
+Pruning: Prune the plant to maintain its shape and promote flowering.
+""",
+        symptoms: """Potential Toxicity: Certain parts of the plant may contain toxic compounds; ingestion might cause symptoms such as stomach upset.""",
+        precautions: """Caution with Ingestion: Avoid ingesting any parts of the plant, especially if you're not familiar with its toxicity profile.
+Skin Contact: Handling the plant might cause skin irritation in some individuals.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=crape+jasmine',
         isSelected: false),
     // FOUR O' CLOCK EDIT
     HerbalLens(
@@ -506,12 +512,15 @@ Allergies: Individuals with known allergies to plants in the Asteraceae family (
         scientificname: 'Mirabilis jalapa',
         imageURL: 'assets/plants/flowers/Four o\' clock.png',
         isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Mirabilis jalapa" refers to the Four O\' Clock Flower. The genus name suggests the plant's notable and admirable characteristics, while the specific epithet acknowledges its historical association with the town of Xalapa in Mexico, where it was cultivated and introduced to Europe centuries ago.',
+        usefulin: """Ornamental Plant: Mirabilis jalapa is primarily grown as an ornamental plant due to its attractive and colorful flowers that bloom in the late afternoon or evening.
+Historical Medicinal Use: Traditionally, some cultures used parts of the plant in herbal remedies, although modern scientific evidence for medicinal efficacy might be limited.""",
+        procedure: """Cultivation: It grows well in various soil types with moderate watering, preferably in full sunlight.
+Propagation: Can be grown from seeds or tubers.""",
+        symptoms: 'Potential Toxicity: Some parts of the plant may contain toxic compounds; ingestion might cause symptoms such as stomach upset.',
+        precautions: """Caution with Ingestion: Avoid ingesting any parts of the plant, especially if you're not familiar with its toxicity profile.
+Skin Contact: Handling the plant might cause skin irritation in some individuals.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Four+o%27+clock+flower',
         isSelected: false),
     // GARLIC VINE EDIT
     HerbalLens(
@@ -521,12 +530,14 @@ Allergies: Individuals with known allergies to plants in the Asteraceae family (
         scientificname: 'Mansoa alliacea',
         imageURL: 'assets/plants/flowers/garlic vine.png',
         isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Mansoa alliacea" specifically refers to the species known as the Garlic Vine. The genus name, Mansoa, doesn\'t have a clear origin, while the specific epithet, alliacea, denotes the plant\'s characteristic garlic-like odor.',
+        usefulin: """Traditional Medicine: Mansoa alliacea has been used in traditional medicine in various cultures for its perceived medicinal properties, though scientific evidence might be limited.
+Ornamental Plant: Often cultivated as an ornamental vine due to its clusters of fragrant, tubular, lavender-colored flowers and its resemblance to garlic.""",
+        procedure: 'Cultivation: It can be grown in well-drained soil in sunny or partially shaded areas. Propagation can be done through seeds or stem cuttings.',
+        symptoms: 'Skin Sensitivity: Some individuals might experience skin irritation upon contact with the plant.',
+        precautions: """Allergic Reactions: Individuals sensitive to plants in the Bignoniaceae family (where Mansoa alliacea belongs) might exhibit allergic reactions.
+Skin Contact: Handling the plant might cause skin irritation in some individuals""",
+        references: 'http://tropical.theferns.info/viewtropical.php?id=Mansoa+alliacea',
         isSelected: false),
     // GUMAMELA EDIT
     HerbalLens(
@@ -536,12 +547,15 @@ Allergies: Individuals with known allergies to plants in the Asteraceae family (
         scientificname: 'Hibiscus rosa-sinensis',
         imageURL: 'assets/plants/flowers/gumamela.png',
         isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Hibiscus rosa-sinensis" refers specifically to the Chinese hibiscus, an ornamental plant species appreciated for its beautiful and rose-like flowers. The specific epithet "rosa-sinensis" indicates its resemblance to a rose and its association with China.',
+        usefulin: """Ornamental Plant: Hibiscus rosa-sinensis is primarily cultivated as an ornamental plant due to its large, showy, and colorful flowers.
+Traditional Use: In some cultures, parts of the hibiscus plant are used in herbal preparations, teas, or remedies, though scientific evidence may vary regarding its medicinal properties.""",
+        procedure: """Cultivation: It thrives in warm climates, requiring well-draining soil and regular watering. It can be grown in gardens or as a potted plant.
+Pruning: Regular pruning helps maintain shape and encourage flowering.""",
+        symptoms: 'Potential Allergic Reactions: Some individuals might experience mild skin irritation or allergic reactions when in contact with the plant.',
+        precautions: """Skin Contact: For sensitive individuals, wearing gloves when handling the plant might be advisable to prevent skin irritation.
+Ingestion: Avoid ingestion of any parts of the plant unless properly prepared and confirmed safe for consumption.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=gumamela',
         isSelected: false),
     // JUNGLE FLAME EDIT
     HerbalLens(
@@ -551,12 +565,14 @@ Allergies: Individuals with known allergies to plants in the Asteraceae family (
         scientificname: 'Ixora coccinea',
         imageURL: 'assets/plants/flowers/Santan.png',
         isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Ixora coccinea" refers specifically to this species of flowering plant known for its colorful and showy flowers, primarily in shades of red, although it also comes in other colors such as orange, pink, or yellow. The genus name reflects its Indian origins, while the specific epithet emphasizes the striking scarlet or deep red coloration of its flowers.',
+        usefulin: """Ornamental Plant: Ixora coccinea is primarily grown as an ornamental shrub, valued for its clusters of vibrant, showy flowers that come in various colors such as red, orange, pink, and yellow.
+Landscaping: It's commonly used in landscaping for hedges, borders, or as an accent plant due to its attractive flowers and evergreen foliage.""",
+        procedure: """Cultivation: It grows well in well-drained soil and requires regular watering, preferably in full sun to partial shade.
+Pruning: Pruning can help maintain its shape and encourage new growth.""",
+        symptoms: 'Potential Skin Irritation: Handling the plant might cause skin irritation in some individuals.',
+        precautions: 'Skin Contact: For sensitive individuals, wearing gloves while handling the plant is advisable to avoid skin irritation.',
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=santan',
         isSelected: false),
     // LANTANA EDIT
     HerbalLens(
@@ -566,12 +582,14 @@ Allergies: Individuals with known allergies to plants in the Asteraceae family (
         scientificname: 'Lantana camara',
         imageURL: 'assets/plants/flowers/Latana.png',
         isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Lantana camara" specifically refers to a species of flowering plant in the Lantana genus. It is characterized by its colorful and often multi-colored flower clusters, and its name signifies its placement within the genus Lantana, though the origin of the specific epithet "camara" might not have a clear botanical association. ',
+        usefulin:"""Ornamental Plant: Lantana camara is cultivated as an ornamental shrub due to its vibrant and colorful flower clusters, which attract butterflies and pollinators.
+Erosion Control: In some regions, it's used for soil erosion control due to its ability to form dense thickets.""",
+        procedure: 'Cultivation: It grows well in various soil types and tolerates different conditions. It requires full sun and regular watering.',
+        symptoms: 'Potential Toxicity: Some parts of the plant contain toxic compounds that may cause symptoms if ingested, such as gastrointestinal upset or skin irritation.',
+        precautions: """Handling Precaution: Use gloves when handling the plant to avoid skin irritation.
+Ingestion Warning: Avoid ingestion of any parts of the plant, especially for pets and small children.""",
+        references: 'https://www.cabi.org/isc/datasheet/29542',
         isSelected: false),
     // LAVENDER EDIT
     HerbalLens(
@@ -581,12 +599,14 @@ Allergies: Individuals with known allergies to plants in the Asteraceae family (
         scientificname: 'Lavandula angustifolia',
         imageURL: 'assets/plants/flowers/Lavender.png',
         isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Lavandula angustifolia" refers specifically to a species of lavender known for its narrow leaves. Lavandula, as the genus name, represents the broader group of plants known as lavender, while the specific epithet "angustifolia" emphasizes the distinctive feature of its narrow foliage.',
+        usefulin: """Aromatherapy: Lavandula angustifolia, commonly known as English lavender, is widely used in aromatherapy for its soothing and relaxing properties. Its essential oil is employed in diffusers, baths, and massage oils.
+Herbal Remedies: It's used in herbal medicine for its potential calming effects, aiding in relaxation, stress reduction, and promoting better sleep.""",
+        procedure: 'Harvesting: Flowers are harvested when in full bloom, usually in the morning, to extract essential oil or used in teas and sachets.',
+        symptoms: 'Skin Sensitivity: Some individuals might experience skin irritation or allergic reactions when using lavender oil directly on the skin. It\'s advisable to perform a patch test before extensive use.',
+        precautions: """Avoid Ingestion: While lavender is commonly used in teas, ingestion of large quantities may cause nausea or other adverse effects. Consult a healthcare professional for appropriate dosage and guidance.
+Use Caution with Essential Oil: Direct application of undiluted essential oil to the skin may cause irritation in some individuals. Always dilute essential oils before topical use.""",
+        references: 'https://www.rhs.org.uk/plants/8412/lavandula-angustifolia/details',
         isSelected: false),
     // MARIGOLD EDIT
     HerbalLens(
@@ -596,12 +616,15 @@ Allergies: Individuals with known allergies to plants in the Asteraceae family (
         scientificname: 'Tagetes',
         imageURL: 'assets/plants/flowers/Marigold.png',
         isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: 'The genus Tagetes includes various species of marigolds, commonly cultivated for their vibrant flowers and foliage. These plants are known for their ornamental value in gardens, as well as for their use in traditional medicine and pest control due to their natural insect-repelling properties.',
+        usefulin: """Gardening and Landscaping: Tagetes, or marigolds, are widely used as ornamental plants in gardens, borders, and landscaping due to their vibrant flowers and ability to repel certain pests.
+Companion Planting: They are often planted alongside vegetables to deter pests due to their natural repellent properties.
+Traditional Medicine: Some cultures use Tagetes species in traditional medicine for various purposes, although scientific evidence might vary.""",
+        procedure: 'Cultivation: Marigolds grow well in various soil types and require ample sunlight. They can be grown from seeds or nursery-bought seedlings.',
+        symptoms: 'Skin Irritation: Contact with the plant can cause mild skin irritation or allergic reactions in some individuals.',
+        precautions: """Skin Contact: It's advisable to wear gloves when handling marigold plants to avoid potential skin irritation.
+Ingestion Warning: While not typically consumed, avoid ingesting any parts of the plant.""",
+        references: 'https://www.gardeningknowhow.com/ornamental/flowers/marigold/growing-tagetes-in-gardens.htm',
         isSelected: false),
     // MUMS EDIT
     HerbalLens(
@@ -611,12 +634,14 @@ Allergies: Individuals with known allergies to plants in the Asteraceae family (
         scientificname: 'Chrysanthemum',
         imageURL: 'assets/plants/flowers/Chrysanthemum.png',
         isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: 'Chrysanthemums, often referred to as "mums," are flowering plants in the Asteraceae family and are native to Asia and northeastern Europe. They are widely cultivated for their beautiful and diverse blooms, which come in various colors, shapes, and sizes. Due to their popularity and ornamental value, they hold significant cultural and symbolic meanings in different parts of the world, symbolizing cheerfulness, positivity, and longevity in many cultures, particularly in East Asia.',
+        usefulin: """Ornamental Plant: Chrysanthemums are primarily cultivated as decorative flowering plants in gardens, landscapes, and floral arrangements due to their diverse colors and shapes.
+Traditional Medicine: In some cultures, Chrysanthemum species are used in traditional herbal medicine for various purposes, such as promoting relaxation, reducing inflammation, or aiding in digestion.""",
+        procedure: 'Cultivation: Chrysanthemums prefer well-draining soil and adequate sunlight. They can be grown from seeds, cuttings, or purchased as nursery-grown plants.',
+        symptoms: 'Skin Sensitivity: Contact with certain Chrysanthemum species might cause mild skin irritation or allergic reactions in sensitive individuals.',
+        precautions: """Skin Contact: Wear gloves when handling Chrysanthemums to avoid potential skin irritation.
+Ingestion Warning: While not typically consumed as food, avoid ingesting any parts of the plant.""",
+        references: 'https://www.rhs.org.uk/plants/popular/chrysanthemum',
         isSelected: false),
     // ROSE EDIT
     HerbalLens(
@@ -626,12 +651,14 @@ Allergies: Individuals with known allergies to plants in the Asteraceae family (
         scientificname: 'Rosa',
         imageURL: 'assets/plants/flowers/Rose.png',
         isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: 'The term "Rosa" refers to the genus name for plants commonly known as roses. The word "Rosa" originates from Latin and has been adopted across various languages with little alteration. The name "Rosa" has historical and symbolic significance and is often associated with beauty, love, and admiration.',
+        usefulin: """Ornamental Plant: Roses are primarily cultivated for their aesthetic value in gardens, landscapes, and floral arrangements due to their beautiful and fragrant flowers.
+Symbolism: Roses hold significant symbolic meanings associated with love, beauty, and various emotions, making them popular for gifting and ceremonie""",
+        procedure: 'Cultivation: Roses require well-draining soil, adequate sunlight, and proper watering. They can be grown from seeds, cuttings, or purchased as nursery-grown plants.',
+        symptoms: 'Skin Irritation: Prickly thorns on rose stems can cause skin irritation or allergic reactions in some individuals upon contact.',
+        precautions: """Handling Thorns: Wear gloves when pruning or handling roses to avoid prickles and potential skin irritation
+Insecticides: Be cautious with the use of insecticides or pesticides around roses, as certain chemicals may affect the plant or its surroundings""",
+        references: 'https://www.almanac.com/plant/roses',
         isSelected: false),
     // ROSE BALSAM EDIT
     HerbalLens(
@@ -641,12 +668,14 @@ Allergies: Individuals with known allergies to plants in the Asteraceae family (
         scientificname: 'Impatiens balsamina ',
         imageURL: 'assets/plants/flowers/Kamantigi.png',
         isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Impatiens balsamina" refers specifically to a species within the Impatiens genus known for its characteristic seed pod behavior and, historically, potentially fragrant or healing properties. This species is commonly called garden balsam or rose balsam and is cultivated for its colorful flowers.',
+        usefulin: """Ornamental Plant: Impatiens balsamina, commonly known as garden balsam or rose balsam, is cultivated as an ornamental plant due to its colorful and attractive flowers.
+Traditional Medicine: In some traditional practices, extracts or preparations from this plant are used for their potential medicinal properties, although scientific evidence may vary.""",
+        procedure: 'Cultivation: It prefers well-drained soil and partial shade, thriving in moderate climates. Seeds or nursery-bought seedlings can be used for propagation.',
+        symptoms: 'Potential Skin Irritation: Contact with the sap of the plant might cause mild skin irritation in some individuals.',
+        precautions: """Skin Contact: Use caution when handling Impatiens balsamina to avoid potential skin irritation.
+Ingestion Warning: Avoid ingestion of any parts of the plant, as certain species within the Impatiens genus may contain compounds that can cause discomfort if ingested.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=rose+balsam',
         isSelected: false),
     // SEA ROSEMALLOW EDIT
     HerbalLens(
@@ -656,12 +685,14 @@ Allergies: Individuals with known allergies to plants in the Asteraceae family (
         scientificname: 'Hibiscus tiliaceus',
         imageURL: 'assets/plants/flowers/Malabago.png',
         isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Hibiscus tiliaceus" refers specifically to a species of Hibiscus known as the Sea Hibiscus or Beach Hibiscus. The specific epithet "tiliaceus" likely describes the similarity of the plant\'s leaves to those of the linden tree.',
+        usefulin: """Ornamental Plant: Hibiscus tiliaceus, commonly known as the Sea Hibiscus or Beach Hibiscus, is cultivated as an ornamental plant due to its attractive yellow flowers and tolerance to coastal conditions.
+Traditional Uses: In some cultures, various parts of the Hibiscus tiliaceus plant have been used in traditional medicine for potential therapeutic benefits, although scientific evidence may vary.""",
+        procedure: 'Cultivation: It thrives in coastal areas, preferring well-drained soil and tolerating salt spray. It can be grown from seeds or stem cuttings.',
+        symptoms: 'Potential Skin Sensitivity: Contact with the plant\'s sap might cause skin irritation in some individuals.',
+        precautions: """Skin Contact: Use gloves when handling Hibiscus tiliaceus to prevent potential skin irritation.
+Ingestion Warning: Avoid ingestion of any parts of the plant, as certain species may contain compounds that could cause discomfort if ingested""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Hibiscus+tiliaceus',
         isSelected: false),
     // SUNFLOWER EDIT
     HerbalLens(
@@ -671,12 +702,14 @@ Allergies: Individuals with known allergies to plants in the Asteraceae family (
         scientificname: 'Tagetes erecta',
         imageURL: 'assets/plants/flowers/Sunflower.png',
         isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Tagetes erecta" refers specifically to a species within the Tagetes genus known for its upright growth habit. Commonly called African marigold or American marigold, it\'s recognized for its large, colorful flowers and is widely cultivated for ornamental purposes in gardens, landscapes, and floral arrangements.',
+        usefulin: """Ornamental Plant: Tagetes erecta, commonly known as African Marigold, is widely cultivated as an ornamental plant due to its vibrant and showy flowers. It's used in gardens, landscapes, and as a decorative element in floral arrangements.
+Companion Planting: Some gardeners use African Marigolds as companion plants to deter pests in vegetable gardens due to their natural pest-repelling properties.""",
+        procedure: 'Cultivation: African Marigolds thrive in well-drained soil and full sun. They can be grown from seeds, and regular deadheading can promote continuous blooming.',
+        symptoms: 'Skin Irritation: Contact with the plant might cause mild skin irritation or allergic reactions in sensitive individuals.',
+        precautions: """Skin Contact: Wear gloves when handling African Marigolds, particularly if sensitive to plant allergies or irritants.
+Ingestion Warning: Avoid ingestion of any parts of the plant, as some individuals may have adverse reactions.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=sunflowerhttps://pubmed.ncbi.nlm.nih.gov/?term=sunflower',
         isSelected: false),
     // VEGETABLE HUMMINGBIRD EDIT
     HerbalLens(
@@ -686,12 +719,14 @@ Allergies: Individuals with known allergies to plants in the Asteraceae family (
         scientificname: 'Sesbania grandiflora',
         imageURL: 'assets/plants/flowers/Katuray.png',
         isFavorated: false,
-        decription: '',
-        usefulin: '',
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Sesbania grandiflora" refers to this particular species recognized for its large, showy flowers. The tree is esteemed for various purposes, including its edible flowers, leaves, and pods, which hold significance in traditional medicine and culinary practices in many regions where it grows. It\'s also valued for its nitrogen-fixing properties and as a fodder crop for livestock.',
+        usefulin: """Culinary Use: The young leaves, flowers, and pods of Sesbania grandiflora are used in various culinary dishes in some cultures, often in salads, curries, or stir-fries.
+Traditional Medicine: In certain traditional medicinal practices, parts of the tree are utilized for potential therapeutic benefits, although scientific evidence may vary.
+Fodder Crop: It is used as a fodder crop for livestock due to its nutritional value.""",
+        procedure: 'Harvesting: Young leaves, flowers, and pods are typically harvested for culinary or medicinal purposes.',
+        symptoms: 'Potential Allergies: Some individuals might have allergic reactions to parts of the plant, particularly if sensitive to legumes.',
+        precautions: 'Ingestion Warning: Ensure proper preparation and moderation when consuming parts of Sesbania grandiflora, as excessive consumption might lead to adverse effects.',
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=katuray',
         isSelected: false),
     //LIST OF FRUITS
     //ATIS
