@@ -744,12 +744,17 @@ Allergies: Individuals with known allergies to plants in the Asteraceae family (
         scientificname: 'Beta vulgaris',
         imageURL: 'assets/plants/fruits/kamias.png',
         isFavorated: false,
-        decription: '',
-        usefulin: "",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Averrhoa bilimbi" refers to a specific species of tropical fruit tree known for its bilimbi fruit. The tree is cultivated in various tropical regions and is valued for its culinary and potential medicinal uses.',
+        usefulin: """Culinary Uses: The bilimbi fruit is used in various culinary applications, especially in Southeast Asian cuisines. It adds a tangy flavor to dishes.
+Traditional Medicine: In some traditional practices, bilimbi is used for its potential medicinal properties, including as a remedy for coughs and skin conditions.
+""",
+        procedure: """Harvesting: Bilimbi fruits are typically harvested when they are green and firm.
+Culinary Preparation: The fruits can be sliced and added to salads, pickles, or used as a souring agent in cooking.
+""",
+        symptoms: """Gastrointestinal Distress: Excessive consumption may cause gastrointestinal discomfort in some individuals.""",
+        precautions: """Kidney Disorders: Individuals with kidney issues should exercise caution as bilimbi contains oxalic acid, which may contribute to the formation of kidney stones.
+Allergies: People with known allergies to bilimbi or similar fruits should avoid it.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Averrhoa+bilimbi',
         isSelected: false),
     //BITTER GROUD
     HerbalLens(
@@ -788,12 +793,15 @@ Allergies: Individuals with known allergies to plants in the Asteraceae family (
         scientificname: 'Syzygium cumini',
         imageURL: 'assets/plants/fruits/duhat.png',
         isFavorated: false,
-        decription: """ """,
-        usefulin: """ """,
-        procedure: """ """,
-        symptoms: """ """,
-        precautions: """ """,
-        references: '',
+        decription: " Syzygium cumini refers to a specific species of the Syzygium genus known as jamun or Java plum. This tree is valued for its edible fruits and is native to the Indian subcontinent.",
+        usefulin: """Culinary Uses: The fruit is consumed fresh and is also used in the preparation of jams, jellies, juices, and desserts.
+Traditional Medicine: In some traditional practices, various parts of the jamun tree are used for potential medicinal purposes, including managing diabetes and digestive issues""",
+        procedure: """Harvesting: Jamun fruits are typically harvested when they are fully ripe and have a dark purple to almost black color.
+Culinary Preparation: The ripe fruits can be eaten as is, or used to make jams, juices, or desserts""",
+        symptoms: """Allergic Reactions: Some individuals may be allergic to components of jamun, leading to symptoms like itching or swelling""",
+        precautions: """Blood Sugar Levels: Individuals with diabetes should monitor their blood sugar levels when consuming jamun, as it may have an impact on glucose metabolism.
+Allergies: If you have known allergies to fruits or berries, exercise caution when trying jamun.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Syzygium+cumini',
         isSelected: false),
     // CALAMANSI
     HerbalLens(
@@ -864,12 +872,16 @@ Moderation: Coconut products are high in saturated fats, so it's advisable to co
         scientificname: 'Sandoricum koetjape',
         imageURL: 'assets/plants/fruits/santol.png',
         isFavorated: false,
-        decription: """""",
-        usefulin: """""",
-        procedure: """""",
-        symptoms: """""",
-        precautions: """""",
-        references: '',
+        decription: " Sandoricum koetjape refers to the specific species of the santol tree. The name reflects its tropical origin and the local terminology used for the fruit in certain Southeast Asian languages.",
+        usefulin: """Culinary Uses: The fruit is consumed fresh and is also used in various culinary preparations such as jams, jellies, and beverages.
+Traditional Medicine: In some traditional practices, different parts of the santol tree are used for potential medicinal purposes, including as a remedy for digestive issues.
+""",
+        procedure: """Harvesting: Santol fruits are typically harvested when they are fully ripe and have a yellowish or reddish color.
+Culinary Preparation: The ripe fruits can be eaten as is, or used in the preparation of jams, jellies, or beverages""",
+        symptoms: """Allergic Reactions: Some individuals may be allergic to components of santol, leading to symptoms like itching or swelling.""",
+        precautions: """Allergies: If you have known allergies to fruits or latex, exercise caution when trying santol.
+Moderation: Excessive consumption may cause stomach upset in some individuals.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Sandoricum+koetjape',
         isSelected: false),
     // CUCUMBER
     HerbalLens(
@@ -898,12 +910,16 @@ Gastrointestinal Sensitivity: In some cases, individuals with sensitive stomachs
         scientificname: 'Zingiber officinale',
         imageURL: 'assets/plants/fruits/luya.png',
         isFavorated: false,
-        decription: '',
-        usefulin: "",
-        procedure: '',
-        symptoms: '',
-        precautions: '',
-        references: '',
+        decription: '"Zingiber officinale" refers to the ginger plant. The name reflects its characteristic rhizomes and highlights its historical use in workshops or storehouses for its various applications, especially in medicine and cooking.',
+        usefulin: """Culinary Uses: Ginger is widely used in cooking and is a key ingredient in many cuisines, adding flavor to savory and sweet dishes.
+Traditional Medicine: Ginger has a long history of use in traditional medicine for its potential anti-inflammatory, anti-nausea, and digestive properties.
+Beverages: Ginger is used to make ginger tea, which is consumed for its potential health benefits and soothing qualities.""",
+        procedure: """Culinary Preparation: Fresh ginger can be peeled, sliced, minced, or grated and added to various dishes during cooking.
+Tea Preparation: Ginger tea can be made by steeping fresh ginger slices in hot water.""",
+        symptoms: """Heartburn: Excessive consumption may cause heartburn or gastrointestinal discomfort in some individuals.""",
+        precautions: """Pregnancy: Pregnant women should consult with healthcare professionals before consuming large amounts of ginger.
+Bleeding Disorders: Ginger may have blood-thinning effects, so caution is advised for individuals with bleeding disorders or those taking blood-thinning medications""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Zingiber+officinale',
         isSelected: false),
     // LEMON
     HerbalLens(
@@ -933,12 +949,16 @@ Gastrointestinal Sensitivity: Some individuals may experience gastrointestinal d
         scientificname: 'Citrus × aurantiifolia',
         imageURL: 'assets/plants/fruits/dayap.png',
         isFavorated: false,
-        decription: '',
-        usefulin: """""",
-        procedure: """""",
-        symptoms: """""",
-        precautions: """""",
-        references: '',
+        decription: 'Citrus × aurantiifolia specifically refers to the hybrid citrus plant known as Key Lime or Mexican Lime. The name reflects its status as a crossbred citrus species, and it is recognized for its small, round, and highly acidic fruits used in culinary applications.',
+        usefulin: """Culinary Uses: Key limes are commonly used in cooking and baking, adding a distinctive flavor to dishes, desserts, and beverages.
+Beverages: Key lime juice is a key ingredient in beverages such as limeade and cocktails.
+Source of Vitamin C: Key limes, like other citrus fruits, are a good source of vitamin C, which is essential for immune function.""",
+        procedure: """Juicing: Extract juice by cutting the key lime and squeezing. The juice can be used immediately or stored for later use.
+Zesting: The zest of key lime peel can be used to add flavor to dishes.""",
+        symptoms: """Acidic Sensitivity: Excessive consumption of highly acidic citrus fruits may cause acidity or gastric discomfort in some individuals.""",
+        precautions: """Dental Health: The acidic nature of citrus fruits may erode tooth enamel. Rinse the mouth with water after consuming citrus fruits.
+Allergies: Individuals with known allergies to citrus fruits should exercise caution.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Citrus+%C3%97+aurantiifolia',
         isSelected: false),
     // MELON EDIT
     HerbalLens(
@@ -948,12 +968,16 @@ Gastrointestinal Sensitivity: Some individuals may experience gastrointestinal d
         scientificname: 'Cucumis melo ',
         imageURL: 'assets/plants/fruits/melon.png',
         isFavorated: false,
-        decription: '',
-        usefulin: """""",
-        procedure: """""",
-        symptoms: """""",
-        precautions: """""",
-        references: '',
+        decription: 'Cucumis melo refers to the specific species of melon that includes muskmelons. The name is a botanical classification used to identify and categorize this particular type of melon within the broader world of cucumbers and melons.',
+        usefulin: """Nutrient Content: Muskmelons are a good source of essential nutrients such as vitamins A and C, potassium, and dietary fiber.
+Hydration: Muskmelons have high water content, contributing to hydration and refreshing taste.
+Digestive Health: The dietary fiber in muskmelons may contribute to digestive health.""",
+        procedure: """Selection: Choose muskmelons that are heavy for their size, have a sweet aroma, and yield slightly to pressure at the blossom end.
+Cutting: Cut the muskmelon into halves or slices, discarding seeds and rind for consumption""",
+        symptoms: """Allergic Reactions: In rare cases, individuals may be allergic to muskmelons, leading to symptoms like itching or swelling.""",
+        precautions: """Hygiene: Wash the outer surface of the melon thoroughly before cutting to prevent contamination.
+Diabetes: Individuals with diabetes should monitor their portion sizes due to the natural sugars present in muskmelons""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Cucumis+melo',
         isSelected: false),
     // OLIVE
     HerbalLens(
@@ -968,7 +992,6 @@ Gastrointestinal Sensitivity: Some individuals may experience gastrointestinal d
 Olive Oil: Olive oil, extracted from the fruit of the olive tree, is widely used in cooking and is known for its health benefits, including being rich in monounsaturated fats and antioxidants.
 Traditional Medicine: In traditional medicine, various parts of the olive tree have been used for their potential medicinal properties.""",
         procedure: """Olive Harvesting: Olives are typically harvested by hand or mechanically. The timing of harvest can affect the flavor and quality of the resulting olive oil.
-
 Olive Oil Extraction: Olive oil is extracted through processes like pressing or centrifugation, separating the oil from the fruit's pulp and water""",
         symptoms: """Allergic Reactions: Some individuals may experience allergic reactions to olives or olive products. Symptoms can include itching, swelling, or difficulty breathing.""",
         precautions: """Allergies: Individuals with known olive allergies should avoid olives and olive products.
@@ -984,12 +1007,16 @@ Moderation: While olive oil is considered a healthy fat, it is calorie-dense. Co
         scientificname: 'Carica papaya',
         imageURL: 'assets/plants/fruits/papaya.png',
         isFavorated: false,
-        decription: '',
-        usefulin: """""",
-        procedure: """""",
-        symptoms: """""",
-        precautions: """""",
-        references: '',
+        decription: '"Carica papaya" refers to the specific species of tropical fruit plant known as papaya. The name reflects both the genus of plants to which papaya belongs and the common name that has been used to describe this fruit for centuries.',
+        usefulin: """Digestive Enzymes: Papaya contains enzymes like papain, aiding in the digestion of proteins.
+Rich in Nutrients: Papaya is a good source of vitamins C and A, folate, and dietary fiber.
+Anti-inflammatory Properties: Some studies suggest that papaya may have anti-inflammatory effects.""",
+        procedure: """Consumption: Papaya can be consumed fresh, in smoothies, salads, or as a snack.
+Papain Extraction: Papain, extracted from papaya, is used in the food and pharmaceutical industries.""",
+        symptoms: """Allergic Reactions: Rarely, individuals may be allergic to papaya, leading to symptoms such as itching or swelling""",
+        precautions: """Pregnancy: Unripe papaya may contain latex, which can stimulate uterine contractions. Pregnant women should avoid excessive consumption of unripe papaya.
+Allergies: Individuals with latex allergies might be sensitive to papaya""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Carica+papaya',
         isSelected: false),
     // SAPODILLA
     HerbalLens(
@@ -1017,12 +1044,16 @@ Allergies: Individuals with latex allergies should exercise caution, as cross-re
         scientificname: 'Capsicum frutescens',
         imageURL: 'assets/plants/fruits/sili labuyo.png',
         isFavorated: false,
-        decription: '',
-        usefulin: """""",
-        procedure: """""",
-        symptoms: """""",
-        precautions: """""",
-        references: '',
+        decription: '"Capsicum frutescens" refers to a type of pepper plant that typically grows in a bushy manner. The name is commonly used to describe various hot chili pepper varieties within the Capsicum genus.',
+        usefulin: """Culinary Uses: Chili peppers are widely used in various cuisines to add heat and flavor to dishes.
+Capsaicin Content: Capsaicin, found in chili peppers, is used in topical creams for pain relief.
+Rich in Vitamins: Chili peppers contain vitamins A and C, and other antioxidants that contribute to overall health.""",
+        procedure: """Culinary Preparation: Chili peppers can be added to dishes during cooking or used to make sauces and condiments.
+Capsaicin Cream: Capsaicin cream, derived from chili peppers, can be applied topically for pain relief.""",
+        symptoms: """Digestive Discomfort: Excessive consumption may cause digestive discomfort or irritation in some individuals""",
+        precautions: """Gastrointestinal Conditions: Individuals with sensitive stomachs or gastrointestinal conditions may need to limit their intake of spicy foods.
+Topical Use: When using capsaicin cream, avoid applying it to broken or irritated skin.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Capsicum+frutescens',
         isSelected: false),
     // TAMARIND EDIT
     HerbalLens(
@@ -1032,12 +1063,16 @@ Allergies: Individuals with latex allergies should exercise caution, as cross-re
         scientificname: 'Tamarindus indica',
         imageURL: 'assets/plants/fruits/Tamarind.png',
         isFavorated: false,
-        decription: '',
-        usefulin: """""",
-        procedure: """""",
-        symptoms: """""",
-        precautions: """""",
-        references: '',
+        decription: ' "Tamarindus indica" specifically refers to the tamarind tree, a tropical tree species known for its edible fruit pods. The scientific name points to its origin and characteristic features, notably its similarity to dates and its association with India.',
+        usefulin: """Culinary Uses: Tamarind is widely used as a flavoring agent in various cuisines, adding a sweet and tangy taste to dishes.
+Digestive Health: Tamarind contains dietary fiber that may aid digestion and alleviate constipation.
+Antioxidant Properties: It contains compounds like polyphenols that possess antioxidant properties.""",
+        procedure: """Culinary Preparation: Tamarind pulp or paste is used to flavor dishes such as curries, sauces, chutneys, and beverages.
+Medicinal Use: In traditional medicine, tamarind preparations are used to address digestive issues.""",
+        symptoms: """Allergic Reactions: Some individuals may experience allergic reactions to tamarind, resulting in itching, rash, or swelling.""",
+        precautions: """Blood Sugar Levels: Individuals with diabetes should monitor their blood sugar levels when consuming tamarind due to its natural sugars.
+Allergies: Individuals with known allergies to tamarind or related plants should avoid it.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Tamarindus+indica',
         isSelected: false),
     // TOMATO EDIT
     HerbalLens(
@@ -1047,12 +1082,15 @@ Allergies: Individuals with latex allergies should exercise caution, as cross-re
         scientificname: 'Solanum lycopersicum',
         imageURL: 'assets/plants/fruits/kamatis.png',
         isFavorated: false,
-        decription: '',
-        usefulin: """""",
-        procedure: """""",
-        symptoms: """""",
-        precautions: """""",
-        references: '',
+        decription: '"Solanum lycopersicum" refers specifically to the tomato plant. The name reflects both the genus of plants to which tomatoes belong (Solanum) and an earlier belief about the fruit\'s resemblance to a wolf peach or peach-like fruit.',
+        usefulin: """Nutritional Value: Tomatoes are rich in vitamins (especially vitamin C and K), minerals, and antioxidants like lycopene, which may promote overall health.
+Culinary Uses: Widely used in cooking, salads, sauces, and as a base for various dishes due to their flavor and versatility.
+Potential Health Benefits: Studies suggest that lycopene in tomatoes may have antioxidant properties and could contribute to heart health and reduce the risk of certain cancers.""",
+        procedure: """Culinary Preparation: Tomatoes can be eaten raw, cooked, or blended into sauces, soups, and juices.""",
+        symptoms: """Allergic Reactions: Rarely, individuals may experience allergic reactions to tomatoes, causing itching, swelling, or digestive discomfort.""",
+        precautions: """Acid Reflux: Tomatoes are acidic and might exacerbate symptoms in individuals with acid reflux or related conditions.
+Allergies: Individuals with known allergies to tomatoes or other nightshade family plants should avoid them.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Solanum+lycopersicum',
         isSelected: false),
   ];
 
