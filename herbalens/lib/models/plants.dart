@@ -39,8 +39,7 @@ class HerbalLens {
         scientificname: 'Euphorbia hirta',
         imageURL: 'assets/plants/leaves/Tawa-tawa.png', //find photo
         isFavorated: false,
-        decription:
-            '', //find description
+        decription:'"Euphorbia hirta" refers specifically to a species within the Euphorbia genus known for its characteristic hairy or rough texture. This particular species is commonly called Asthma Plant or Garden Spurge and is recognized for its medicinal properties and traditional uses in various herbal remedies.', //find description
         usefulin: """""",
         procedure: '',
         symptoms: '',
@@ -55,7 +54,7 @@ class HerbalLens {
         scientificname: 'Ocimum basilicum',
         imageURL: 'assets/plants/leaves/Basil.png', //find photo
         isFavorated: false,
-        decription:'',
+        decription:'"Ocimum basilicum" refers specifically to the species of basil recognized for its culinary significance, aromatic fragrance, and use in various cuisines worldwide. This species includes different cultivars such as sweet basil, Genovese basil, Thai basil, and others, each with distinct characteristics in flavor, aroma, and appearance.',
         usefulin: """""",
         procedure: '',
         symptoms: '',
@@ -1037,7 +1036,7 @@ Allergies: Individuals with latex allergies should exercise caution, as cross-re
     HerbalLens(
         plantId: 57,
         category: 'Fruit',
-        plantName: 'Tabasco Perpp',
+        plantName: 'Tabasco Pepper',
         scientificname: 'Capsicum frutescens',
         imageURL: 'assets/plants/fruits/sili labuyo.png',
         isFavorated: false,
