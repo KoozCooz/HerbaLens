@@ -31,127 +31,89 @@ class HerbalLens {
 
   static List<HerbalLens> plantList = [
     //LIST OF LEAVES
-    //SAMBONG
+    //Asthma Plant
     HerbalLens(
         plantId: 0,
         category: 'Leaves',
-        plantName: 'Sambong',
-        scientificname: 'Blumea balsamifera',
-        imageURL: 'assets/images/plant-one.png', //find photo
+        plantName: 'Asthma Plant',
+        scientificname: 'Euphorbia hirta',
+        imageURL: 'assets/plants/leaves/Tawa-tawa.png', //find photo
         isFavorated: false,
         decription:
-            'A coarse, woody, and strongly scented shrub found in most Philippine provinces in open grasslands, waste sites, and clearings.', //find description
-        usefulin: """•Fever
-          Procedure: decoction of roots; boil 2 - 4 handfuls of the leaves. Use the lukewarm decoction as a sponge bath. •Headaches
-          Procedure: apply pounded leaves on the forehead and temples. Hold in place with a clean piece of cloth. 
-  •Gas distention
-          Procedure: boil 2 tsp of the chopped leaves in 1 cup of water for 5 minutes. Drink the decoction while warm. Also used for upset stomach. •Postpartum
-          Procedure:  for mothers bath after childbirth. 
-  •Boils
-          Procedure:: Apply pounded leaves as poultice daily. 
-  •Diuretic
-          Procedure: Boil 2 tbsp chopped leaves in 2 glasses of water for 15 minutes. Take 1/2 of the decoction after every meal, 3 times a day.""",
+            '', //find description
+        usefulin: """""",
         procedure: '',
         symptoms: '',
         precautions: '',
         references: '',
         isSelected: false),
-    //TAWA-TAWA
+    //Basil
     HerbalLens(
         plantId: 1,
         category: 'Leaves',
-        plantName: 'Tawa-tawa',
-        scientificname: 'Euphorbia hirta',
-        imageURL: 'assets/images/plant-two.png', //find photo
+        plantName: 'Basil',
+        scientificname: 'Ocimum basilicum',
+        imageURL: 'assets/plants/leaves/Basil.png', //find photo
         isFavorated: false,
-        decription:
-            'A small herbaceous plant that belongs to the Euphorbiaceae family. It is native to tropical regions and is commonly found in'
-            'Southeast Asia, particularly in countries like the Philippines.',
-        usefulin: """•Fever, colds cough and flu
-        Procedure: Decoction of leaves. •Dengue
-        Procedure: 100 grams of the fresh whole plant (including roots) are washed and boiled in half a liter (500 ml) of water for 15 minutes. After cooling and paper-filtration, the decoction is taken by the patient at one glass every hour until the fever subsides.""",
+        decription:'',
+        usefulin: """""",
         procedure: '',
         symptoms: '',
         precautions: '',
         references: '',
         isSelected: false),
-    //GUYABANO LEAVES
+    //Betel Leaves
     HerbalLens(
         plantId: 2,
         category: 'Leaves',
-        plantName: 'Guyabano Leaves',
-        scientificname: 'Annona muricata L.',
-        imageURL: 'assets/images/plant-three.png',
+        plantName: 'Betel Leaves',
+        scientificname: 'Piper betle',
+        imageURL: 'assets/plants/leaves/Nga-nga Leaves.png',
         isFavorated: false,
-        decription:
-            'A small tropical tree bearing shiny leaves, heart-shaped fruits with a soft spined green outer skin and pulpy white skin.',
-        usefulin: """•Inflammation and swollen feet
-        Procedure: Decoction of leaves used a compresses. 
-  •Eczema
-        Procedure: A poultice of mashed leaves and sap of young leaves. 
-  •Head lice and bedbugs
-        Procedure: Decoction of leaves""",
+        decription: '',
+        usefulin: """""",
         procedure: '',
         symptoms: '',
         precautions: '',
         references: '',
         isSelected: false),
-    //BAYABAS LEAVES
+    //BOKCHOY
     HerbalLens(
         plantId: 3,
         category: 'Leaves',
-        plantName: 'Bayabas Leaves',
-        scientificname: 'Psidium guajava L.',
-        imageURL: 'assets/images/plant-four.png',
+        plantName: 'Bokchoy',
+        scientificname: 'Brassica rapa subsp. chinensis',
+        imageURL: 'assets/plants/leaves/Pechay.png',
         isFavorated: false,
-        decription:
-            'It refer to the foliage of the Bayabas tree, scientifically known as Psidium guajava'
-            'The Bayabas tree, commonly known as the Guava tree, is native to tropical regions and is widely cultivated for its fruit, known as guava.',
-        usefulin: """•Wounds
-        Procedure: Infusion of fresh leaves for wound cleaning to prevent infection and to facilitate healing. 
-  •Diarrhea
-        Procedure: Boil for 15 minutes 4 to 6 tablespoons of chopped leaves in 18 ounces of water. Strain and cool. Drink 1/4 of the decoction every 3 - 4 hours. •Pasma
-        Procedure: The salt residue from home ice-cream makers is mixed with water and bayabas leaves, boiled and used as a healing wash for the extremities. 
-  •Nosebleeds
-        Procedure: Densely roll the bayabas leaves and place into the nostril cavity.
-  •Vaginal wash
-        Procedure: Warm decoction of leaves as a vaginal wash (after childbirth) or douche.
-  •Toothache
-        Procedure: Chew 2-3 young leaves and put into the tooth cavity
-        """,
+        decription:'',
+        usefulin: """""",
         procedure: '',
         symptoms: '',
         precautions: '',
         references: '',
         isSelected: false),
-    //NGA-NGA LEAVES
+    //celery
     HerbalLens(
         plantId: 4,
         category: 'Leaves',
-        plantName: 'Nga nga Leaves',
-        scientificname: 'Piper siriboa L. ',
-        imageURL: 'assets/images/plant-five.png',
+        plantName: 'Celery',
+        scientificname: 'Apium graveolens',
+        imageURL: 'assets/plants/leaves/Celery.png',
         isFavorated: false,
-        decription:
-            'a masticatory indulgence—ancient, ritualistic, and medicinal. It is reported to be the fourth most commonly used psychoactive substance in the world, used by 10 to 25% of the world population.',
-        usefulin: """•Constipation
-        Procedure: Crush Nga nga leaves and put them in the water overnight. Drink the water in the morning on an empty stomach to ease bowel movements. 
-  •Oral health
-        Procedure: Chewing a tiny amount of nganga leaves paste after meals not only boosts gut wellness but also fights bad breath, mouth odor, as well as, relieves toothaches, gum pain, swelling and oral infections. 
-  •Joint Pain
-        Procedure: Warm a bunch of fresh nga nga leaves and tying them tightly aroung the affected bones and joints significantly lessen the intensity of pain, inflammation in that region and alliviates symtoms of arthritis.""",
+        decription:'',
+        usefulin: """""",
         procedure: '',
         symptoms: '',
         precautions: '',
         references: '',
         isSelected: false),
-    //LAGUNDI EDIT
+    // Chili Leaves EDIT
     HerbalLens(
         plantId: 5,
         category: 'Leaves',
-        plantName: 'Lagundi',
-        scientificname: 'Averrhoa carambola',
-        imageURL: 'assets/icon/Fritz.jpg',
+        plantName: 'Chili leaves',
+        scientificname: 'Capsicum spp.',
+        imageURL: 'assets/plants/leaves/Dahon ng Sili.png',
         isFavorated: false,
         decription: '',
         usefulin: "",
@@ -160,13 +122,13 @@ class HerbalLens {
         precautions: '',
         references: '',
         isSelected: false),
-    //ALUGBATI EDIT
+    //Five-Leaved Chaste Tree
     HerbalLens(
         plantId: 6,
         category: 'Leaves',
-        plantName: 'Alugnati',
-        scientificname: 'Basella alba',
-        imageURL: 'assets/icon/Fritz.jpg',
+        plantName: 'Five-Leaved Chaste Tree',
+        scientificname: 'Vitex negundo',
+        imageURL: 'assets/plants/leaves/Lagundi.png',
         isFavorated: false,
         decription: '',
         usefulin: "",
@@ -175,13 +137,13 @@ class HerbalLens {
         precautions: '',
         references: '',
         isSelected: false),
-    //DAHON NG SILI EDIT
+    //Goethe plant
     HerbalLens(
         plantId: 7,
         category: 'Leaves',
-        plantName: 'Dahon ng Sili',
-        scientificname: '',
-        imageURL: 'assets/icon/Fritz.jpg',
+        plantName: 'Goethe plant',
+        scientificname: 'Kalanchoe pinnata',
+        imageURL: 'assets/plants/leaves/Katakataka.png',
         isFavorated: false,
         decription: '',
         usefulin: "",
@@ -190,13 +152,13 @@ class HerbalLens {
         precautions: '',
         references: '',
         isSelected: false),
-    //BASIL EDIT
+    //Guava Leaves
     HerbalLens(
         plantId: 8,
         category: 'Leaves',
-        plantName: 'Basil',
-        scientificname: '',
-        imageURL: 'assets/icon/Fritz.jpg',
+        plantName: ' Guava Leaves',
+        scientificname: 'Psidium guajava',
+        imageURL: 'assets/plants/leaves/Bayabas Leaves.png',
         isFavorated: false,
         decription: '',
         usefulin: "",
@@ -205,13 +167,13 @@ class HerbalLens {
         precautions: '',
         references: '',
         isSelected: false),
-    //THYME EDIT
+    //MALABAR SPINACH
     HerbalLens(
         plantId: 9,
         category: 'Leaves',
-        plantName: 'Thyme',
-        scientificname: '',
-        imageURL: 'assets/icon/Fritz.jpg',
+        plantName: 'Malabar Spinach',
+        scientificname: 'Basella alba',
+        imageURL: 'assets/plants/leaves/Alugbati.png',
         isFavorated: false,
         decription: '',
         usefulin: "",
@@ -220,13 +182,13 @@ class HerbalLens {
         precautions: '',
         references: '',
         isSelected: false),
-    //DAMONG MARIA EDIT
+    //MORINGA
     HerbalLens(
         plantId: 10,
         category: 'Leaves',
-        plantName: 'Damong maria',
-        scientificname: '',
-        imageURL: 'assets/icon/Fritz.jpg',
+        plantName: 'Moringa',
+        scientificname: 'Moringa oleifera',
+        imageURL: 'assets/plants/leaves/Malunggay.png',
         isFavorated: false,
         decription: '',
         usefulin: "",
@@ -235,13 +197,13 @@ class HerbalLens {
         precautions: '',
         references: '',
         isSelected: false),
-    //KANG KONG EDIT
+    //Mugwort
     HerbalLens(
         plantId: 11,
         category: 'Leaves',
-        plantName: 'Kang kong',
-        scientificname: '',
-        imageURL: 'assets/icon/Fritz.jpg',
+        plantName: 'Mugwort',
+        scientificname: 'Artemisia vulgaris',
+        imageURL: 'assets/plants/leaves/Damong Maria.png',
         isFavorated: false,
         decription: '',
         usefulin: "",
@@ -250,13 +212,13 @@ class HerbalLens {
         precautions: '',
         references: '',
         isSelected: false),
-    //KATAKATAKA EDIT
+    //Ngai camphor
     HerbalLens(
         plantId: 12,
         category: 'Leaves',
-        plantName: 'Katakataka',
-        scientificname: '',
-        imageURL: 'assets/icon/Fritz.jpg',
+        plantName: 'Ngai camphor',
+        scientificname: 'Ngai camphor',
+        imageURL: 'assets/plants/leaves/Sambong.png',
         isFavorated: false,
         decription: '',
         usefulin: "",
@@ -265,13 +227,13 @@ class HerbalLens {
         precautions: '',
         references: '',
         isSelected: false),
-    //MALUNGGAY EDIT
+    //Painted Coleus
     HerbalLens(
         plantId: 13,
         category: 'Leaves',
-        plantName: 'Malunggay',
-        scientificname: '',
-        imageURL: 'assets/icon/Fritz.jpg',
+        plantName: 'Painted Coleus',
+        scientificname: 'Coleus blumei',
+        imageURL: 'assets/plants/leaves/Mayana.png',
         isFavorated: false,
         decription: '',
         usefulin: "",
@@ -280,13 +242,13 @@ class HerbalLens {
         precautions: '',
         references: '',
         isSelected: false),
-    //MAYANA EDIT
+    //Pandan
     HerbalLens(
         plantId: 14,
         category: 'Leaves',
-        plantName: 'Mayana',
-        scientificname: '',
-        imageURL: 'assets/icon/Fritz.jpg',
+        plantName: 'Pandan',
+        scientificname: 'Pandanus amaryllifolius',
+        imageURL: 'assets/plants/leaves/Pandan.png',
         isFavorated: false,
         decription: '',
         usefulin: "",
@@ -295,13 +257,13 @@ class HerbalLens {
         precautions: '',
         references: '',
         isSelected: false),
-    //NIOG-NIOGAN EDIT
+    //Physic nut tree
     HerbalLens(
         plantId: 15,
         category: 'Leaves',
-        plantName: 'Niog-niogan',
-        scientificname: '',
-        imageURL: 'assets/icon/Fritz.jpg',
+        plantName: 'Physic nut tree',
+        scientificname: 'Jatropha curcas',
+        imageURL: 'assets/plants/leaves/Tubang-bakod.png',
         isFavorated: false,
         decription: '',
         usefulin: "",
@@ -310,13 +272,13 @@ class HerbalLens {
         precautions: '',
         references: '',
         isSelected: false),
-    //PANDAN EDIT
+    //Rosemary
     HerbalLens(
         plantId: 16,
         category: 'Leaves',
-        plantName: 'Pandan',
-        scientificname: '',
-        imageURL: 'assets/icon/Fritz.jpg',
+        plantName: 'Rosemary',
+        scientificname: 'Salvia rosmarinus',
+        imageURL: 'assets/plants/leaves/Rosemary.png',
         isFavorated: false,
         decription: '',
         usefulin: "",
@@ -325,13 +287,13 @@ class HerbalLens {
         precautions: '',
         references: '',
         isSelected: false),
-    //TSITSIRIKA LEAVES EDIT
+    //Soursop Leaves
     HerbalLens(
         plantId: 17,
         category: 'Leaves',
-        plantName: 'Tsitsirika Leaves',
-        scientificname: '',
-        imageURL: 'assets/icon/Fritz.jpg',
+        plantName: 'Soursop Leaves',
+        scientificname: 'Annona muricata',
+        imageURL: 'assets/plants/leaves/Guyabano Leaves.png',
         isFavorated: false,
         decription: '',
         usefulin: "",
@@ -340,13 +302,13 @@ class HerbalLens {
         precautions: '',
         references: '',
         isSelected: false),
-    //TUBANG-BAKOD EDIT
+    //Thyme
     HerbalLens(
         plantId: 18,
         category: 'Leaves',
-        plantName: 'Tubang-bakod',
-        scientificname: '',
-        imageURL: 'assets/icon/Fritz.jpg',
+        plantName: 'Thyme',
+        scientificname: 'Thymus vulgaris',
+        imageURL: 'assets/plants/leaves/Thyme.png',
         isFavorated: false,
         decription: '',
         usefulin: "",
@@ -355,13 +317,13 @@ class HerbalLens {
         precautions: '',
         references: '',
         isSelected: false),
-    //BOKCHOY EDIT
+    //Water Spinach
     HerbalLens(
         plantId: 19,
         category: 'Leaves',
-        plantName: 'Bokchoy',
-        scientificname: '',
-        imageURL: 'assets/icon/Fritz.jpg',
+        plantName: 'Water Spinach',
+        scientificname: 'Ipomoea aquatica',
+        imageURL: 'assets/plants/leaves/Kang-kong.png',
         isFavorated: false,
         decription: '',
         usefulin: "",
