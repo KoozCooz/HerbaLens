@@ -4,6 +4,7 @@ import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.da
 import 'package:flutter/material.dart';
 import 'package:herbalens/constants.dart';
 import 'package:herbalens/models/plants.dart';
+import 'package:herbalens/ui/screens/Profile/Notifications/notification-ui.dart';
 import 'package:herbalens/ui/screens/favorite_page.dart';
 import 'package:herbalens/ui/screens/herbalens_page.dart';
 import 'package:herbalens/ui/screens/Dashboard/home_page.dart';
@@ -89,7 +90,7 @@ List<String> titleList = [
                   const SizedBox(width: 9.0),
                   GestureDetector(
                     onTap: () {
-                      // Add your notification button logic here
+                      Navigator.push(context, PageTransition(child: const NotificationUi(), type: PageTransitionType.bottomToTop));
                     },
                     child: Container(
                       height: 40,
