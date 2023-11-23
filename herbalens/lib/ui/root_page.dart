@@ -57,7 +57,7 @@ List<String> titleList = [
         title: 
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //BOTTOM NAV CODE
+          //UPPER NAV CODE
           children: [
             Text(titleList[bottomNavIndex], style: const TextStyle(
               color: Colors.white,
@@ -68,33 +68,41 @@ List<String> titleList = [
               padding: const EdgeInsets.all(0),
               child: Row(
                 children: [
-                  Container(
-                    height: 40,
-                    width: 40,
-                    decoration: BoxDecoration(
-                    color:Colors.white,
-                    borderRadius: BorderRadius.circular(20)
-                  ),
-                    //SEARCH BUTTON
-                    child: Icon(
-                      Icons.search,
-                      color: Constants.primaryColor,
-                      size: 30.0,
+                  GestureDetector(
+                    onTap: () {
+                      // Add your search button logic here
+                    },
+                    child: Container(
+                      height: 40,
+                      width: 40,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Icon(
+                        Icons.search,
+                        color: Constants.primaryColor,
+                        size: 30.0,
+                      ),
                     ),
                   ),
                   const SizedBox(width: 9.0),
-                  Container(
-                    height: 40,
-                    width: 40,
-                    decoration: BoxDecoration(
-                    color:Colors.white,
-                    borderRadius: BorderRadius.circular(40)
-                  ),
-                    //NOTIFCATION BUTTON
-                    child: Icon(
-                      Icons.notifications,
-                      color: Constants.primaryColor,
-                      size: 30.0,
+                  GestureDetector(
+                    onTap: () {
+                      // Add your notification button logic here
+                    },
+                    child: Container(
+                      height: 40,
+                      width: 40,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(40),
+                      ),
+                      child: Icon(
+                        Icons.notifications,
+                        color: Constants.primaryColor,
+                        size: 30.0,
+                      ),
                     ),
                   ),
                 ],
