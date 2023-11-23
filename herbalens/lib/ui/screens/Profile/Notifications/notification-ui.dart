@@ -44,7 +44,7 @@ class _NotificationUiState extends State<NotificationUi> {
                     height: 10,
                   ),
                   Text(
-                    'Your favorited Plants',
+                    'Your notifications',
                     style: TextStyle(
                       color: Constants.primaryColor,
                       fontWeight: FontWeight.w300,
