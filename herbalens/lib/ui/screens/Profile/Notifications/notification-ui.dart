@@ -38,7 +38,7 @@ class _NotificationUiState extends State<NotificationUi> {
                 children: [
                   SizedBox(
                     height: 100,
-                    child: Image.asset('assets/images/favorited.png'),
+                    child: Image.asset('assets/images/Notification bell.png'),
                   ),
                   const SizedBox(
                     height: 10,
