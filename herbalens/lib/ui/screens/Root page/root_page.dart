@@ -4,7 +4,7 @@ import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.da
 import 'package:flutter/material.dart';
 import 'package:herbalens/constants.dart';
 import 'package:herbalens/models/plants.dart';
-import 'package:herbalens/ui/screens/Profile/Notifications/notification-ui.dart';
+import 'package:herbalens/ui/screens/Root%20page/Notifications/notification-ui.dart';
 import 'package:herbalens/ui/screens/favorite_page.dart';
 import 'package:herbalens/ui/screens/herbalens_page.dart';
 import 'package:herbalens/ui/screens/Dashboard/home_page.dart';
@@ -22,7 +22,7 @@ class RootPage extends StatefulWidget {
 class _RootPageState extends State<RootPage> {
   List<HerbalLens> favorites=[];
   List<HerbalLens> plants=[];
-  int bottomNavIndex = 0;
+  int bottomNavIndex = 0; // Replace with your actual notification count
 
   //List of the pages
   List<Widget> _widgetOptions(){
@@ -88,22 +88,27 @@ List<String> titleList = [
                     ),
                   ),
                   const SizedBox(width: 9.0),
+                  
                   GestureDetector(
                     onTap: () {
                       Navigator.push(context, PageTransition(child: const NotificationUi(), type: PageTransitionType.bottomToTop));
                     },
-                    child: Container(
-                      height: 40,
-                      width: 40,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(40),
-                      ),
-                      child: Icon(
-                        Icons.notifications,
-                        color: Constants.primaryColor,
-                        size: 30.0,
-                      ),
+                    child: Stack(
+                      children: <Widget>[
+                        Container(
+                          height: 40,
+                          width: 40,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: Icon(
+                            Icons.notifications,
+                            color: Constants.primaryColor,
+                            size: 30.0,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ],

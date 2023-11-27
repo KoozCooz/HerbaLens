@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:herbalens/ui/screens/Profile/Settings/changepass.dart';
-import 'package:herbalens/ui/screens/Profile/Settings/emailveri.dart';
 import 'package:herbalens/ui/screens/widgets/profil_widget.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -58,15 +57,6 @@ class _SettingsState extends State<Settings> {
                 child: const ProfileWidget(
                   icon: Icons.password,
                   title: 'Change Password',
-                ),
-              ),
-              GestureDetector(
-                onTap: () {
-                  Navigator.push(context, PageTransition(child: const Emailveri(), type: PageTransitionType.bottomToTop));
-                },
-                child: const ProfileWidget(
-                  icon: Icons.alternate_email,
-                  title: 'Email Verification',
                 ),
               ),
             ],
