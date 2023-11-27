@@ -13,7 +13,7 @@ class DetailPage extends StatefulWidget {
   State<DetailPage> createState() => _DetailPageState();
 }
 
-class _DetailPageState extends State<DetailPage> {
+class _DetailPageState extends State<DetailPage> {    
   //Toggle Favorite button
   bool toggleIsFavorated(bool isFavorited) {
     return !isFavorited;
@@ -24,20 +24,17 @@ class _DetailPageState extends State<DetailPage> {
     Size size = MediaQuery.of(context).size;
     List<HerbalLens> _plantList = HerbalLens.plantList;
     return Scaffold(
-      body: Stack(
+      body: Column(
         children: [
-          Positioned(
-            //close and favorite format
-            top: 35,
-            left: 20,
-            right: 20,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                GestureDetector(
-                  onTap: () {
-                    Navigator.pop(context);
-                  },
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              GestureDetector(
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 20, bottom: 10, top:30),
                   child: Container(
                     //close
                     height: 40,
@@ -52,10 +49,13 @@ class _DetailPageState extends State<DetailPage> {
                     ),
                   ),
                 ),
-                GestureDetector(
-                    onTap: () {
-                      debugPrint('favorite');
-                    },
+              ),
+              GestureDetector(
+                  onTap: () {
+                    debugPrint('favorite');
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.only(right: 20,bottom: 10,top:30),
                     child: Container(
                       //favorite line
                       height: 40,
@@ -65,257 +65,243 @@ class _DetailPageState extends State<DetailPage> {
                         color: Constants.primaryColor.withOpacity(.15),
                       ),
                       child: IconButton(
-                          onPressed: () {
-                            setState(() {
-                              bool isFavorated = toggleIsFavorated(
-                                  _plantList[widget.plantId].isFavorated);
-                              _plantList[widget.plantId].isFavorated =
-                                  isFavorated;
-                            });
-                          },
-                          icon: Icon(
-                            _plantList[widget.plantId].isFavorated == true
-                                ? Icons.favorite
-                                : Icons.favorite_border,
-                            color: Constants.primaryColor,
-                          )),
-                    ))
-              ],
-            ),
-          ),
-          Positioned(
-            //image
-            top: 45,
-            left: -5,
-            right: 0,
-            child: Container(
-              width: size.width * .8,
-              height: size.height * .5,
-              padding: const EdgeInsets.all(10),
-              child: Stack(
-                children: [
-                  Positioned(
-                    top: 10,
-                    left: 0,
-                    child: SizedBox(
-                      height: 400,
-                      child: Image.asset(_plantList[widget.plantId].imageURL),
+                        onPressed: () {
+                          setState(() {
+                            bool isFavorited = toggleIsFavorated(_plantList[widget.plantId].isFavorated);
+                            _plantList[widget.plantId].isFavorated = isFavorited;
+                          });
+                        },
+                        icon: Icon(
+                          _plantList[widget.plantId].isFavorated == true
+                              ? Icons.favorite
+                              : Icons.favorite_border,
+                          color: Constants.primaryColor,
+                        ),
+                      ),
                     ),
                   ),
-                ],
-              ),
-            ),
-          ),
-          Positioned(
-            //words
-            bottom: 0,
-            left: 0,
-            right: 0,
-            top:450,
-            child: SingleChildScrollView(
-            child: Container(
-              padding: const EdgeInsets.only(top: 20, left: 30, right: 30),
-              width: size.width,
-              decoration: BoxDecoration(
-                color: Constants.primaryColor.withOpacity(.4),
-                borderRadius: const BorderRadius.only(
-                  topRight: Radius.circular(30),
-                  topLeft: Radius.circular(30),
                 ),
-              ),
-
+              ],
+            ),
+          Expanded(
+            child:SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                           Text(
-                            _plantList[widget.plantId].plantName,
-                            style: TextStyle(
-                              color: Constants.primaryColor,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 30.0,
-                            ),),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                             Text(
-                            _plantList[widget.plantId].scientificname,
-                            style: TextStyle(
-                              color: Constants.blackColor,
-                              fontSize: 24.0,
-                              fontWeight: FontWeight.bold,
-                              fontStyle: FontStyle.italic,
-                            ),
-                          ),
-                        ],
-                    )
-                  ],),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Text(
-                          _plantList[widget.plantId].decription,
-                          textAlign: TextAlign.justify,
-                          style: TextStyle(
-                            height: 2,
-                            fontSize: 18,
-                            color: Constants.blackColor.withOpacity(.7),
-                          ),
-                        ),
-                      ),
-                    ],
+                  SizedBox(
+                    height: 400,
+                    child: Image.asset(_plantList[widget.plantId].imageURL),
                   ),
                   Container(
-                    padding: const EdgeInsets.only(top: 20), //Below News Herbal Leaves
-                    child: const Text(
-                      'Useful in:',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25.0,
-                        color:Color(0xff296e48)
+                    padding: const EdgeInsets.only(top: 20, left: 30, right: 30),
+                    width: size.width,
+                    decoration: BoxDecoration(
+                      color: Constants.primaryColor.withOpacity(.4),
+                      borderRadius: const BorderRadius.only(
+                        topRight: Radius.circular(30),
+                        topLeft: Radius.circular(30),
                       ),
                     ),
-                  ),
-                  Row(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Expanded(
-                        child: Text(
-                          _plantList[widget.plantId].usefulin,
-                          textAlign: TextAlign.justify,
-                          style: TextStyle(
-                            height: 2,
-                            fontSize: 18,
-                            color: Constants.blackColor.withOpacity(.7),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.only(top: 20), //Below News Herbal Leaves
-                    child: const Text(
-                      'Prodecure:',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25.0,
-                        color:Color(0xff296e48)
-                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                _plantList[widget.plantId].plantName,
+                                style: TextStyle(
+                                  color: Constants.primaryColor,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 30.0,
+                                ),),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Text(
+                                _plantList[widget.plantId].scientificname,
+                                style: TextStyle(
+                                  color: Constants.blackColor,
+                                  fontSize: 24.0,
+                                  fontWeight: FontWeight.bold,
+                                  fontStyle: FontStyle.italic,
+                                ),
+                              ),
+                            ],
+                        )
+                      ],
                     ),
-                  ),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Text(
-                          _plantList[widget.plantId].procedure,
-                          textAlign: TextAlign.justify,
-                          style: TextStyle(
-                            height: 2,
-                            fontSize: 18,
-                            color: Constants.blackColor.withOpacity(.7),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.only(top: 20), //Below News Herbal Leaves
-                    child: const Text(
-                      'Symptoms:',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25.0,
-                        color:Color(0xff296e48)
-                      ),
-                    ),
-                  ),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Text(
-                          _plantList[widget.plantId].symptoms,
-                          textAlign: TextAlign.justify,
-                          style: TextStyle(
-                            height: 2,
-                            fontSize: 18,
-                            color: Constants.blackColor.withOpacity(.7),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.only(top: 20), //Below News Herbal Leaves
-                    child: const Text(
-                      'Precautions:',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25.0,
-                        color:Color(0xff296e48)
-                      ),
-                    ),
-                  ),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Text(
-                          _plantList[widget.plantId].precautions,
-                          textAlign: TextAlign.justify,
-                          style: TextStyle(
-                            height: 2,
-                            fontSize: 18,
-                            color: Constants.blackColor.withOpacity(.7),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.only(top: 20), //Below News Herbal Leaves
-                    child: const Text(
-                      'References:',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25.0,
-                        color:Color(0xff296e48)
-                      ),
-                    ),
-                  ),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: GestureDetector(
-                          onTap: () => launchUrl(Uri.parse(_plantList[widget.plantId].references)),
+                    Row(
+                      children: [
+                        Expanded(
                           child: Text(
-                            _plantList[widget.plantId].references,
+                            _plantList[widget.plantId].decription,
                             textAlign: TextAlign.justify,
                             style: TextStyle(
                               height: 2,
                               fontSize: 18,
                               color: Constants.blackColor.withOpacity(.7),
-                              decoration: TextDecoration.underline,
                             ),
                           ),
                         ),
+                      ],
+                    ),
+                    Container(
+                      padding: const EdgeInsets.only(top: 20), //Below News Herbal Leaves
+                      child: const Text(
+                        'Useful in:',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 25.0,
+                          color:Color(0xff296e48)
+                        ),
                       ),
-                    ],
+                    ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            _plantList[widget.plantId].usefulin,
+                            textAlign: TextAlign.justify,
+                            style: TextStyle(
+                              height: 2,
+                              fontSize: 18,
+                              color: Constants.blackColor.withOpacity(.7),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      padding: const EdgeInsets.only(top: 20), //Below News Herbal Leaves
+                      child: const Text(
+                        'Prodecure:',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 25.0,
+                          color:Color(0xff296e48)
+                        ),
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            _plantList[widget.plantId].procedure,
+                            textAlign: TextAlign.justify,
+                            style: TextStyle(
+                              height: 2,
+                              fontSize: 18,
+                              color: Constants.blackColor.withOpacity(.7),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      padding: const EdgeInsets.only(top: 20), //Below News Herbal Leaves
+                      child: const Text(
+                        'Symptoms:',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 25.0,
+                          color:Color(0xff296e48)
+                        ),
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            _plantList[widget.plantId].symptoms,
+                            textAlign: TextAlign.justify,
+                            style: TextStyle(
+                              height: 2,
+                              fontSize: 18,
+                              color: Constants.blackColor.withOpacity(.7),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      padding: const EdgeInsets.only(top: 20), //Below News Herbal Leaves
+                      child: const Text(
+                        'Precautions:',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 25.0,
+                          color:Color(0xff296e48)
+                        ),
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            _plantList[widget.plantId].precautions,
+                            textAlign: TextAlign.justify,
+                            style: TextStyle(
+                              height: 2,
+                              fontSize: 18,
+                              color: Constants.blackColor.withOpacity(.7),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      padding: const EdgeInsets.only(top: 20), //Below News Herbal Leaves
+                      child: const Text(
+                        'References:',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 25.0,
+                          color:Color(0xff296e48)
+                        ),
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: GestureDetector(
+                            onTap: () => launchUrl(Uri.parse(_plantList[widget.plantId].references)),
+                            child: Text(
+                              _plantList[widget.plantId].references,
+                              textAlign: TextAlign.justify,
+                              style: TextStyle(
+                                height: 2,
+                                fontSize: 18,
+                                color: Constants.blackColor.withOpacity(.7),
+                                decoration: TextDecoration.underline,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 30),
+                  ]
+                ),
                   ),
-                  const SizedBox(height: 30),
-                ],
-              ),
+              ],
             ),
           ),
           ),
-        ],
-      ),
+    ],
+    ) 
     );
   }
 }
+
+
+
+
+              
 
 class PlantFeature extends StatelessWidget {
   final String plantFeature;

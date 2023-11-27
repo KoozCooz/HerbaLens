@@ -4,6 +4,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:herbalens/Firebase_auth_implementation/firebase_auth_services.dart';
 import 'package:herbalens/constants.dart';
 import 'package:herbalens/ui/screens/Profile/Settings/settings.dart';
+import 'package:herbalens/ui/screens/Profile/faqs.dart';
 import 'package:herbalens/ui/screens/widgets/profil_widget.dart';
 import 'package:herbalens/ui/screens/Account/signin_page.dart';
 import 'package:page_transition/page_transition.dart';
@@ -48,7 +49,11 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Scaffold(
+    return WillPopScope(
+      onWillPop: () async{
+        return false;
+      },
+      child:Scaffold(
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(16),
@@ -142,7 +147,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     //EDIT FAQS
                     GestureDetector(
                       onTap: () {
-                        // Add code to perform desired action when "FAQs" is tapped
+                        Navigator.push(context, PageTransition(child: FAQPage(), type: PageTransitionType.bottomToTop));
                       },
                       child: const ProfileWidget(
                         icon: Icons.chat,
@@ -178,6 +183,7 @@ class _ProfilePageState extends State<ProfilePage> {
           ),
         ),
       ),
+    ),
     );
   }
 }
@@ -210,7 +216,7 @@ Future selectLogOut(BuildContext context) {
               // Sign out from Firebase
               await FirebaseAuth.instance.signOut();
               
-              Navigator.push(
+              Navigator.pushReplacement(
                 context,
                 PageTransition(
                   child: const SignIn(),

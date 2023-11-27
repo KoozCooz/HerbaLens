@@ -48,8 +48,8 @@
                 ),
               ),
               const SizedBox(height: 20),
-              Padding(
-                padding: const EdgeInsets.all(20.0),
+              const Padding(
+                padding: EdgeInsets.all(20.0),
                 child: Text(
                   "Herbalens is your go-to platform for all things related to herbal remedies, natural wellness, and holistic living. Whether you're a seasoned herbal enthusiast or just beginning your journey into the world of natural health, Herbalens provides a wealth of information, tips, and resources to support your well-being. Join our community to explore the power of herbs, discover traditional remedies, and embrace a lifestyle that nurtures both body and mind. Let's embark on a journey to vibrant health and vitality together!",
                   textAlign: TextAlign.justify,

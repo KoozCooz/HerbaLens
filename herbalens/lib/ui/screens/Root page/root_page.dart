@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:herbalens/constants.dart';
 import 'package:herbalens/models/plants.dart';
 import 'package:herbalens/ui/screens/Root%20page/Notifications/notification-ui.dart';
+import 'package:herbalens/ui/screens/Root%20page/Search/search-ui.dart';
 import 'package:herbalens/ui/screens/favorite_page.dart';
 import 'package:herbalens/ui/screens/herbalens_page.dart';
 import 'package:herbalens/ui/screens/Dashboard/home_page.dart';
@@ -71,11 +72,11 @@ List<String> titleList = [
                 children: [
                   GestureDetector(
                     onTap: () {
-                      // Add your search button logic here
+                      Navigator.push(context, PageTransition(child: const SearchUi(listofHerbaLens: [],), type: PageTransitionType.bottomToTop));
                     },
                     child: Container(
                       height: 40,
-                      width: 40,
+                      width: 40,  
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20),

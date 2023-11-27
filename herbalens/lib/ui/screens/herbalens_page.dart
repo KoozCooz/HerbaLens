@@ -21,7 +21,7 @@ class _HerbalPageState extends State<HerbalPage> {
           children:[
             //HERBAL FRUITS
             Container(
-            padding: const EdgeInsets.only(left: 16, bottom: 10), //Below News Herbal Leaves
+            padding: const EdgeInsets.all(10), //Below News Herbal Leaves
             child: const Text(
               'Herbal Fruits',
               style: TextStyle(
@@ -31,9 +31,10 @@ class _HerbalPageState extends State<HerbalPage> {
               ),
             ),
           ),
+          //Container of each plant
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 20),
-              height: 2000,
+              height: 1900,
               child: ListView.builder(
                   itemCount: 20,
                   physics: const NeverScrollableScrollPhysics(),
@@ -44,7 +45,7 @@ class _HerbalPageState extends State<HerbalPage> {
             ),
             //HERBAL LEAVES
             Container(
-            padding: const EdgeInsets.only(left: 16, bottom: 10, top: 20), //Below News Herbal Leaves
+            padding: const EdgeInsets.all(10), //Below News Herbal Leaves
             child: const Text(
               'Herbal Leaves',
               style: TextStyle(
@@ -54,9 +55,10 @@ class _HerbalPageState extends State<HerbalPage> {
               ),
             ),
           ),
+          //Container of each plant
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 20),
-              height:2000,
+              height:1900,
               child: ListView.builder(
                   itemCount: 20,
                   physics: const NeverScrollableScrollPhysics(),
@@ -66,7 +68,7 @@ class _HerbalPageState extends State<HerbalPage> {
             ),
             //HERBAL FLOWERS
             Container(
-            padding: const EdgeInsets.only(left: 16, bottom: 10), //Below News Herbal Leaves
+            padding: const EdgeInsets.all(10), //Below News Herbal Leaves
             child: const Text(
               'Herbal Flowers',
               style: TextStyle(
@@ -76,9 +78,10 @@ class _HerbalPageState extends State<HerbalPage> {
               ),
             ),
           ),
+          //Container of each plant
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 20),
-              height: 2000,
+              height: 1900,
               child: ListView.builder(
                   itemCount: 20,
                   physics: const NeverScrollableScrollPhysics(),
