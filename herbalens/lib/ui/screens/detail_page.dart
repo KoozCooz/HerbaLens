@@ -22,7 +22,8 @@ class _DetailPageState extends State<DetailPage> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    List<HerbalLens> _plantList = HerbalLens.plantList;
+    // ignore: non_constant_identifier_names
+    List<HerbalLens> PlantList = HerbalLens.plantList;
     return Scaffold(
       body: Column(
         children: [
@@ -67,12 +68,12 @@ class _DetailPageState extends State<DetailPage> {
                       child: IconButton(
                         onPressed: () {
                           setState(() {
-                            bool isFavorited = toggleIsFavorated(_plantList[widget.plantId].isFavorated);
-                            _plantList[widget.plantId].isFavorated = isFavorited;
+                            bool isFavorited = toggleIsFavorated(PlantList[widget.plantId].isFavorated);
+                            PlantList[widget.plantId].isFavorated = isFavorited;
                           });
                         },
                         icon: Icon(
-                          _plantList[widget.plantId].isFavorated == true
+                          PlantList[widget.plantId].isFavorated == true
                               ? Icons.favorite
                               : Icons.favorite_border,
                           color: Constants.primaryColor,
@@ -90,7 +91,7 @@ class _DetailPageState extends State<DetailPage> {
                 children: [
                   SizedBox(
                     height: 400,
-                    child: Image.asset(_plantList[widget.plantId].imageURL),
+                    child: Image.asset(PlantList[widget.plantId].imageURL),
                   ),
                   Container(
                     padding: const EdgeInsets.only(top: 20, left: 30, right: 30),
@@ -113,7 +114,7 @@ class _DetailPageState extends State<DetailPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                _plantList[widget.plantId].plantName,
+                                PlantList[widget.plantId].plantName,
                                 style: TextStyle(
                                   color: Constants.primaryColor,
                                   fontWeight: FontWeight.bold,
@@ -123,7 +124,7 @@ class _DetailPageState extends State<DetailPage> {
                                   height: 10,
                                 ),
                                 Text(
-                                _plantList[widget.plantId].scientificname,
+                                PlantList[widget.plantId].scientificname,
                                 style: TextStyle(
                                   color: Constants.blackColor,
                                   fontSize: 24.0,
@@ -139,7 +140,7 @@ class _DetailPageState extends State<DetailPage> {
                       children: [
                         Expanded(
                           child: Text(
-                            _plantList[widget.plantId].decription,
+                            PlantList[widget.plantId].decription,
                             textAlign: TextAlign.justify,
                             style: TextStyle(
                               height: 2,
@@ -165,7 +166,7 @@ class _DetailPageState extends State<DetailPage> {
                       children: [
                         Expanded(
                           child: Text(
-                            _plantList[widget.plantId].usefulin,
+                            PlantList[widget.plantId].usefulin,
                             textAlign: TextAlign.justify,
                             style: TextStyle(
                               height: 2,
@@ -191,7 +192,7 @@ class _DetailPageState extends State<DetailPage> {
                       children: [
                         Expanded(
                           child: Text(
-                            _plantList[widget.plantId].procedure,
+                            PlantList[widget.plantId].procedure,
                             textAlign: TextAlign.justify,
                             style: TextStyle(
                               height: 2,
@@ -217,7 +218,7 @@ class _DetailPageState extends State<DetailPage> {
                       children: [
                         Expanded(
                           child: Text(
-                            _plantList[widget.plantId].symptoms,
+                            PlantList[widget.plantId].symptoms,
                             textAlign: TextAlign.justify,
                             style: TextStyle(
                               height: 2,
@@ -243,7 +244,7 @@ class _DetailPageState extends State<DetailPage> {
                       children: [
                         Expanded(
                           child: Text(
-                            _plantList[widget.plantId].precautions,
+                            PlantList[widget.plantId].precautions,
                             textAlign: TextAlign.justify,
                             style: TextStyle(
                               height: 2,
@@ -269,9 +270,9 @@ class _DetailPageState extends State<DetailPage> {
                       children: [
                         Expanded(
                           child: GestureDetector(
-                            onTap: () => launchUrl(Uri.parse(_plantList[widget.plantId].references)),
+                            onTap: () => launchUrl(Uri.parse(PlantList[widget.plantId].references)),
                             child: Text(
-                              _plantList[widget.plantId].references,
+                              PlantList[widget.plantId].references,
                               textAlign: TextAlign.justify,
                               style: TextStyle(
                                 height: 2,

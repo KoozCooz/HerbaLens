@@ -18,8 +18,8 @@ class _SettingsState extends State<Settings> {
     return Scaffold(
       //TITLE
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(41, 110, 72, 1),
-        title: Text(
+        backgroundColor: const Color.fromRGBO(41, 110, 72, 1),
+        title: const Text(
           'Settings',
           style: TextStyle(
             fontWeight: FontWeight.bold,

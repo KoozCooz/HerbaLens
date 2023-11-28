@@ -53,7 +53,7 @@ class FAQPage extends StatelessWidget {
             title: Text(questions[index]),
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Text(answers[index]),
               ),
             ],

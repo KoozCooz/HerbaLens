@@ -34,7 +34,7 @@ class NotificationUi extends StatelessWidget {
           Navigator.push(
             context,
             PageTransition(
-              child: NotificationDetail(),
+              child: const NotificationDetail(),
               type: PageTransitionType.bottomToTop,
             ),
           );

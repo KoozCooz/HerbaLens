@@ -18,9 +18,9 @@ class SignUp extends StatefulWidget {
 class _SignUpPageState extends State<SignUp> {
   final FirebaseAuthService _auth = FirebaseAuthService();
 
-  TextEditingController _emailController = TextEditingController();
-  TextEditingController _nameController = TextEditingController();
-  TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _nameController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
 
   @override
   void dispose() {
@@ -205,14 +205,14 @@ class _SignUpPageState extends State<SignUp> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text('Incomplete Information'),
-            content: Text('Please complete all the necessary information.'),
+            title: const Text('Incomplete Information'),
+            content: const Text('Please complete all the necessary information.'),
             actions: [
               TextButton(
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
-                child: Text('OK'),
+                child: const Text('OK'),
               ),
             ],
           );

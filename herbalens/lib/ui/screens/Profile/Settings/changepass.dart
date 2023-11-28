@@ -32,8 +32,8 @@ class _ChangePassState extends State<ChangePass> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(41, 110, 72, 1),
-        title: Text(
+        backgroundColor: const Color.fromRGBO(41, 110, 72, 1),
+        title: const Text(
           'Change Password',
           style: TextStyle(
             fontWeight: FontWeight.bold,
@@ -56,7 +56,7 @@ class _ChangePassState extends State<ChangePass> {
           children: [
             //TEXTFIELD OLD PASSWORD
             Padding(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               child: TextFormField(
                 controller: oldPasswordController,
                 decoration: const InputDecoration(
@@ -68,11 +68,11 @@ class _ChangePassState extends State<ChangePass> {
               ),
             ),
 
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
 
             //TEXTFIELD NEW PASSWORD
             Padding(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               child: TextFormField(
                 controller: newPasswordController,
                 decoration: const InputDecoration(
@@ -84,7 +84,7 @@ class _ChangePassState extends State<ChangePass> {
               ),
             ),
 
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             
             ElevatedButton(
               onPressed: ()async{
@@ -94,11 +94,11 @@ class _ChangePassState extends State<ChangePass> {
                   oldPassword: oldPasswordController.text,
                   newPassword: newPasswordController.text,
                 );
-                print("Password changed");
+                //print("Password changed");
                 //CHANGE PASSWORD BUTTON
               }, 
               style: ElevatedButton.styleFrom(
-                backgroundColor: Color.fromRGBO(41, 110, 72, 1),
+                backgroundColor: const Color.fromRGBO(41, 110, 72, 1),
               ),
               child: const Text(
                 "Change Password",

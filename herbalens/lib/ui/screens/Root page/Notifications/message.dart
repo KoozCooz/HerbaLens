@@ -23,7 +23,7 @@ class _MessageState extends State<Message> {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text("Your Message")),
+      appBar: AppBar(title: const Text("Your Message")),
       body: Center(child: Text(payload.toString())),
     );
   }

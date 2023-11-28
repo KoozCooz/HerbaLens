@@ -51,7 +51,7 @@ class NotificationWedget extends StatelessWidget {
                   height: 100.0,
                   child: Image.asset('assets/images/HerbaLens_Logo.png'),
                  ), ),
-                Positioned(
+                const Positioned(
                   bottom: 12,
                   left:80,
                   child: Column(

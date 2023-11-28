@@ -18,8 +18,8 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   final FirebaseAuthService _auth = FirebaseAuthService();
-  TextEditingController _emailController = TextEditingController();
-  TextEditingController _nameController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _nameController = TextEditingController();
 
 
   @override
@@ -70,7 +70,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(
-                          color: Color.fromRGBO(41, 110, 72, 1).withOpacity(.5),
+                          color: const Color.fromRGBO(41, 110, 72, 1).withOpacity(.5),
                           width: 2,
                         ),
                       ),
@@ -93,9 +93,9 @@ class _ProfilePageState extends State<ProfilePage> {
                             width: 4,
                             color: Theme.of(context).scaffoldBackgroundColor,
                           ),
-                          color: Color.fromRGBO(41, 110, 72, 1),
+                          color: const Color.fromRGBO(41, 110, 72, 1),
                         ),
-                        child: Icon(
+                        child: const Icon(
                           Icons.add_a_photo,
                           color: Colors.white,
                         ),
@@ -104,7 +104,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   ],
                 ),
               ),
-              SizedBox(height: 8), // Add space after the Stack
+              const SizedBox(height: 8), // Add space after the Stack
 
               // add plus button to change profile picture
 
