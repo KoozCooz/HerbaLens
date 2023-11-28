@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -11,6 +12,8 @@ import 'package:herbalens/ui/screens/Account/signup_page.dart';
 import 'package:herbalens/ui/screens/Account/signin_page.dart';
 import 'package:herbalens/ui/onboarding_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
+
+import 'ui/screens/Root page/root_page.dart';
 
 final navigatorKey = GlobalKey<NavigatorState>();
 
@@ -57,8 +60,8 @@ Future main() async {
 
   if (message != null) {
     print("Launched from terminated state");
-     Fluttertoast.showToast(msg: "Lauched in Terminated State");
-    Future.delayed(Duration(seconds: 1), () {
+    Fluttertoast.showToast(msg: "Lauched in Terminated State");
+    Future.delayed(const Duration(seconds: 1), () {
       navigatorKey.currentState!.pushNamed("/message", arguments: message);
     });
   }
@@ -75,62 +78,74 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       navigatorKey: navigatorKey,
       title: 'Onboarding Screen',
-      home: const OnboardingScreen(),
+      // home: const OnboardingScreen(),
+
+      home: FirebaseAuth.instance.currentUser == null
+          ? const OnboardingScreen()
+          : const RootPage(),
+      // initialRoute:
+      //     FirebaseAuth.instance.currentUser == null ? '/onboard' : '/home',
       debugShowCheckedModeBanner: false,
       routes: {
+        '/onboard': (context) => const OnboardingScreen(),
         '/login': (context) => const SignIn(),
         '/signUp': (context) => const SignUp(),
-        '/home': (context) => const HomePage(articleId: 0,),
+        '/home': (context) => const HomePage(
+              articleId: 0,
+            ),
         '/message': (context) => const Message()
       },
     );
   }
 }
+//cristalkathy@gmail.com
+//111111
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
 
-  final String title;
+// class MyHomePage extends StatefulWidget {
+//   const MyHomePage({super.key, required this.title});
 
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
+//   final String title;
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+//   @override
+//   State<MyHomePage> createState() => _MyHomePageState();
+// }
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
+// class _MyHomePageState extends State<MyHomePage> {
+//   int _counter = 0;
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
-  }
-}
+//   void _incrementCounter() {
+//     setState(() {
+//       _counter++;
+//     });
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+//         title: Text(widget.title),
+//       ),
+//       body: Center(
+//         child: Column(
+//           mainAxisAlignment: MainAxisAlignment.center,
+//           children: <Widget>[
+//             const Text(
+//               'You have pushed the button this many times:',
+//             ),
+//             Text(
+//               '$_counter',
+//               style: Theme.of(context).textTheme.headlineMedium,
+//             ),
+//           ],
+//         ),
+//       ),
+//       floatingActionButton: FloatingActionButton(
+//         onPressed: _incrementCounter,
+//         tooltip: 'Increment',
+//         child: const Icon(Icons.add),
+//       ), // This trailing comma makes auto-formatting nicer for build methods.
+//     );
+//   }
+// }
