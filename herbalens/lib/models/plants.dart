@@ -31,13 +31,32 @@ class HerbalLens {
 
   static List<HerbalLens> plantList = [
     //LIST OF LEAVES
-    //Asthma Plant
+    //Aloe Vera Edit
     HerbalLens(
         plantId: 0,
         category: 'Leaves',
+        plantName: 'Aloe Vera',
+        scientificname: ' Aloe barbadensis Miller',
+        imageURL: 'assets/plants/leaves/Tubang-bakod.png',//EDIT PICTURE
+        isFavorated: false,
+        decription: '"The name "aloe" is derived from the Arabic word "alloeh", meaning "shining bitter substance". The word "vera" is Latin for "true". Aloe vera is also known as Barbados aloe, Indian aloe, or medicinal aloe.',
+        usefulin: """Skin Care: Aloe vera gel is widely used in skincare products due to its moisturizing, soothing, and cooling properties. It's used to alleviate sunburn, minor burns, and as a general skin moisturizer.
+Wound Healing: The gel may aid in wound healing due to its reported anti-inflammatory and antimicrobial properties. It's sometimes applied topically to minor cuts and burns.
+Digestive Health: Aloe vera juice, when consumed orally, is believed to support digestive health and soothe gastrointestinal issues. However, scientific evidence supporting its efficacy is limited.""",
+        procedure: """Topical Application: The gel from Aloe vera leaves is directly applied to the skin for various purposes. To use, cut a leaf and extract the gel, applying it directly to the affected area.
+Oral Consumption: Aloe vera juice can be consumed, but it's crucial to follow recommended doses, as excessive consumption can have laxative effects.""",
+        symptoms: 'Potential Allergic Reactions: Some individuals may experience allergic reactions to Aloe vera. A patch test is recommended before widespread application to check for allergies.',
+        precautions: """Internal Use Caution: Aloe vera latex, found in the inner leaf, has laxative effects and can cause stomach cramps and diarrhea if consumed in large amounts.
+Purity of Products: Ensure the purity of commercially available Aloe vera products, as additives or other ingredients may cause adverse reactions.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=aloe+vera',
+        isSelected: false),
+    //Asthma Plant
+    HerbalLens(
+        plantId: 1,
+        category: 'Leaves',
         plantName: 'Asthma Plant',
         scientificname: 'Euphorbia hirta',
-        imageURL: 'assets/plants/leaves/Tawa-tawa.png', //find photo
+        imageURL: 'assets/plants/leaves/Tawa-tawa.png', 
         isFavorated: false,
         decription:'"Euphorbia hirta" refers specifically to a species within the Euphorbia genus known for its characteristic hairy or rough texture. This particular species is commonly called Asthma Plant or Garden Spurge and is recognized for its medicinal properties and traditional uses in various herbal remedies.', //find description
         usefulin: """Traditional Medicine: Euphorbia hirta is used in various traditional medicinal practices for potential therapeutic effects, including treating respiratory issues, gastrointestinal problems, and skin ailments. However, scientific evidence supporting its efficacy may vary.
@@ -50,7 +69,7 @@ Consumption Quantity: While basil is generally safe for consumption in culinary 
         isSelected: false),
     //Basil
     HerbalLens(
-        plantId: 1,
+        plantId: 2,
         category: 'Leaves',
         plantName: 'Basil',
         scientificname: 'Ocimum basilicum',
@@ -67,7 +86,7 @@ Consumption Quantity: While basil is generally safe for consumption in culinary 
         isSelected: false),
     //Betel Leaves
     HerbalLens(
-        plantId: 2,
+        plantId: 3,
         category: 'Leaves',
         plantName: 'Betel Leaves',
         scientificname: 'Piper betle',
@@ -85,7 +104,7 @@ Allergies: Some individuals might develop allergies or sensitivities to betel le
         isSelected: false),
     //BOKCHOY
     HerbalLens(
-        plantId: 3,
+        plantId: 4,
         category: 'Leaves',
         plantName: 'Bokchoy',
         scientificname: 'Brassica rapa subsp. chinensis',
@@ -102,7 +121,7 @@ Allergy Caution: If allergic to other brassica vegetables, use caution when cons
         isSelected: false),
     //celery
     HerbalLens(
-        plantId: 4,
+        plantId: 5,
         category: 'Leaves',
         plantName: 'Celery',
         scientificname: 'Apium graveolens',
@@ -118,9 +137,9 @@ Potential Medicinal Use: In some traditional practices, celery has been used for
 Pesticides and Contaminants: Wash celery thoroughly before consumption to remove any pesticides or contaminants.""",
         references: 'https://pfaf.org/user/Plant.aspx?LatinName=Apium+graveolens',
         isSelected: false),
-    // Chili Leaves EDIT
+    // Chili Leaves
     HerbalLens(
-        plantId: 5,
+        plantId: 6,
         category: 'Leaves',
         plantName: 'Chili leaves',
         scientificname: 'Capsicum spp.',
@@ -139,7 +158,7 @@ Avoid Eye Contact: Avoid touching your eyes or face after handling hot peppers, 
         isSelected: false),
     //Five-Leaved Chaste Tree
     HerbalLens(
-        plantId: 6,
+        plantId: 7,
         category: 'Leaves',
         plantName: 'Five-Leaved Chaste Tree',
         scientificname: 'Vitex negundo',
@@ -156,7 +175,7 @@ Consultation: Before using it for medicinal purposes, especially in combination 
         isSelected: false),
     //Goethe plant
     HerbalLens(
-        plantId: 7,
+        plantId: 8,
         category: 'Leaves',
         plantName: 'Goethe plant',
         scientificname: 'Kalanchoe pinnata',
@@ -173,7 +192,7 @@ Medical Consultation: Before using it for medicinal purposes, especially alongsi
         isSelected: false),
     //Guava Leaves
     HerbalLens(
-        plantId: 8,
+        plantId: 9,
         category: 'Leaves',
         plantName: ' Guava Leaves',
         scientificname: 'Psidium guajava',
@@ -191,7 +210,7 @@ Pesticides: If using pesticides or chemicals for cultivation, follow proper inst
         isSelected: false),
     //MALABAR SPINACH
     HerbalLens(
-        plantId: 9,
+        plantId: 10,
         category: 'Leaves',
         plantName: 'Malabar Spinach',
         scientificname: 'Basella alba',
@@ -208,7 +227,7 @@ Allergies: If prone to allergies related to leafy greens or spinach, exercise ca
         isSelected: false),
     //MORINGA
     HerbalLens(
-        plantId: 10,
+        plantId: 11,
         category: 'Leaves',
         plantName: 'Moringa',
         scientificname: 'Moringa oleifera',
@@ -225,7 +244,7 @@ Allergies: Individuals allergic to plants in the Moringaceae family might experi
         isSelected: false),
     //Mugwort
     HerbalLens(
-        plantId: 11,
+        plantId: 12,
         category: 'Leaves',
         plantName: 'Mugwort',
         scientificname: 'Artemisia vulgaris',
@@ -242,7 +261,7 @@ Allergic Reactions: If allergic to plants in the Asteraceae family (such as ragw
         isSelected: false),
     //Ngai camphor
     HerbalLens(
-        plantId: 12,
+        plantId: 13,
         category: 'Leaves',
         plantName: 'Ngai camphor',
         scientificname: 'Blumea balsamifera',
@@ -256,24 +275,27 @@ Allergic Reactions: If allergic to plants in the Asteraceae family (such as ragw
 Consultation: Before using it for medicinal purposes, especially in combination with other medications, it's advisable to consult with a healthcare professional for guidance and potential interactions.""",
         references: 'https://pubmed.ncbi.nlm.nih.gov/?term=sambong',
         isSelected: false),
-    //Painted Coleus
+    //OREGANO EDIT
     HerbalLens(
-        plantId: 13,
+        plantId: 14,
         category: 'Leaves',
-        plantName: 'Painted Coleus',
-        scientificname: 'Coleus blumei',
-        imageURL: 'assets/plants/leaves/Mayana.png',
+        plantName: 'Oregano',
+        scientificname: ' Origanum vulgare',
+        imageURL: 'assets/plants/leaves/Mayana.png', //EDIT PICTURE
         isFavorated: false,
-        decription: '"Coleus blumei" specifically refers to this species of plant, recognized for its colorful foliage and is often cultivated as an ornamental plant for gardens or indoor decoration. It\'s appreciated for its vibrant leaves, which can display a wide range of colors and patterns.',
-        usefulin: """Ornamental Plant: Coleus blumei is primarily grown for its aesthetic appeal. It's valued as an ornamental plant due to its vibrant and colorful foliage, which comes in various shades, patterns, and combinations.""",
-        procedure: 'ultivation: Coleus blumei is cultivated as a decorative plant in gardens, landscapes, and as indoor potted plants. They thrive in well-draining soil and prefer partial shade to bright, indirect light.',
-        symptoms: 'Coleus or forskolin are used for high blood pressure, chest pain (angina), asthma, dry eye, and many other conditions, but there is no good scientific evidence to support any of these uses.',
-        precautions: 'Non-Toxic: It is considered non-toxic to humans and animals. However, ingestion of any plant material could cause mild gastrointestinal discomfort, so avoid consumption.',
-        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Coleus+blumei',
+        decription: '" It is a member of the mint family, Lamiaceae, and is native to the Mediterranean region. The name "Oreganum" is derived from the Greek words "oros" meaning "mountain" and "ganos" meaning "joy," possibly referring to its abundance in mountainous regions',
+        usefulin: """Culinary Purposes: Oregano is a flavorful herb used in various cuisines, particularly in Mediterranean and Italian dishes. It adds a distinct savory taste to pasta, pizza, sauces, salads, and meats.
+Potential Health Benefits: Oregano contains antioxidants and compounds that may have antibacterial properties, although more research is needed to confirm its specific health benefits.""",
+        procedure: """Cooking: Oregano is often used dried or fresh in cooking. It can be added directly to dishes during cooking or sprinkled as a garnish.""",
+        symptoms: 'No Major Side Effects: When used in normal culinary amounts, oregano typically doesn\'t cause significant adverse effects.',
+        precautions: """Allergies: Individuals allergic to plants in the Lamiaceae family (such as basil, mint, or sage) might have allergies to oregano. Use cautiously if known allergies exist.
+
+Purity of Products: Ensure the purity of commercially available oregano products to avoid potential contamination or adverse reactions.""",
+        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=oregano',
         isSelected: false),
     //Pandan
     HerbalLens(
-        plantId: 14,
+        plantId: 15,
         category: 'Leaves',
         plantName: 'Pandan',
         scientificname: 'Pandanus amaryllifolius',
@@ -285,23 +307,6 @@ Consultation: Before using it for medicinal purposes, especially in combination 
         symptoms: 'Traditional medicine prizes pandan for its role in pain relief, especially arthritis and joint pain',
         precautions: 'Allergies: While Pandan leaves are generally safe for consumption, some individuals may have allergic reactions. It\'s advisable to use them cautiously, especially if allergic to other plants.',
         references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Pandanus+amaryllifolius',
-        isSelected: false),
-    //Physic nut tree
-    HerbalLens(
-        plantId: 15,
-        category: 'Leaves',
-        plantName: 'Physic nut tree',
-        scientificname: 'Jatropha curcas',
-        imageURL: 'assets/plants/leaves/Tubang-bakod.png',
-        isFavorated: false,
-        decription: '"Jatropha curcas" specifically refers to this species of plant, recognized for its seeds that contain oil used for biodiesel production, as well as for its historical use in traditional medicine for various purposes.',
-        usefulin: """Biofuel Production: Jatropha curcas seeds contain oil that can be processed to produce biodiesel, making it a potential source for renewable energy.
-Traditional Medicine: Some cultures have used parts of the plant in traditional medicine, though scientific evidence supporting medicinal uses may vary. The plant has been historically used for ailments like constipation, wounds, and as a purgative.""",
-        procedure: 'Biodiesel Production: The oil extracted from Jatropha curcas seeds is processed to create biodiesel. This involves crushing the seeds and refining the oil for use as a fuel.',
-        symptoms: 'Potential Toxicity: Jatropha curcas seeds and other parts of the plant contain toxic compounds such as phorbol esters and curcin. Ingestion can cause severe symptoms including abdominal pain, nausea, vomiting, and diarrhea.',
-        precautions: """Toxicity: Extreme caution must be taken with handling and consumption due to the plant's toxicity. Direct contact or ingestion of parts of the plant, especially the seeds, can be harmful.
-Biodiesel Use: While it has been considered for biodiesel production, environmental impact assessments and economic viability studies are essential to prevent negative ecological effects and to ensure sustainability.""",
-        references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Jatropha+curcas',
         isSelected: false),
     //Rosemary
     HerbalLens(

@@ -27,7 +27,7 @@ class _RootPageState extends State<RootPage> {
   //List of the pages
   List<Widget> _widgetOptions(){
     return[
-    const HomePage(articleId: 0,),
+    const HomePage(listofArticle: [],),
     HerbalPage(listofHerbaLens: plants,),
     FavoritePage(favoritedPlants: favorites,),
     const ProfilePage(),

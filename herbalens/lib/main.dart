@@ -90,9 +90,7 @@ class MyApp extends StatelessWidget {
         '/onboard': (context) => const OnboardingScreen(),
         '/login': (context) => const SignIn(),
         '/signUp': (context) => const SignUp(),
-        '/home': (context) => const HomePage(
-              articleId: 0,
-            ),
+        '/home': (context) => const HomePage(listofArticle: [],),
         '/message': (context) => const Message()
       },
     );

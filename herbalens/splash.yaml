@@ -1,9 +1,9 @@
 flutter_native_splash:
   color: "#FFFFFF"
-  image: assets\images\HerbaLens_Logo.png
+  image: assets\images\HerbaLens_Logo.png //edit 
 
   android_12:
     color: "#FFFFFF"
-    image: assets\images\HerbaLens_Logo.png
+    image: assets\images\HerbaLens_Logo.png //edit
 
   web: false
