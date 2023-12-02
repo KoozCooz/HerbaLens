@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
               padding: const EdgeInsets.symmetric(horizontal: 10),
               height: 15000, // Adjust the height as needed
               child: ListView.builder(
-                itemCount: 31, // Total number of items in all categories
+                itemCount: 20, // Total number of items in all categories
                 physics: const NeverScrollableScrollPhysics(),
                 itemBuilder: (BuildContext context, int index) {
                   return HomepageWidget(index: index, articleList: articleList);
