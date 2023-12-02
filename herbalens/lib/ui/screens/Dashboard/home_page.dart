@@ -48,7 +48,7 @@ class _HomePageState extends State<HomePage> {
             ),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 10),
-              height: 15000, // Adjust the height as needed
+              height: 10050, // Adjust the height as needed
               child: ListView.builder(
                 itemCount: 20, // Total number of items in all categories
                 physics: const NeverScrollableScrollPhysics(),

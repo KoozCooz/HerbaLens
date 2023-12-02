@@ -2,8 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:herbalens/constants.dart';
+import 'package:herbalens/main.dart';
 import 'package:herbalens/models/plants.dart';
 import 'package:url_launcher/url_launcher.dart';
+
 
 class DetailPage extends StatefulWidget {
   final int plantId;
@@ -35,7 +37,7 @@ class _DetailPageState extends State<DetailPage> {
                   Navigator.pop(context);
                 },
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 20, bottom: 10, top:50),
+                  padding: const EdgeInsets.only(left: 20, bottom: 10, top:30),
                   child: Container(
                     //close
                     height: 40,
@@ -71,6 +73,7 @@ class _DetailPageState extends State<DetailPage> {
                             bool isFavorited = toggleIsFavorated(PlantList[widget.plantId].isFavorated);
                             PlantList[widget.plantId].isFavorated = isFavorited;
                           });
+                          savePlant(platnId: widget.plantId);
                         },
                         icon: Icon(
                           PlantList[widget.plantId].isFavorated == true
@@ -334,5 +337,32 @@ class PlantFeature extends StatelessWidget {
         )
       ],
     );
+  }
+}
+
+Future<void> savePlant({required int platnId}) async{
+  // first get the saved plants
+  List<String> savedPlants = [];
+  savedPlants = prefs!.getStringList('savedPlants') ?? [];
+
+  if (savedPlants.contains(platnId.toString())) {
+    // if already saved, remove it
+    savedPlants.remove(platnId.toString());
+  } else {
+    // if not saved, add it
+    savedPlants.add(platnId.toString());
+  }
+  // save to the shared preferences
+  await prefs!.setStringList('savedPlants', savedPlants);
+}
+
+void loadSavedPlants() {
+  // first get the saved plants
+  List<String> savedPlants = [];
+  savedPlants = prefs!.getStringList('savedPlants') ?? [];
+
+  for(int i = 0; i < savedPlants.length; i++){
+    int plantId = int.parse(savedPlants[i]);
+    HerbalLens.plantList[plantId].isFavorated = true;
   }
 }
