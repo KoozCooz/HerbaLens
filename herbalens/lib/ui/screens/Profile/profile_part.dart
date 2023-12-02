@@ -4,7 +4,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:herbalens/Firebase_auth_implementation/firebase_auth_services.dart';
 import 'package:herbalens/constants.dart';
 import 'package:herbalens/ui/screens/Profile/Settings/settings.dart';
-import 'package:herbalens/ui/screens/Profile/faqs.dart';
+import 'package:herbalens/ui/screens/Profile/FAQs/faqs-ui.dart';
 import 'package:herbalens/ui/screens/widgets/profil_widget.dart';
 import 'package:herbalens/ui/screens/Account/signin_page.dart';
 import 'package:page_transition/page_transition.dart';
@@ -115,11 +115,12 @@ class _ProfilePageState extends State<ProfilePage> {
                       title: 'Settings',
                     ),
                   ),
+                  
 
                   //EDIT FAQS
                   GestureDetector(
                     onTap: () {
-                      Navigator.push(context, PageTransition(child: FAQPage(), type: PageTransitionType.bottomToTop));
+                      Navigator.push(context, PageTransition(child: FaqsListScreen(), type: PageTransitionType.bottomToTop));
                     },
                     child: const ProfileWidget(
                       icon: Icons.chat,
