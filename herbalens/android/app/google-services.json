@@ -12,7 +12,28 @@
           "package_name": "com.example.herbalens"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "663924677150-67f7t0iju5g5g7fn58vf4dn1mj4snl5k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.herbalens",
+            "certificate_hash": "c4e37633395e0e74a25c7eb9648604d7da188467"
+          }
+        },
+        {
+          "client_id": "663924677150-i86c5fh1gpl0uvmjpme3kolaefdin1ga.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.herbalens",
+            "certificate_hash": "bac33c2f3647f5a740c25f881331c875ca36b214"
+          }
+        },
+        {
+          "client_id": "663924677150-5il5i00n5bn01j4vb9j4m7ektpmk9i33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyA37T6CyxnEGAhzloMXNlSOKWRlcE2MLSs"
@@ -20,7 +41,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663924677150-5il5i00n5bn01j4vb9j4m7ektpmk9i33.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "663924677150-in7at9engapu05ks4l9cghd2kqhun7js.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.herbalens.RunnerTests"
+              }
+            }
+          ]
         }
       }
     }

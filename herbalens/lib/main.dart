@@ -12,10 +12,14 @@ import 'package:herbalens/ui/screens/Account/signup_page.dart';
 import 'package:herbalens/ui/screens/Account/signin_page.dart';
 import 'package:herbalens/ui/onboarding_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:herbalens/ui/screens/detail_page.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'ui/screens/Root page/root_page.dart';
 
 final navigatorKey = GlobalKey<NavigatorState>();
+
+SharedPreferences? prefs;
 
 Future _firebaseBackgroundMessage(RemoteMessage message) async {
   if (message.notification != null) {
@@ -25,6 +29,8 @@ Future _firebaseBackgroundMessage(RemoteMessage message) async {
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  prefs = await SharedPreferences.getInstance();
+  loadSavedPlants();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
