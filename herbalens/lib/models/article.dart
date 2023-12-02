@@ -96,7 +96,7 @@ class Article {
       articleTitle: 'Medicinal Plants and Their Benefits:',
       articleURL: 'https://www.urbanplant.in/blogs/planter/medicinal-plants-and-their-benefits',
       articledescription: 'Medicinal plants are certain herbs that have been very fruitful for the healthy existence of every human existing on Earth. From about centuries, they have been marked with certain healing properties and are considered as ayurvedic plants. These healing herbs are great for removing the unwanted toxins from our body, thereby producing antibodies to fight the toxins. India is a treasure for the herbs that cure and manifest positivity within the body. Amongst this, these herbal plants also cure the existing medical issues present within a person’s body.',
-      imageURL: 'assets/posts/11.png'
+      imageURL: 'assets/posts/11.PNG'
         ),
     Article(
       articleId: 12,
@@ -104,7 +104,7 @@ class Article {
       articleURL:'https://medium.com/@yeahitsmeadil/top-10-medicinal-plants-to-grow-in-your-garden-best-home-plants-d10fd4c9be08',
 
       articledescription: 'Your garden can be much more than just a place of fresh air and lovely greenery. In this article, we’ll delve into 10 plants that can be cultivated in your own backyard, turning your garden into a sanctuary for nurturing the purest organic medicinal herbs. From soothing aches and pains to promoting deep sleep, these ten essential plants can be your key to a healthier, more vibrant you. Let\’s explore these garden gems, each offering unique benefits for your well-being.',
-      imageURL: 'assets/posts/12.png'
+      imageURL: 'assets/posts/12.PNG' //
         ),
     Article(
       articleId: 13,
@@ -118,14 +118,14 @@ class Article {
       articleTitle: 'The Best Medicinal Plants for Women',
       articleURL:'https://yoursuper.eu/blogs/articles/medicinal-plants-for-women',
       articledescription: 'Whether it\'s menstrual pain, hot flushes during menopause or a bladder infection - women have been using special medicinal plants for specific ailments for centuries. Here you can find out all about the best medicinal plants for women, where to find them and how to use them.',
-      imageURL: 'assets/posts/14.png'
+      imageURL: 'assets/posts/14.PNG'
         ),
     Article(
       articleId: 15,
       articleTitle: 'Nature’s 9 Most Powerful Medicinal Plants and the Science Behind Them',
       articleURL:'https://www.healthline.com/health/most-powerful-medicinal-plants',
       articledescription: 'Today, we live in a time when manufactured medicines and prescriptions prevail, but do they have to be the only approach to healing? Even with all these engineered options at our fingertips, many people find themselves turning back to the medicinal plants that started it all: Herbal remedies that have the ability to heal and boost physical and mental well-being. In fact, at the beginning of the 21st century, 11 percentTrusted Source of the 252 drugs considered “basic and essential” by the World Health Organization were “exclusively of flowering plant origin.” Drugs like codeine, quinine, and morphine all contain plant-derived ingredients.',
-      imageURL: 'assets/posts/15.png'
+      imageURL: 'assets/posts/15.PNG'
         ),
     Article(
       articleId: 16,
@@ -139,14 +139,14 @@ class Article {
       articleTitle: '',
       articleURL:'https://supernatural.com/blogs/news/7-indoor-plants-with-medicinal-uses',
       articledescription: 'There are a lot of amazing plants we can choose to grow with us in our homes, however some do have more appealing reasons to grow, such is the case with plants that have medicinal properties! So if you’re looking to bring some life into your home, plants are a wonderful way to add some greenery and doubly so if you can use some of them for their medicine! Be sure to learn the proper ways of using each plant\'s medicine and please consult a doctor before using any medicinal plants in this article!',
-      imageURL: 'assets/posts/17.png'
+      imageURL: 'assets/posts/17.PNG'
         ),
     Article(
       articleId: 18,
       articleTitle: '11 Powerful Health Benefits of Butterfly Pea Flower',
       articleURL:'https://www.mybluetea.com.au/post/11-powerful-health-benefits-of-butterfly-pea-flower-clitoria-ternatea-infusion',
       articledescription: 'Ladies and Gentlemen, here\'s everything you want to know about Clitoria Ternatea, commonly known as the Blue Butterfly Pea Flower. The plant is native to equatorial Asia. The flower is commonly used in cooking, baking, and drinks and as a natural food colouring. The Clitoria Ternatea is also used in traditional Ayurvedic and Chinese medicine.',
-      imageURL: 'assets/posts/18.png'
+      imageURL: 'assets/posts/18.PNG'
         ),
     Article(
       articleId: 19,
