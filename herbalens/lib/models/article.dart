@@ -23,16 +23,16 @@ class Article {
         ),
     Article(
       articleId: 1,
-      articleTitle: '10 Healing Herbs',
-      articleURL:'https://www.verywellhealth.com/healing-herbs-5180997',
-      articledescription: 'A healing herb—otherwise known as a medicinal plant—is either collected from the wild or intentionally grown for its medicinal, or curative, value. A plant\'s leaves, bark, stems, roots, seeds, and/or flowers may be used to create herbal remedies.',
+      articleTitle: 'Philippine Insitute of Traditional and Alternative Health Care',
+      articleURL:'https://pitahc.gov.ph',
+      articledescription: 'The website is the official site of the Philippine Institute of Traditional and Alternative Health Care (PITAHC). It promotes traditional and alternative health care in the Philippines and integrates these practices into the national health care system. The site provides information about various traditional and complementary medicine practices, research clusters, transparency seal, and the Freedom of Information (FOI) Program.',
       imageURL: 'assets/posts/1.jpg' //EDIT PICTURE 5 assets/posts/1.jpg
         ),
     Article(
       articleId: 2,
-      articleTitle: 'Easy To Grow 10 Medicinal Plants At Home',
-      articleURL:'https://www.fnp.com/article/easy-to-grow-10-medicinal-plants-at-home',
-      articledescription: 'Ancient Unani, Chinese, and Egyptian texts mention the use of medicinal plants dating back 4000 years. These plants were used by various cultures for healing purposes. "Medicinal Plants" are used in herbology, the study of plants for medicinal use. The word "herb" comes from Latin and French. These plants are used in medicines, food, skincare, and perfumes.',
+      articleTitle: 'Traditional and Alternative Medicine Act of 1997',
+      articleURL:'https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/3840',
+      articledescription: 'AN ACT CREATING THE PHILIPPINE INSTITUTE OF TRADITIONAL AND ALTERNATIVE HEALTH CARE (PITAHC) TO ACCELERATE THE DEVELOPMENT OF TRADITIONAL AND ALTERNATIVE HEALTH CARE IN THE PHILIPPINES, PROVIDING FOR A TRADITIONAL AND ALTERNATIVE HEALTH CARE DEVELOPMENT FUND AND FOR OTHER PURPOSES',
       imageURL: 'assets/posts/2.png'// EDIT PICTURE 6
         ),
     Article(
@@ -93,73 +93,75 @@ class Article {
         ),
     Article(
       articleId: 11,
-      articleTitle: 'Recommended Medicinal Plants as Source of Natural Products: A Review',
-      articleURL:'https://doi.org/10.1016/S2589-3777(19)30018-7',
-      articledescription: 'This article reviews the medicinal plants that have been recommended as sources of natural products. Natural products are compounds that are produced by living organisms, and they have a wide range of potential applications in medicine and other fields. Medicinal plants are a particularly rich source of natural products, and they have been used for centuries to treat a variety of diseases and conditions.',
-      imageURL: 'assets/posts/DOH_approved_plants.jpg'
+      articleTitle: 'Medicinal Plants and Their Benefits:',
+      articleURL: 'https://www.urbanplant.in/blogs/planter/medicinal-plants-and-their-benefits',
+      articledescription: 'Medicinal plants are certain herbs that have been very fruitful for the healthy existence of every human existing on Earth. From about centuries, they have been marked with certain healing properties and are considered as ayurvedic plants. These healing herbs are great for removing the unwanted toxins from our body, thereby producing antibodies to fight the toxins. India is a treasure for the herbs that cure and manifest positivity within the body. Amongst this, these herbal plants also cure the existing medical issues present within a person’s body.',
+      imageURL: 'assets/posts/11.png'
         ),
     Article(
       articleId: 12,
-      articleTitle: 'Recommended Medicinal Plants as Source of Natural Products: A Review',
-      articleURL:'https://doi.org/10.1016/S2589-3777(19)30018-7',
-      articledescription: 'This article reviews the medicinal plants that have been recommended as sources of natural products. Natural products are compounds that are produced by living organisms, and they have a wide range of potential applications in medicine and other fields. Medicinal plants are a particularly rich source of natural products, and they have been used for centuries to treat a variety of diseases and conditions.',
-      imageURL: 'assets/posts/DOH_approved_plants.jpg'
+      articleTitle: 'TOP 10 MEDICINAL PLANTS TO GROW IN YOUR GARDEN: BEST HOME PLANTS',
+      articleURL:'https://medium.com/@yeahitsmeadil/top-10-medicinal-plants-to-grow-in-your-garden-best-home-plants-d10fd4c9be08',
+
+      articledescription: 'Your garden can be much more than just a place of fresh air and lovely greenery. In this article, we’ll delve into 10 plants that can be cultivated in your own backyard, turning your garden into a sanctuary for nurturing the purest organic medicinal herbs. From soothing aches and pains to promoting deep sleep, these ten essential plants can be your key to a healthier, more vibrant you. Let\’s explore these garden gems, each offering unique benefits for your well-being.',
+      imageURL: 'assets/posts/12.png'
         ),
     Article(
       articleId: 13,
-      articleTitle: 'Recommended Medicinal Plants as Source of Natural Products: A Review',
-      articleURL:'https://doi.org/10.1016/S2589-3777(19)30018-7',
-      articledescription: 'This article reviews the medicinal plants that have been recommended as sources of natural products. Natural products are compounds that are produced by living organisms, and they have a wide range of potential applications in medicine and other fields. Medicinal plants are a particularly rich source of natural products, and they have been used for centuries to treat a variety of diseases and conditions.',
-      imageURL: 'assets/posts/DOH_approved_plants.jpg'
+      articleTitle: 'Ethnobotanical study of medicinal plants in Ogotun-Ekiti, Ekiti State, Nigeria',
+      articleURL:'https://smujo.id/aje/article/view/15154',
+      articledescription: 'The essential role of medicinal plants in maintaining human health demonstrates the necessity for appropriate knowledge and documentation of their significance and application. The aim of this study is to record the ethnobotanical knowledge of medicinal plants thoroughly and methodically by local community in Ogotun-Ekiti, Nigeria',
+      imageURL: 'assets/posts/13.jpg'
         ),
     Article(
       articleId: 14,
-      articleTitle: 'Recommended Medicinal Plants as Source of Natural Products: A Review',
-      articleURL:'https://doi.org/10.1016/S2589-3777(19)30018-7',
-      articledescription: 'This article reviews the medicinal plants that have been recommended as sources of natural products. Natural products are compounds that are produced by living organisms, and they have a wide range of potential applications in medicine and other fields. Medicinal plants are a particularly rich source of natural products, and they have been used for centuries to treat a variety of diseases and conditions.',
-      imageURL: 'assets/posts/DOH_approved_plants.jpg'
+      articleTitle: 'The Best Medicinal Plants for Women',
+      articleURL:'https://yoursuper.eu/blogs/articles/medicinal-plants-for-women',
+      articledescription: 'Whether it\'s menstrual pain, hot flushes during menopause or a bladder infection - women have been using special medicinal plants for specific ailments for centuries. Here you can find out all about the best medicinal plants for women, where to find them and how to use them.',
+      imageURL: 'assets/posts/14.png'
         ),
     Article(
       articleId: 15,
-      articleTitle: 'Recommended Medicinal Plants as Source of Natural Products: A Review',
-      articleURL:'https://doi.org/10.1016/S2589-3777(19)30018-7',
-      articledescription: 'This article reviews the medicinal plants that have been recommended as sources of natural products. Natural products are compounds that are produced by living organisms, and they have a wide range of potential applications in medicine and other fields. Medicinal plants are a particularly rich source of natural products, and they have been used for centuries to treat a variety of diseases and conditions.',
-      imageURL: 'assets/posts/DOH_approved_plants.jpg'
+      articleTitle: 'Nature’s 9 Most Powerful Medicinal Plants and the Science Behind Them',
+      articleURL:'https://www.healthline.com/health/most-powerful-medicinal-plants',
+      articledescription: 'Today, we live in a time when manufactured medicines and prescriptions prevail, but do they have to be the only approach to healing? Even with all these engineered options at our fingertips, many people find themselves turning back to the medicinal plants that started it all: Herbal remedies that have the ability to heal and boost physical and mental well-being. In fact, at the beginning of the 21st century, 11 percentTrusted Source of the 252 drugs considered “basic and essential” by the World Health Organization were “exclusively of flowering plant origin.” Drugs like codeine, quinine, and morphine all contain plant-derived ingredients.',
+      imageURL: 'assets/posts/15.png'
         ),
     Article(
       articleId: 16,
-      articleTitle: 'Recommended Medicinal Plants as Source of Natural Products: A Review',
-      articleURL:'https://doi.org/10.1016/S2589-3777(19)30018-7',
-      articledescription: 'This article reviews the medicinal plants that have been recommended as sources of natural products. Natural products are compounds that are produced by living organisms, and they have a wide range of potential applications in medicine and other fields. Medicinal plants are a particularly rich source of natural products, and they have been used for centuries to treat a variety of diseases and conditions.',
-      imageURL: 'assets/posts/DOH_approved_plants.jpg'
+      articleTitle: '28 Medicinal Herbs You Need to Have in Your Garden',
+      articleURL:'https://morningchores.com/medicinal-herbs/',
+      articledescription: 'Herbs are the building blocks for tasty, delicious meals. Without them, food would be bland and unexciting. But have you considered all of the amazing health benefits you can get from consuming them? For centuries, people have turned to medicinal herbs to cure their ailments. Even though we may have chemical alternatives today, many of the most common garden greens have tried-and-true medical benefits.',
+      imageURL: 'assets/posts/16.jpg'
         ),
     Article(
       articleId: 17,
-      articleTitle: 'Recommended Medicinal Plants as Source of Natural Products: A Review',
-      articleURL:'https://doi.org/10.1016/S2589-3777(19)30018-7',
-      articledescription: 'This article reviews the medicinal plants that have been recommended as sources of natural products. Natural products are compounds that are produced by living organisms, and they have a wide range of potential applications in medicine and other fields. Medicinal plants are a particularly rich source of natural products, and they have been used for centuries to treat a variety of diseases and conditions.',
-      imageURL: 'assets/posts/DOH_approved_plants.jpg'
+      articleTitle: '',
+      articleURL:'https://supernatural.com/blogs/news/7-indoor-plants-with-medicinal-uses',
+      articledescription: 'There are a lot of amazing plants we can choose to grow with us in our homes, however some do have more appealing reasons to grow, such is the case with plants that have medicinal properties! So if you’re looking to bring some life into your home, plants are a wonderful way to add some greenery and doubly so if you can use some of them for their medicine! Be sure to learn the proper ways of using each plant\'s medicine and please consult a doctor before using any medicinal plants in this article!',
+      imageURL: 'assets/posts/17.png'
         ),
     Article(
       articleId: 18,
-      articleTitle: 'Recommended Medicinal Plants as Source of Natural Products: A Review',
-      articleURL:'https://doi.org/10.1016/S2589-3777(19)30018-7',
-      articledescription: 'This article reviews the medicinal plants that have been recommended as sources of natural products. Natural products are compounds that are produced by living organisms, and they have a wide range of potential applications in medicine and other fields. Medicinal plants are a particularly rich source of natural products, and they have been used for centuries to treat a variety of diseases and conditions.',
-      imageURL: 'assets/posts/DOH_approved_plants.jpg'
+      articleTitle: '11 Powerful Health Benefits of Butterfly Pea Flower',
+      articleURL:'https://www.mybluetea.com.au/post/11-powerful-health-benefits-of-butterfly-pea-flower-clitoria-ternatea-infusion',
+      articledescription: 'Ladies and Gentlemen, here\'s everything you want to know about Clitoria Ternatea, commonly known as the Blue Butterfly Pea Flower. The plant is native to equatorial Asia. The flower is commonly used in cooking, baking, and drinks and as a natural food colouring. The Clitoria Ternatea is also used in traditional Ayurvedic and Chinese medicine.',
+      imageURL: 'assets/posts/18.png'
         ),
     Article(
       articleId: 19,
-      articleTitle: 'Recommended Medicinal Plants as Source of Natural Products: A Review',
-      articleURL:'https://doi.org/10.1016/S2589-3777(19)30018-7',
-      articledescription: 'This article reviews the medicinal plants that have been recommended as sources of natural products. Natural products are compounds that are produced by living organisms, and they have a wide range of potential applications in medicine and other fields. Medicinal plants are a particularly rich source of natural products, and they have been used for centuries to treat a variety of diseases and conditions.',
-      imageURL: 'assets/posts/DOH_approved_plants.jpg'
+      articleTitle: 'A Guide to Foraging for Medicinal Plants',
+      articleURL:'https://www.hobbyfarms.com/a-guide-to-foraging-for-medicinal-plants/',
+      articledescription: 'An herbalist once told a story of a young man who studied plant medicine under the tutelage of a wise teacher. For his final exam, the teacher sent the young man out into the woods, telling him, “Come back when you find three plants that can’t be used as medicine.” The young man spent weeks upon weeks searching for the three plants, but finally returned to his teacher empty-handed.',
+      imageURL: 'assets/posts/19.jpg'
         ),
     Article(
       articleId: 20,
-      articleTitle: 'Recommended Medicinal Plants as Source of Natural Products: A Review',
-      articleURL:'https://doi.org/10.1016/S2589-3777(19)30018-7',
-      articledescription: 'This article reviews the medicinal plants that have been recommended as sources of natural products. Natural products are compounds that are produced by living organisms, and they have a wide range of potential applications in medicine and other fields. Medicinal plants are a particularly rich source of natural products, and they have been used for centuries to treat a variety of diseases and conditions.',
-      imageURL: 'assets/posts/DOH_approved_plants.jpg'
+      articleTitle: '8 Unusual Herbs To Grow',
+      articleURL:'https://www.promixgardening.com/en/tips/8-unusual-herbs-to-grow-22',
+      articledescription: 'You very well may have herbs in your own garden, but more than likely they are the rather usual culinary herbs such as parsley, sage, rosemary, and thyme.There are, however, many other herbs worthy of incorporating into the garden or interspersed amongst other plants for not only their unique beauty, but for their potential medicinal use and/or to spice things up in the kitchen. The following is a list of 8 less common or rare herbs to grow in the home garden.',
+      imageURL: 'assets/posts/20.jpg'
         ),
+
   ];
 }
