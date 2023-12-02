@@ -35,7 +35,7 @@ class _DetailPageState extends State<DetailPage> {
                   Navigator.pop(context);
                 },
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 20, bottom: 10, top:30),
+                  padding: const EdgeInsets.only(left: 20, bottom: 10, top:50),
                   child: Container(
                     //close
                     height: 40,
