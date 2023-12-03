@@ -83,7 +83,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       navigatorKey: navigatorKey,
-      title: 'Onboarding Screen',
+      title: 'HerbaLens',
       // home: const OnboardingScreen(),
 
       home: FirebaseAuth.instance.currentUser == null

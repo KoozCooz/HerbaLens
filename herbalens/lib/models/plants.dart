@@ -564,7 +564,7 @@ Allergies: Individuals with known allergies to plants should exercise caution, a
         scientificname: 'Cananga odorata',
         imageURL: 'assets/plants/flowers/Ylang-ylang.png',
         isFavorated: false,
-        decription: '',
+        decription: ' "Cananga odorata" refers to the fragrant tree of the Cananga genus. Ylang-ylang is well-known for its aromatic flowers, which are used in the production of essential oil with a sweet and exotic fragrance, widely used in perfumery and aromatherapy.',
         usefulin:
             """Perfumery: Ylang-ylang oil, extracted from the flowers of Cananga odorata, is a popular ingredient in the perfume industry, known for its sweet and floral fragrance.
 Aromatherapy: Ylang-ylang essential oil is used in aromatherapy for its potential calming and mood-enhancing properties.
@@ -587,7 +587,7 @@ Pregnancy: Pregnant women should consult with a healthcare professional before u
         scientificname: 'Matricaria chamomilla',
         imageURL: 'assets/plants/flowers/Chamomile.png',
         isFavorated: false,
-        decription: '',
+        decription: '"Matricaria chamomilla" refers to a specific species of chamomile known for its medicinal properties, particularly in traditional herbal remedies. Chamomile is valued for its delicate, apple-like fragrance and is commonly used to make herbal teas and for various therapeutic applications.',
         usefulin:
             """Herbal Tea: Chamomile tea is popular for its potential calming and relaxation properties. It is often consumed to promote better sleep and reduce stress.
 Digestive Aid: Chamomile is sometimes used to ease digestive discomfort, including symptoms of indigestion and bloating.
@@ -925,7 +925,7 @@ Ingestion Warning: Avoid ingestion of any parts of the plant, as some individual
     HerbalLens(
         plantId: 39,
         category: 'Flower',
-        plantName: 'Vegetable Hummingbird',
+        plantName: 'Katuray',
         scientificname: 'Sesbania grandiflora',
         imageURL: 'assets/plants/flowers/Katuray.png',
         isFavorated: false,
