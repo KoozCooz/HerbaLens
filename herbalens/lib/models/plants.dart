@@ -198,7 +198,7 @@ Avoid Eye Contact: Avoid touching your eyes or face after handling hot peppers, 
     HerbalLens(
         plantId: 7,
         category: 'Leaves',
-        plantName: 'Five-Leaved Chaste Tree',
+        plantName: 'Lagundi',
         scientificname: 'Vitex negundo',
         imageURL: 'assets/plants/leaves/Lagundi.png',
         isFavorated: false,
@@ -368,7 +368,6 @@ Potential Health Benefits: Oregano contains antioxidants and compounds that may 
             'No Major Side Effects: When used in normal culinary amounts, oregano typically doesn\'t cause significant adverse effects.',
         precautions:
             """Allergies: Individuals allergic to plants in the Lamiaceae family (such as basil, mint, or sage) might have allergies to oregano. Use cautiously if known allergies exist.
-
 Purity of Products: Ensure the purity of commercially available oregano products to avoid potential contamination or adverse reactions.""",
         references: 'https://pubmed.ncbi.nlm.nih.gov/?term=oregano',
         isSelected: false),
@@ -528,7 +527,6 @@ Infusion: Butterfly pea flowers can be steeped in hot water to make a vibrant bl
             """Allergic Reactions: Some individuals may be allergic to butterfly pea flowers, leading to symptoms such as itching, swelling, or respiratory issues.""",
         precautions:
             """Pregnancy: Pregnant women should use butterfly pea flowers with caution, and it's advisable to consult with a healthcare professional.
-
 Allergies: If you have known allergies to flowers or legumes, exercise caution when using butterfly pea flowers""",
         references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Clitoria+ternatea',
         isSelected: false),
@@ -640,8 +638,7 @@ Maintenance: Regular watering and deadheading spent flowers can promote continuo
 Traditional Uses: In some traditional practices, various parts of the plant are used for potential medicinal purposes, although scientific evidence might be limited.""",
         procedure:
             """Cultivation: It can be grown in well-draining soil in sunny to partially shaded areas, and it requires regular watering.
-Pruning: Prune the plant to maintain its shape and promote flowering.
-""",
+Pruning: Prune the plant to maintain its shape and promote flowering.""",
         symptoms:
             """Potential Toxicity: Certain parts of the plant may contain toxic compounds; ingestion might cause symptoms such as stomach upset.""",
         precautions:
@@ -955,17 +952,16 @@ Fodder Crop: It is used as a fodder crop for livestock due to its nutritional va
         decription:
             'Annona squamosa is the scientific name for a tropical fruit commonly known as the sugar apple or custard apple. The term "Annona" comes from the Latin word "annon," which means "year" or "annual," possibly referring to the perennial nature of plants in the Annonaceae family. The specific epithet "squamosa" refers to the scale-like, overlapping bracts found on the flower buds of this plant.',
         usefulin:
-            """• Antioxidant Properties: Annona squamosa is rich in antioxidants, which may help neutralize harmful free radicals in the body.
+            """Antioxidant Properties: Annona squamosa is rich in antioxidants, which may help neutralize harmful free radicals in the body.
 • Antimicrobial Activity: Some studies suggest that extracts from Annona squamosa have demonstrated antimicrobial properties against certain bacteria and fungi.
-• Gastrointestinal Health: In traditional medicine, parts of the sugar apple plant are sometimes used to address digestive issues.
-        """,
+• Gastrointestinal Health: In traditional medicine, parts of the sugar apple plant are sometimes used to address digestive issues.""",
         procedure:
-            """• Consumption: The fruit is typically consumed fresh by scooping out the soft, sweet flesh. It can be eaten as is or used in various culinary preparations.
+            """Consumption: The fruit is typically consumed fresh by scooping out the soft, sweet flesh. It can be eaten as is or used in various culinary preparations.
 • Tea or Extracts: In some traditional practices, extracts from different parts of the plant are used to make teas or infusions.""",
         symptoms:
-            '• Allergic Reactions: While allergic reactions to sugar apples are rare, some individuals may be allergic to certain components of the fruit.',
+            'Allergic Reactions: While allergic reactions to sugar apples are rare, some individuals may be allergic to certain components of the fruit.',
         precautions:
-            """• Pregnancy: Pregnant women are often advised to consume sugar apples in moderation due to the presence of certain compounds that may have uterine stimulant effects.
+            """Pregnancy: Pregnant women are often advised to consume sugar apples in moderation due to the presence of certain compounds that may have uterine stimulant effects.
 • Interaction with Medications: If you are taking medications or have existing health conditions, it's advisable to consult with a healthcare professional before consuming Annona squamosa, as it may interact with certain medications.""",
         references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Annona+squamosa',
         isSelected: false),
@@ -984,7 +980,8 @@ Fodder Crop: It is used as a fodder crop for livestock due to its nutritional va
   •Dyspepsia and flatulence
         Procedure: Infusion of the fruit is stimulant, stomachic and antispasmodic. •Toothache
         Procedure: Juice of the pepper pressed into the tooth cavity""",
-        procedure: """""",
+        procedure: """Consumption: Avocados can be eaten raw, added to salads, spread on toast, or used in various culinary dishes.
+Topical Application: Mashed avocado can be used in homemade facial masks for potential skin benefits.""",
         symptoms:
             """• Allergic Reactions: Some individuals may be allergic to avocados, experiencing symptoms such as itching, swelling, or difficulty breathing. Severe allergic reactions are rare but can occur.""",
         precautions:
@@ -1004,12 +1001,10 @@ Fodder Crop: It is used as a fodder crop for livestock due to its nutritional va
             '"Averrhoa bilimbi" refers to a specific species of tropical fruit tree known for its bilimbi fruit. The tree is cultivated in various tropical regions and is valued for its culinary and potential medicinal uses.',
         usefulin:
             """Culinary Uses: The bilimbi fruit is used in various culinary applications, especially in Southeast Asian cuisines. It adds a tangy flavor to dishes.
-Traditional Medicine: In some traditional practices, bilimbi is used for its potential medicinal properties, including as a remedy for coughs and skin conditions.
-""",
+Traditional Medicine: In some traditional practices, bilimbi is used for its potential medicinal properties, including as a remedy for coughs and skin conditions.""",
         procedure:
             """Harvesting: Bilimbi fruits are typically harvested when they are green and firm.
-Culinary Preparation: The fruits can be sliced and added to salads, pickles, or used as a souring agent in cooking.
-""",
+Culinary Preparation: The fruits can be sliced and added to salads, pickles, or used as a souring agent in cooking.""",
         symptoms:
             """Gastrointestinal Distress: Excessive consumption may cause gastrointestinal discomfort in some individuals.""",
         precautions:
@@ -1028,19 +1023,19 @@ Allergies: People with known allergies to bilimbi or similar fruits should avoid
         decription:
             'Momordica charantia, commonly known as bitter melon or bitter gourd, is a tropical and subtropical vine that belongs to the gourd family (Cucurbitaceae). The fruit of this plant is popular in various Asian cuisines and is known for its bitter taste. It is also used for its potential medicinal properties in traditional medicine systems.',
         usefulin:
-            """•<b>Antidiabetic Properties</b>: Bitter melon is often used in traditional medicine to help manage diabetes. It contains compounds that may have hypoglycemic effects, helping to lower blood sugar levels.
+            """Antidiabetic Properties: Bitter melon is often used in traditional medicine to help manage diabetes. It contains compounds that may have hypoglycemic effects, helping to lower blood sugar levels.
 • Antioxidant Activity: Bitter melon is rich in antioxidants, which can help neutralize harmful free radicals in the body, potentially reducing oxidative stress.
 • Immune System Support: Some traditional uses suggest that bitter melon may have immune-boosting properties due to its content of vitamins and antioxidants.
 • Weight Management: Some studies suggest that bitter melon may have potential benefits for weight management, though more research is needed.""",
         procedure:
-            """• Cooking: It is commonly used in culinary dishes in Asian cuisines. Bitter melon can be stir-fried, stuffed, or added to soups and stews.
+            """Cooking: It is commonly used in culinary dishes in Asian cuisines. Bitter melon can be stir-fried, stuffed, or added to soups and stews.
 • Juicing: Some people juice bitter melon and consume it as a beverage.
 • Supplements: Bitter melon supplements, including capsules and extracts, are also available.""",
         symptoms:
-            """• Gastrointestinal Distress: Bitter melon can cause stomach upset, diarrhea, or abdominal pain in some individuals.
+            """Gastrointestinal Distress: Bitter melon can cause stomach upset, diarrhea, or abdominal pain in some individuals.
 • Hypoglycemia Risk: Because of its potential blood sugar-lowering effects, individuals taking medications for diabetes should use caution and monitor their blood sugar levels closely.""",
         precautions:
-            """• Pregnancy: Pregnant women are advised to avoid excessive consumption of bitter melon, as it may have uterine stimulant effects.
+            """Pregnancy: Pregnant women are advised to avoid excessive consumption of bitter melon, as it may have uterine stimulant effects.
 • Blood Sugar Monitoring: Individuals with diabetes should monitor their blood sugar levels closely if using bitter melon, as it may interact with diabetes medications.
 • Allergies: Individuals with allergies to plants in the Cucurbitaceae family (which includes melons and cucumbers) may be at an increased risk of allergic reactions.""",
         references:
@@ -1080,18 +1075,18 @@ Allergies: If you have known allergies to fruits or berries, exercise caution wh
         decription:
             '"Citrus × microcarpa" essentially means a hybrid citrus plant with small fruit. Calamondin or calamansi is a small, sour citrus fruit that is used in various culinary applications, particularly in Southeast Asian cuisines.',
         usefulin:
-            """• Culinary Uses: Calamondin, or Citrus × microcarpa, is commonly used in culinary applications. The small, sour fruits are often used for their tart flavor in cooking, baking, and as a condiment.
+            """Culinary Uses: Calamondin, or Citrus × microcarpa, is commonly used in culinary applications. The small, sour fruits are often used for their tart flavor in cooking, baking, and as a condiment.
 • Beverages: The juice of calamondin is sometimes used to make beverages, such as refreshing drinks or cocktails.
 • Preserves and Condiments: Calamondin is used to make preserves, jams, and condiments due to its tangy flavor.""",
         procedure:
-            """• Harvesting: Calamondin fruits are typically harvested when they are fully ripe, which is when they turn orange.
+            """Harvesting: Calamondin fruits are typically harvested when they are fully ripe, which is when they turn orange.
 • Juicing: To extract juice, the fruits are squeezed. The juice can be used immediately or preserved for later use.
 • Cooking: The fruits can be added to various dishes during cooking to impart a citrusy flavor.""",
         symptoms:
-            """• Allergic Reactions: Some individuals may be allergic to citrus fruits, so allergic reactions such as itching, swelling, or hives are possible.
+            """Allergic Reactions: Some individuals may be allergic to citrus fruits, so allergic reactions such as itching, swelling, or hives are possible.
 • Dental Sensitivity: The acidic nature of citrus fruits may contribute to dental sensitivity in some individuals.""",
         precautions:
-            """• Allergies: Individuals with known allergies to citrus fruits should avoid calamondin.
+            """Allergies: Individuals with known allergies to citrus fruits should avoid calamondin.
 • Dental Health: Due to its acidity, consuming calamondin in moderation and practicing good oral hygiene can help minimize potential adverse effects on dental health.
 • Moderation: As with any food, it's advisable to consume calamondin in moderation to avoid excessive intake of certain compounds.""",
         references:
@@ -1108,17 +1103,16 @@ Allergies: If you have known allergies to fruits or berries, exercise caution wh
         decription:
             '"Daucus carota" essentially means the carrot plant. The scientific name is used to classify and identify this particular species of plant in the carrot family (Apiaceae). Carrots are widely cultivated for their edible taproots, which are consumed as vegetables and are known for their high nutritional content, including beta-carotene.',
         usefulin:
-            """• Nutrition: Carrots are rich in vitamins, particularly vitamin A, and minerals. They contribute to overall nutrition and may benefit eye health.
-
+            """Nutrition: Carrots are rich in vitamins, particularly vitamin A, and minerals. They contribute to overall nutrition and may benefit eye health.
 • Dietary Fiber: Carrots contain dietary fiber, which supports digestive health and may help regulate blood sugar levels.
 • Antioxidants: Carrots are a source of antioxidants, including beta-carotene, which can help neutralize free radicals in the body.""",
         procedure:
-            """• Culinary Uses: Carrots can be consumed raw, juiced, or cooked in various dishes, adding flavor, texture, and nutritional value.
+            """Culinary Uses: Carrots can be consumed raw, juiced, or cooked in various dishes, adding flavor, texture, and nutritional value.
 • Preparation: Wash, peel (if desired), and cut carrots according to your recipe or personal preference.""",
         symptoms:
-            """• Allergic Reactions: While rare, some individuals may be allergic to components in carrots, resulting in symptoms such as itching or swelling.""",
+            """Allergic Reactions: While rare, some individuals may be allergic to components in carrots, resulting in symptoms such as itching or swelling.""",
         precautions:
-            """• Oral Allergy Syndrome: Individuals with pollen allergies may experience cross-reactivity with certain proteins in carrots. This condition is known as oral allergy syndrome.
+            """Oral Allergy Syndrome: Individuals with pollen allergies may experience cross-reactivity with certain proteins in carrots. This condition is known as oral allergy syndrome.
 • Moderation: Carrots are nutritious, but excessive consumption may lead to an orange discoloration of the skin (carotenemia) due to high beta-carotene levels.""",
         references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Daucus+carota',
         isSelected: false),
@@ -1130,7 +1124,8 @@ Allergies: If you have known allergies to fruits or berries, exercise caution wh
         scientificname: 'Cocos nucifera',
         imageURL: 'assets/plants/fruits/coconut.png',
         isFavorated: false,
-        decription: """""",
+        decription: """
+Cocos nucifera, commonly known as the coconut palm, is a tropical plant that produces coconuts. It is a versatile plant with various uses, providing food, drink, and materials for many cultures around the world. The coconut palm is known for its large, palm-frond leaves and its ability to thrive in coastal areas with sandy soil.""",
         usefulin:
             """Edible Fruit: Coconuts provide coconut water, coconut milk, and coconut flesh, all of which are used in various culinary applications.
 Oil Production: Coconut oil, extracted from the kernel or meat of mature coconuts, is used in cooking, skincare, and haircare.
@@ -1157,8 +1152,7 @@ Moderation: Coconut products are high in saturated fats, so it's advisable to co
             " Sandoricum koetjape refers to the specific species of the santol tree. The name reflects its tropical origin and the local terminology used for the fruit in certain Southeast Asian languages.",
         usefulin:
             """Culinary Uses: The fruit is consumed fresh and is also used in various culinary preparations such as jams, jellies, and beverages.
-Traditional Medicine: In some traditional practices, different parts of the santol tree are used for potential medicinal purposes, including as a remedy for digestive issues.
-""",
+Traditional Medicine: In some traditional practices, different parts of the santol tree are used for potential medicinal purposes, including as a remedy for digestive issues.""",
         procedure:
             """Harvesting: Santol fruits are typically harvested when they are fully ripe and have a yellowish or reddish color.
 Culinary Preparation: The ripe fruits can be eaten as is, or used in the preparation of jams, jellies, or beverages""",
@@ -1238,7 +1232,6 @@ Juicing: Extract lemon juice by cutting the lemon and squeezing it. The juice ca
             """Allergic Reactions: While rare, some individuals may be allergic to citrus fruits like lemons, leading to symptoms such as itching or swelling.""",
         precautions:
             """Dental Health: The acidic nature of lemons can erode tooth enamel. It's advisable to rinse your mouth with water after consuming lemon juice and practice good oral hygiene.
-
 Gastrointestinal Sensitivity: Some individuals may experience gastrointestinal discomfort if they consume large quantities of lemon juice.""",
         references: 'https://pubmed.ncbi.nlm.nih.gov/?term=Citrus+limon',
         isSelected: false),
