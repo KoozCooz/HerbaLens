@@ -7,9 +7,9 @@ class Constants{
   static var blackColor = Colors.black54;
 
   static var titleOne= "HerbaLens";
-  static var descriptionOne = "Providing a more accurate and efficient method of identifying and classifying different species of herbal plants, as well as, facilitating their safe and effective medicinal use.";
+  static var descriptionOne = "Developing a machine learning-based system for accurately identifying herbal plants and integrating it with medicinal knowledge to ensure safe and effective use.";
   static var titleTwo= "HerbaLens";
-  static var descriptionTwo ="The term “Herba” meaning “herb”, which emphasizes the application's focus on herbal plants and “Lens” refers to the mobile device's camera lens, which is used to take pictures of various medicinal plants.";
+  static var descriptionTwo ='"HerbaLens" combines "herb" and "lens," highlighting its focus on herbal plants and the use of a mobile device\'s camera for capturing medicinal plant images.';
   static var titleThree ="Welcome!";
   static var descriptionThree ="Let's start our journey together to learn the Philippines herbal plants.";
 
