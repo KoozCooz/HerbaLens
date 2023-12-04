@@ -39,6 +39,8 @@ class _ScanPageState extends State<ScanPage> {
   String confidence = '';
   int detectedPlantIndex = 0;
 
+  bool isError = false;
+
   //-----------------------------------------
 
   Future<void> loadModel() async {
@@ -147,6 +149,11 @@ class _ScanPageState extends State<ScanPage> {
     }
     detectedPlant = plantNames[maxIndex - 4];
     confidence = "${maxValue.toStringAsFixed(2)}%";
+    if (maxValue < 30.0) {
+      isError = true;
+      detectedPlant = "Sorry! No Plant Detected. Select another image.";
+      confidence = "";
+    }
     isProcessingImage = false;
     detectedPlantIndex = maxIndex - 4;
     setState(() {});
@@ -250,9 +257,11 @@ class _ScanPageState extends State<ScanPage> {
                 ? const SizedBox()
                 : Text(
                     detectedPlant,
-                    style: const TextStyle(
-                      fontSize: 24,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: isError ? 18 : 24,
                       fontWeight: FontWeight.bold,
+                      color: isError ? Colors.red : Colors.green,
                     ),
                   ),
             SizedBox(height: height * 0.01),
