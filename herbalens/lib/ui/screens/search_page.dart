@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:herbalens/models/plants.dart';
+import 'package:herbalens/ui/screens/detail_page.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({super.key});
@@ -8,6 +10,9 @@ class SearchPage extends StatefulWidget {
 }
 
 class _SearchPageState extends State<SearchPage> {
+  List<String> searchedList = [];
+  List<int> idList = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,6 +37,21 @@ class _SearchPageState extends State<SearchPage> {
                 children: [
                   Expanded(
                     child: TextField(
+                      cursorColor: const Color(0xff296e48),
+                      onChanged: (value) {
+                        List<HerbalLens> plantsList = HerbalLens.plantList
+                            .where(
+                              (element) =>
+                                  element.plantName.toLowerCase().contains(
+                                        value.toLowerCase(),
+                                      ),
+                            )
+                            .toList();
+                        searchedList =
+                            plantsList.map((e) => e.plantName).toList();
+                        idList = plantsList.map((e) => e.plantId).toList();
+                        setState(() {});
+                      },
                       decoration: InputDecoration(
                         hintText: "Search",
                         hintStyle: const TextStyle(
@@ -55,6 +75,34 @@ class _SearchPageState extends State<SearchPage> {
                   ),
                 ],
               ),
+            ),
+            Expanded(
+              child: searchedList.isEmpty
+                  ? const Center(
+                      child: Text("Empty"),
+                    )
+                  : Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ListView.builder(
+                        itemCount: searchedList.length,
+                        itemBuilder: (context, index) {
+                          // you can change this tile style as you want
+                          return ListTile(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailPage(
+                                    plantId: idList[index],
+                                  ),
+                                ),
+                              );
+                            },
+                            title: Text(searchedList[index]),
+                          );
+                        },
+                      ),
+                  ),
             ),
           ],
         ),

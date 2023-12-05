@@ -5,6 +5,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:herbalens/firebase_options.dart';
+import 'package:herbalens/ui/scan_page.dart';
 import 'package:herbalens/ui/screens/Root%20page/Notifications/message.dart';
 import 'package:herbalens/ui/screens/Root%20page/Notifications/notifications.dart';
 import 'package:herbalens/ui/screens/Dashboard/home_page.dart';
@@ -13,6 +14,7 @@ import 'package:herbalens/ui/screens/Account/signin_page.dart';
 import 'package:herbalens/ui/onboarding_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:herbalens/ui/screens/detail_page.dart';
+import 'package:herbalens/ui/screens/search_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'ui/screens/Root page/root_page.dart';

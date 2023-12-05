@@ -296,7 +296,7 @@ class _ScanPageState extends State<ScanPage> {
                   : const Text("Please wait loading model..."),
             ),
             SizedBox(height: height * 0.01),
-            detectedPlant.isNotEmpty ? ElevatedButton(
+            detectedPlant.isNotEmpty && !isError ? ElevatedButton(
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(
                   isModelLoaded && !isProcessingImage
