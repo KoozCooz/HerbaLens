@@ -202,6 +202,26 @@ class _ScanPageState extends State<ScanPage> {
                   ),
                 ),
                 const Spacer(),
+                GestureDetector(
+                  onTap: () {
+                    debugPrint('share');
+                  },
+                  child: Container(
+                    height: 40,
+                    width: 40,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(25),
+                      color: Constants.primaryColor.withOpacity(.15),
+                    ),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.share,
+                        color: Constants.primaryColor,
+                      ),
+                    ),
+                  ),
+                ),
                 const SizedBox(width: 20),
               ],
             ),
@@ -276,37 +296,34 @@ class _ScanPageState extends State<ScanPage> {
                   : const Text("Please wait loading model..."),
             ),
             SizedBox(height: height * 0.01),
-            detectedPlant.isNotEmpty
-                ? ElevatedButton(
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(
-                        isModelLoaded && !isProcessingImage
-                            ? const Color(0xff296e48)
-                            : Colors.grey,
-                      ),
-                      padding:
-                          MaterialStateProperty.all(const EdgeInsets.all(20)),
-                      textStyle: MaterialStateProperty.all(
-                        const TextStyle(fontSize: 14, color: Colors.white),
-                      ),
-                    ),
-                    onPressed: isModelLoaded && !isProcessingImage
-                        ? () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => DetailPage(
-                                  plantId: plantIds[detectedPlantIndex],
-                                ),
-                              ),
-                            );
-                          }
-                        : () {},
-                    child: isModelLoaded
-                        ? const Text("Get Plant Info")
-                        : const Text("Please wait loading model..."),
-                  )
-                : const SizedBox(),
+            detectedPlant.isNotEmpty && !isError ? ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(
+                  isModelLoaded && !isProcessingImage
+                      ? const Color(0xff296e48)
+                      : Colors.grey,
+                ),
+                padding: MaterialStateProperty.all(const EdgeInsets.all(20)),
+                textStyle: MaterialStateProperty.all(
+                  const TextStyle(fontSize: 14, color: Colors.white),
+                ),
+              ),
+              onPressed: isModelLoaded && !isProcessingImage
+                  ? () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => DetailPage(
+                            plantId: plantIds[detectedPlantIndex],
+                          ),
+                        ),
+                      );
+                    }
+                  : () {},
+              child: isModelLoaded
+                  ? const Text("Get Plant Info")
+                  : const Text("Please wait loading model..."),
+            ):const SizedBox(),
           ],
         ),
       ),
@@ -441,4 +458,4 @@ class _ScanPageState extends State<ScanPage> {
       return '';
     }
   }
-}
+}  

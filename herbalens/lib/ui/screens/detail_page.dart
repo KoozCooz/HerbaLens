@@ -2,10 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:herbalens/constants.dart';
-import 'package:herbalens/main.dart';
 import 'package:herbalens/models/plants.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../main.dart';
 
 class DetailPage extends StatefulWidget {
   final int plantId;
@@ -183,7 +183,7 @@ class _DetailPageState extends State<DetailPage> {
                     Container(
                       padding: const EdgeInsets.only(top: 20), //Below News Herbal Leaves
                       child: const Text(
-                        'Procedure:',
+                        'Prodecure:',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 25.0,
