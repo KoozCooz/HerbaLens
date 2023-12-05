@@ -39,6 +39,8 @@ class _ScanPageState extends State<ScanPage> {
   String confidence = '';
   int detectedPlantIndex = 0;
 
+  bool isError = false;
+
   //-----------------------------------------
 
   Future<void> loadModel() async {
@@ -147,6 +149,11 @@ class _ScanPageState extends State<ScanPage> {
     }
     detectedPlant = plantNames[maxIndex - 4];
     confidence = "${maxValue.toStringAsFixed(2)}%";
+    if (maxValue < 30.0) {
+      isError = true;
+      detectedPlant = "Sorry! No Plant Detected. Select another image.";
+      confidence = "";
+    }
     isProcessingImage = false;
     detectedPlantIndex = maxIndex - 4;
     setState(() {});
@@ -230,9 +237,11 @@ class _ScanPageState extends State<ScanPage> {
                 ? const SizedBox()
                 : Text(
                     detectedPlant,
-                    style: const TextStyle(
-                      fontSize: 24,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: isError ? 18 : 24,
                       fontWeight: FontWeight.bold,
+                      color: isError ? Colors.red : Colors.green,
                     ),
                   ),
             SizedBox(height: height * 0.01),
@@ -267,34 +276,37 @@ class _ScanPageState extends State<ScanPage> {
                   : const Text("Please wait loading model..."),
             ),
             SizedBox(height: height * 0.01),
-            detectedPlant.isNotEmpty ? ElevatedButton(
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(
-                  isModelLoaded && !isProcessingImage
-                      ? const Color(0xff296e48)
-                      : Colors.grey,
-                ),
-                padding: MaterialStateProperty.all(const EdgeInsets.all(20)),
-                textStyle: MaterialStateProperty.all(
-                  const TextStyle(fontSize: 14, color: Colors.white),
-                ),
-              ),
-              onPressed: isModelLoaded && !isProcessingImage
-                  ? () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => DetailPage(
-                            plantId: plantIds[detectedPlantIndex],
-                          ),
-                        ),
-                      );
-                    }
-                  : () {},
-              child: isModelLoaded
-                  ? const Text("Get Plant Info")
-                  : const Text("Please wait loading model..."),
-            ):const SizedBox(),
+            detectedPlant.isNotEmpty
+                ? ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(
+                        isModelLoaded && !isProcessingImage
+                            ? const Color(0xff296e48)
+                            : Colors.grey,
+                      ),
+                      padding:
+                          MaterialStateProperty.all(const EdgeInsets.all(20)),
+                      textStyle: MaterialStateProperty.all(
+                        const TextStyle(fontSize: 14, color: Colors.white),
+                      ),
+                    ),
+                    onPressed: isModelLoaded && !isProcessingImage
+                        ? () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => DetailPage(
+                                  plantId: plantIds[detectedPlantIndex],
+                                ),
+                              ),
+                            );
+                          }
+                        : () {},
+                    child: isModelLoaded
+                        ? const Text("Get Plant Info")
+                        : const Text("Please wait loading model..."),
+                  )
+                : const SizedBox(),
           ],
         ),
       ),
@@ -429,4 +441,4 @@ class _ScanPageState extends State<ScanPage> {
       return '';
     }
   }
-}  
+}

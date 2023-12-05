@@ -183,7 +183,7 @@ class _DetailPageState extends State<DetailPage> {
                     Container(
                       padding: const EdgeInsets.only(top: 20), //Below News Herbal Leaves
                       child: const Text(
-                        'Prodecure:',
+                        'Procedure:',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 25.0,
