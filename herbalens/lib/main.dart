@@ -13,6 +13,7 @@ import 'package:herbalens/ui/screens/Account/signin_page.dart';
 import 'package:herbalens/ui/onboarding_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:herbalens/ui/screens/detail_page.dart';
+import 'package:herbalens/ui/screens/termscons.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'ui/screens/Root page/root_page.dart';
@@ -94,6 +95,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/onboard': (context) => const OnboardingScreen(),
+        '/terms' : (context) => TermsAndConditionsScreen(),
         '/login': (context) => const SignIn(),
         '/signUp': (context) => const SignUp(),
         '/home': (context) => const HomePage(listofArticle: [],),

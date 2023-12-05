@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:herbalens/constants.dart';
-import 'package:herbalens/ui/screens/Account/signin_page.dart';
+import 'package:herbalens/ui/screens/termscons.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({Key? key}) : super(key: key);
@@ -27,7 +27,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             child: InkWell(
               onTap: () {
                 Navigator.pushReplacement(
-                    context, MaterialPageRoute(builder: (_) => const SignIn()));
+                    context, MaterialPageRoute(builder: (_) => TermsAndConditionsScreen()));
               }, //login screen
               child: const Text(
                 'Skip',
@@ -95,7 +95,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         }
                       } else {
                         Navigator.pushReplacement(context,
-                            MaterialPageRoute(builder: (_) => const SignIn()));
+                            MaterialPageRoute(builder: (_) => TermsAndConditionsScreen()));
                       }
                     });
                   }, //button next
