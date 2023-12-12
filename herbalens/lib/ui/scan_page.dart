@@ -201,28 +201,6 @@ class _ScanPageState extends State<ScanPage> {
                     ),
                   ),
                 ),
-                const Spacer(),
-                GestureDetector(
-                  onTap: () {
-                    debugPrint('share');
-                  },
-                  child: Container(
-                    height: 40,
-                    width: 40,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(25),
-                      color: Constants.primaryColor.withOpacity(.15),
-                    ),
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.share,
-                        color: Constants.primaryColor,
-                      ),
-                    ),
-                  ),
-                ),
-                const SizedBox(width: 20),
               ],
             ),
             SizedBox(height: height * 0.06),

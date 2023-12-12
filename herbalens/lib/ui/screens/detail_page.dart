@@ -117,6 +117,16 @@ class _DetailPageState extends State<DetailPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
+                                PlantList[widget.plantId].category,
+                                style: TextStyle(
+                                  color: Constants.primaryColor,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 30.0,
+                                ),),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Text(
                                 PlantList[widget.plantId].plantName,
                                 style: TextStyle(
                                   color: Constants.primaryColor,

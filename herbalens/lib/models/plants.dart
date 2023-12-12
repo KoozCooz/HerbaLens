@@ -1002,7 +1002,7 @@ class HerbalLens {
         plantId: 42,
         category: 'Fruit',
         plantName: 'Bilimbi',
-        scientificname: 'Beta vulgaris',
+        scientificname: 'Averrhoa bilimbi',
         imageURL: 'assets/plants/fruits/kamias.png',
         isFavorated: false,
         decription:
